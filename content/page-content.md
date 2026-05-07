@@ -34,7 +34,7 @@ Image”, supervisor: Prof. Dr. Hab. Dorota Folga Januszewska
 
 
 [e-mail](mailto:milannowacka@gmail.com) 
-[instagram](www.instagram.com/milanowacka/?hl=en)
+[instagram](www.instagram.com/milanowacka)
 
 
 # Projects
