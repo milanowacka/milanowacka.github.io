@@ -48,15 +48,7 @@ h
 ## Słynny poważny utwór
 ![](DSCF9525.jpg)
 ### Description
-besrgesrasdasdgvesgvs5tseb5tn5b
-se5fasdgfasgsadgsdg
-tbesrtbertbgsenasgdsagsad
-ten
-tshnet
-h
-h
-h
-h
+Nowy opis wielkiego dzieła sztuki marki Suzuki.
 
 
 
