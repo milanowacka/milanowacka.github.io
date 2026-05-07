@@ -10,11 +10,16 @@ EXHIBITIONS
 18–19.06.2022 – Karowa Gallery, Warsaw, PL, Mila Nowacka: Presentation of Works and Types of Feedback Loops in Audio-Video Devices
 8–10.12.2021 – Pracownia Wschodnia, Warsaw, PL / Satin Made of Triggers
 
+PUBLICATIONS
+
+04.2026 - [The Drawing Stall Vol 2: Compendium of Colored Pencil] (https://the-drawing-stall.bigcartel.com/product/the-drawing-stall-vol-2)
+01.2026 - [Muzeum jutra - cyfrowe modele i artefakty, FRSK] (https://www.mapasztuki.pl/muzeum-jutra/artistution)
+
 VIDEO SHOWS
 
 8.02.2026 - Feedback Loop (2026), Sauna Festival, Warsaw, curated by Weronika Adamowska
 20.09.2025 - Aqualines (2025), Her Docs Festival, Warsaw
-1-21.10.2025 - Screening of the film TEYAS as part of the Sprzężenia/Feedback cycle, curated by Weronika, Foundation for Polish Art ING, Warsaw, Poland
+1-21.10.2025 - Screening of the film TEYAS as part of the Sprzężenia/Feedback cycle, curated by Weronika Zalewska, Foundation for Polish Art ING, Warsaw, Poland
 8.02.2025 - Aqualines (2025), Singletary Center for the Arts Visual Music Festival, Kentucky, USA
 18.09.2022 - WIDT 2020, Zachęta & HER Docs, Women’s Video Art and Discussion, Warsaw, Poland
 29-31.07.2021 - WIDT 2020, Contexts Festival, Sokołowsko, Poland
