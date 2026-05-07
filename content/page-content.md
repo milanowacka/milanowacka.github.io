@@ -37,6 +37,17 @@ Image”, supervisor: Prof. Dr. Hab. Dorota Folga Januszewska
 [instagram](https://www.instagram.com/milanowacka)
 
 
+
+
+
+
+
+
+
+
+.
+
+
 # Projects
 ## Thyroid
 ![](DSCF9528.jpg)
