@@ -1,7 +1,7 @@
 # About
 Hej jestem bobulus sanktus prajm. Najlepsza baberka w kosmosie.
 
-[Kliknij tutaj](mailto:milanowacka@gmail.com) żeby wysłać do mnie maila.
+[Kliknij tutaj](mailto:milannowacka@gmail.com) żeby wysłać do mnie maila.
 
 [Link do innej strony](https://transientlab.net)
 
@@ -9,7 +9,8 @@ Hej jestem bobulus sanktus prajm. Najlepsza baberka w kosmosie.
 ## Thyroid
 ![](DSCF9528.jpg)
 ### Description
-
+from Feedback series 
+drawing on cotton paper
 78 x 53 cm 
 2024
 
@@ -21,6 +22,7 @@ photo: Kasia Rysiak
 ![](DSCF9525.jpg)
 ### Description
 from Feedback series 
+drawing on cotton paper
 78 x 53 cm
 2024
 
@@ -69,17 +71,62 @@ Bartosz Górka
 
 photo: Bartosz Górka
 
-## Uber dzieło sztuki poważnej
-![](DSCF9525.jpg)
+## CREATURE stage I
+![](DSCF2714.jpg)
 ### Description
-Tutaj piszesz opis.
-Ten opis może zawierać [link](https://google.com/)
+from Nowelia Kiliani Series 
+[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
 
-## Głowa
+wax-based colored pencils on cotton paper
+100 x 70 cm
+2021 
+
+photo: Kasia Rysiak
+
+## CREATURE stage II
+![](DSCF2731.jpg)
+### Description 
+from Nowelia Kiliani Series 
+[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
+
+wax-based color pencils on cotton paper
+100 x 70 cm
+2022
+
+photo: Kasia Rysiak
+
+## CREATURE stage III
+![](DSCF2767.jpg)
+### Description 
+from Nowelia Kiliani Series 
+[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
+
+wax-based color pencils on bristol
+100 x 70 cm
+2022
+
+photo: Kasia Rysiak
+
+## CREATURE stage IV
 ![](DSCF9525.jpg)
-### Description
-60 x 80 cm 
-2026
+### Description 
+from Nowelia Kiliani Series 
+[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
 
-Praca powstała w ramach serii Sprzężenie Zwrotne. 
-Jest to wizualizacja głowy samodzielnej mamy.
+wax-based color pencils on bristol
+100 x 70 cm
+2022
+
+photo: Kasia Rysiak
+
+## CREATURE stage VI
+![](DSCF9525.jpg)
+### Description 
+from Nowelia Kiliani Series 
+[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
+
+wax-based color pencils on cotton paper
+70 x 50 cm
+2023
+
+photo: Kasia Rysiak
