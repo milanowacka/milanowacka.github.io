@@ -20,7 +20,7 @@ projects_content = projects_match.group(1) if projects_match else ""
 
 # Parse individual projects
 projects = []
-project_pattern = r'## (.*?)\n!\[\]\((.*?)\)\n### Description\n(.*?)(?=\n## |\Z)'
+project_pattern = r'## (.*?)\n!\[\]\((.*?)\)\n### Description\s*\n(.*?)(?=\n## |\Z)'
 for match in re.finditer(project_pattern, projects_content, re.DOTALL):
     title = match.group(1).strip()
     image = match.group(2)
