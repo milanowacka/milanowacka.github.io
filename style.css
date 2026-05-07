@@ -18,7 +18,7 @@ body {
     word-break: normal;
     scroll-behavior: smooth;
     height: 100vh;
-    overflow: hidden;
+    overflow-y: scroll;
     /* max-width: 600px; */
 
 }
@@ -150,33 +150,10 @@ section {
     padding: 0;
 }
 
-/* Responsive
+
 @media (max-width: 768px) {
-    body {
-        margin: 5px;
-        font-size: 12pt;
-    }
-    
-    h2 {
-    font-size: 15pt;
-    }  
-    #logo {
-        font-size: 16pt;
-    }
-    
-    nav ul {
-        flex-direction: column;
-    }
-    
-    nav li {
-        margin: 5px 0;
-    }
-    
-    .carousel {
-        gap: 10px;
-    }
 
     .project img {
-        object-fit:contain;
+        height: 40vh;
+    }
 }
-} */
