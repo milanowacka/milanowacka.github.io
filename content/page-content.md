@@ -43,7 +43,7 @@ This drawing represents the manifestation of the spine in all its magnificent st
 photo: Bartosz Górka
 
 ## Nose 
-![](BGF3155_MN_web.jpg)
+![](BGF3137_MN_web.jpg)
 ### Description
 from Feedback series 
 wax-based color pencils on cotton paper
