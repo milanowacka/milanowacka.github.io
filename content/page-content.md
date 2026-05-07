@@ -150,10 +150,7 @@ wax-based color pencils on cotton paper
 100 x 70 cm
 2022
 
-The culmination of several years of work on the drawings is an audiovisual album in the form of a book, which includes a lathe-cut vinyl record featuring
-a flute composition. The publication was completed in 2024 in collaboration with bookbinder Igor Gołaszewski and sound record publisher Sebastian Buczek. The piece
-was recorded by Aleksander Żurowski, and the sound was then engraved using a modified version of a Polish postcard record cutter from the 1960s, refined by Buczek. Each record was handcrafted.
-Photographs of the drawings were taken by Katarzyna Rysiak at Pracownia Wschodnia in Warsaw. A total of 20 copies of the album were produced. The covers were handprinted at the letterpress workshop of the Academy of Fine Arts in Warsaw.
+The culmination of several years of work on the drawings is an audiovisual album in the form of a book, which includes a lathe-cut vinyl record featuring a flute composition. The publication was completed in 2024 in collaboration with bookbinder Igor Gołaszewski and sound record publisher Sebastian Buczek. The piece was recorded by Aleksander Żurowski, and the sound was then engraved using a modified version of a Polish postcard record cutter from the 1960s, refined by Buczek. Each record was handcrafted. A total of 20 copies of the album were produced. The covers were handprinted at the letterpress workshop of the Academy of Fine Arts in Warsaw.
 
 [Album on Bandcamp](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
 
