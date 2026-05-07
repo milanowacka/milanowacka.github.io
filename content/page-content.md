@@ -10,7 +10,7 @@ Hej jestem bobulus sanktus prajm. Najlepsza baberka w kosmosie.
 ![](DSCF9528.jpg)
 ### Description
 from Feedback series 
-drawing on cotton paper
+wax-based color pencils on cotton paper
 78 x 53 cm 
 2024
 
@@ -22,7 +22,7 @@ photo: Kasia Rysiak
 ![](DSCF9525.jpg)
 ### Description
 from Feedback series 
-drawing on cotton paper
+wax-based color pencils on cotton paper
 78 x 53 cm
 2024
 
@@ -34,6 +34,7 @@ photo: Kasia Rysiak
 ![](BGF3150_MN_WB_web.jpg)
 ### Description
 from Feedback series 
+wax-based color pencils on cotton paper
 78 x 53 cm 
 2024
 
@@ -45,6 +46,7 @@ photo: Bartosz Górka
 ![](_BGF3155_MN_web.jpg)
 ### Description
 from Feedback series 
+wax-based color pencils on cotton paper
 78 x 53 cm 
 2024
 
@@ -56,6 +58,7 @@ photo: Bartosz Górka
 ![](BGF3138_MN_web.jpg)
 ### Description
 from Feedback series
+wax-based color pencils on paper
 200 x 100 cm
 2025
 
@@ -66,7 +69,8 @@ Bartosz Górka
 ## Stimulus
 ![](BGF3180_MN_web.jpg)
 ### Description
-11 x 8 cm 
+wax-based color pencils on old paper in vintage photo frame 
+11 x 8 cm
 2025
 
 photo: Bartosz Górka
@@ -108,7 +112,7 @@ wax-based color pencils on bristol
 photo: Kasia Rysiak
 
 ## CREATURE stage IV
-![](DSCF9525.jpg)
+![](DSCF2789.jpg)
 ### Description 
 from Nowelia Kiliani Series 
 [link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
@@ -120,7 +124,7 @@ wax-based color pencils on bristol
 photo: Kasia Rysiak
 
 ## CREATURE stage VI
-![](DSCF9525.jpg)
+![](DSCF2700.jpg)
 ### Description 
 from Nowelia Kiliani Series 
 [link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
@@ -130,3 +134,40 @@ wax-based color pencils on cotton paper
 2023
 
 photo: Kasia Rysiak
+
+## CREATURE stage VII
+![](DSCF2688.jpg)
+### Description 
+from Nowelia Kiliani Series 
+[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
+
+wax-based color pencils on cotton paper
+100 x 70 cm
+2023
+
+photo: Kasia Rysiak
+
+## CREATURE stage VIII
+![](KMRY9423.jpg)
+### Description 
+from Nowelia Kiliani Series 
+[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
+
+wax-based color pencils on cotton paper
+100 x 70 cm
+2023
+
+photo: Kasia Rysiak
+
+## CREATURE stage X
+![](KMRY9417-20.jpg)
+### Description 
+from Nowelia Kiliani Series 
+[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
+
+wax-based color pencils on military technical paper
+100 x 70 cm
+2024
+
+photo: Kasia Rysiak
+
