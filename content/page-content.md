@@ -73,7 +73,7 @@ wax-based color pencils on cotton paper
 
 This image reflects the desire to be both a mother, caregiver, and a provider at the same time. I realize that my mind perceives these two roles as conflicting, yet I attempt to integrate them into a layered form of being - many heads in constant motion. If a woman is a single mother and carries many fears, the head needs the support of the spine. 
 
-The Feedback is a series of drawings that serve as a visual manifestation of my internal bodily and emotional processes. Each image is created as a result of deep introspection and embodied perception, both internal and external. The drawings constitute a personal record of the phenomenon of feedback, an interpretation of the mechanism known from electronic systems, here translated into the language of  corporeality. Each drawing is accompanied by an original text, which forms an integral part of the work. 
+Beyond the notion of feedback as a creative method, my practice draws on traditions developed by artists associated with the Theosophical Society, who attempted to give visual form to invisible forces, sensations, and states of consciousness.
 
 photo: Kasia Rysiak
 
@@ -87,7 +87,7 @@ wax-based color pencils on cotton paper
 
 This drawing represents the manifestation of the spine in all its magnificent strengh. The spine is our center of movement - a fundamental element in our everyday existance. It is depicted here in colors symbolising the various chackras within us. 
 
-The Feedback is a series of drawings that serve as a visual manifestation of my internal bodily and emotional processes. Each image is created as a result of deep introspection and embodied perception, both internal and external. The drawings constitute a personal record of the phenomenon of feedback, an interpretation of the mechanism known from electronic systems, here translated into the language of corporeality. Each drawing is accompanied by an original text, which forms an integral part of the work. 
+During the process, I focused on internal feelings and emotional responses in relation to information gathered through Traditional Chinese Medicine (TCM), attempting to translate these stimuli into form. The decision-making process was encoded within the body itself: once a gesture, movement of the hand, or emerging shape felt familiar, intuitive, and correct, I continued to develop it further.
 
 photo: Bartosz Górka
 
@@ -101,7 +101,7 @@ wax-based color pencils on cotton paper
 
 This drawing represents nose. This element allows for the regulation of emotions and stabilisation in difficult moments. It is the gateway to life, as breath is life. Focusing on the breath helps to fall asleep. 
 
-The Feedback is a series of drawings that serve as a visual manifestation of my internal bodily and emotional processes. Each image is created as a result of deep introspection and embodied perception, both internal and external. The drawings constitute a personal record of the phenomenon of feedback, an interpretation of the mechanism known from electronic systems, here translated into the language of corporeality. Each drawing is accompanied by an original text, which forms an integral part of the work. 
+I was deeply inspired by the emergence of contemporary scientific movements and manifestos that advocate for new methodologies within scientific discourse, such as new materialism, post-materialism, and posthumanist perspectives. These approaches, often closely connected to feminist theory, propose alternative ways of understanding matter, consciousness, embodiment, and the relationships between humans and non-human entities.
 
 photo: Bartosz Górka
 
@@ -115,7 +115,7 @@ wax-based color pencils on paper
 
 This image is a vision of the urinary system. Kidneys are the power center in our body - they play a crucial role in our lives. The kidneys like the warmth. As an infant my son strugled with an issue within his urinary system, grade IV ureteral wall thickening, his kidneys were in danger, because of the constantly recurring inflamations. For several years he was under the care of the doctors of the Center of Mother and Child in Warsaw. Currently he is healthy. 
 
-The Feedback is a series of drawings that serve as a visual manifestation of my internal bodily and emotional processes. Each image is created as a result of deep introspection and embodied perception, both internal and external. The drawings constitute a personal record of the phenomenon of feedback, an interpretation of the mechanism known from electronic systems, here translated into the language of corporeality. Each drawing is accompanied by an original text, which forms an integral part of the work. 
+I view these movements, and their recognition of all living beings as deeply interconnected, as the emergence of a new paradigm - one that holds the potential to transform, or even heal, the profound wounds of our contemporary world, shaped by ongoing ecological and political crises.
 
 photo: Bartosz Górka
 
@@ -125,9 +125,6 @@ photo: Bartosz Górka
 wax-based color pencils on old paper in vintage photo frame 
 11 x 8 cm
 2025
-
-The Feedback is a series of drawings that serve as a visual manifestation of my internal bodily and emotional processes. Each image is created as a result of deep introspection and embodied perception, both internal and external. The drawings constitute a personal record of the phenomenon of feedback, an interpretation of the mechanism known from electronic systems, here translated into the language of corporeality. Each drawing is accompanied by an original text, which forms an integral part of the work. 
-
 
 photo: Bartosz Górka
 
