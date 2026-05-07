@@ -6,50 +6,43 @@ Hej jestem bobulus sanktus prajm. Najlepsza baberka w kosmosie.
 [Link do innej strony](https://transientlab.net)
 
 # Projects
-## Arcydzieło na wagę uniwersum
+## Head, from Feedback series, 78 x 53 cm, 2024
 ![](DSCF9525.jpg)
 ### Description
-Ogromnie poteżne, wielce cudowne, szokująco nieprawdopodobne arcy dzieło wielkiej artystki skupiającej się wokół cielesnej cielesności oraz intelektualnej intelektualizacji w sprzężeniu zwrotnym wszechbytów.
+This drawing expresses the desire to be both a warm, emotionally supportive mum and a protector and provider for the child. I try to intergrate those aspects as a layered form of being - many heads in constant motion. 
 
-## Głowa z serii cośtam pierwszego
+photo: Kasia Rysiak
+
+## Thyroid, from Feedback series 
 ![](DSCF9528.jpg)
 ### Description
-asdasgvragvgva rgvea ge rgv aerv ga ergv eragv aer vae rg
-aavegr
-eavg
-aev eavgr eavgr
-ave
-g aevg
+78 x 53 cm 
+2024
 
+This is a visualisation of the thyroid during a painful break up. It shines because it is regenerating. It needs support. Small steps are crucial.
 
-## Wielkie dzieło numer dwa
-![](DSCF9531.jpg)
+photo: Kasia Rysiak
+
+## The Spine from Feedback series 
+![](_BGF3150_MN_WB_web.jpg)
 ### Description
-ervrvegvw5bg45g
-5
-bw5
-gvergbegdsfgbdsfgdfsbgdsfbg
-erbgerbgesrbgesrbg
+78 x 53 cm 
+2024
+This drawing represents the manifestation of the spine in all its magnificent strengh. The spine is our center of movement - a fundamental elemnt in our everyday existance. It is depicted here in colors symbolising the various chackras within us. 
 
+photo: Bartosz Górka
 
-## Szalony projekt
+## Nose from Feedback series 78 x 53 cm 2024
+![](_BGF3155_MN_web.jpg)
+### Description
+This drawing represents nose. This element allows for the regulation of emotions and stabilisation in difficult moments. It is the gateway to life, as breath is life. Focusing on the breath helps to fall asleep. 
+
+photo: Bartosz Górka
+
+## Stimulus, 11 x 8 cm, 2025
 ![](DSCF9525.jpg)
 ### Description
-besrgesrgvesgvs5tseb5tn5b
-se5
-tbesrtbertbgsen
-ten
-tshnet
-h
-h
-h
-h
-
-## Słynny poważny utwór
-![](DSCF9525.jpg)
-### Description
-Nowy opis wielkiego dzieła sztuki marki Suzuki.
-
+photo: Bartosz Górka
 
 
 ## Uber dzieło sztuki poważnej
