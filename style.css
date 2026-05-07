@@ -1,4 +1,8 @@
 @font-face {
+    font-family: "hlfont";
+    src: url("content/hl.ttf");
+}
+@font-face {
     font-family: "acumin";
     src: url("content/Acumin-RPro.otf");
 }
@@ -6,8 +10,8 @@ body {
     background-color: #ffffff;
     color: #000000;
     text-align: left;
-    font-family: Helvetica, sans-serif;
-    font-weight: 200;
+    font-family: "acumin";
+    font-weight: 400;
     font-size: 12pt;
     margin: 5px;
     padding: 0;
@@ -23,7 +27,7 @@ h2 {
     font-size: 14pt;
     text-align: left;
     line-height: 50%;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
