@@ -12,8 +12,8 @@ EXHIBITIONS
 
 PUBLICATIONS
 
-[The Drawing Stall Vol 2: Compendium of Colored Pencil] (https://the-drawing-stall.bigcartel.com/product/the-drawing-stall-vol-2)
-[Muzeum jutra - cyfrowe modele i artefakty, FRSK] (https://www.mapasztuki.pl/muzeum-jutra/artistution)
+[The Drawing Stall Vol 2: Compendium of Colored Pencil](https://the-drawing-stall.bigcartel.com/product/the-drawing-stall-vol-2)
+[Muzeum jutra - cyfrowe modele i artefakty, FRSK](https://www.mapasztuki.pl/muzeum-jutra/artistution)
 
 VIDEO SHOWS
 
