@@ -1,9 +1,28 @@
 # About
-Hej jestem bobulus sanktus prajm. Najlepsza baberka w kosmosie.
+Mila Nowacka is a multimedia artist, art history graduate and mother. Her practice explores the relationship between the body, perception, and environment recently focusing on drawing. She employs feedback phenomena, error, and sensory experience as both research and creative tools. Images that she creates explore the entanglement of internal states with external stimuli, offering visual and conceptual reflections on the balance of systems—biological, natural, and technological. She is particularly interested in the cycles of imbalance and return to stability—processes present in every system and deeply affected by human behavior. Currently, she is working on a series of drawings that visualize her own body from within, exploring the sensations associated with individual internal organs. Former co-creator of the audiovisual duo WIDT, audiovisual band TEYAS and musical duo Mentos Gulgendo.
 
-[Kliknij tutaj](mailto:milannowacka@gmail.com) żeby wysłać do mnie maila.
+SHOWS / EXHIBITIONS 
+27.09-15.10 - Nowelia Kiliani, Garden Gallery, Warsaw
+14.06–7.07.2024 – Serce Exhib, Warsaw, PL / Do Flowers Look at Bees?, curator: Kamil Pierwszy
+27–28.08.2023 – Turnus Gallery, Warsaw, PL / IRIDISUNTO
+18.09.2022 – ZACHĘTA & HER DOCS: Women’s Video Art and Discussion / Zachęta National Gallery of Art, Warsaw, PL
+18–19.06.2022 – Karowa Gallery, Warsaw, PL, Mila Nowacka: Presentation of Works and Types of Feedback Loops in Audio-Video Devices
+8–10.12.2021 – Pracownia Wschodnia, Warsaw, PL / Satin Made of Triggers
+29.07–1.08.2021 – Contexts Festival / Kino Zdrowie, Sokołowsko, PL / Video Show WIDT 2020
+5–7.10.2018 – Avant Art Festival / BWA Gallery, Warsaw, PL / Performance: WIDT w/ Francesco Cavaliere
 
-[Link do innej strony](https://transientlab.net)
+WORKSHOPS
+11.03.2023 Video Feedback Workshop / HOS GALLERY, Warsaw - curator: Kasia Piskorz
+4.09.2022 Video Feedback Workshop feat. MOONSPEED ONLINE / Laba Festival, Warsaw
+3.08.2022 Video Feedback Workshop / Lucyna Festival
+18.06.2022 Video Feedback Workshop / Karowa Gallery, Warsaw
+2-3.04.2019 WIDT / Galeria PLATO, Ostrava, CZ - curator: Jakub Adamec
+21.03.2018 WIDT/ Labirynt Gallery, Lublin, PL \n 31.09.2017 WIDT / BDK, Katowice, PL
+9-10.12.2016 WIDT / KASK Conservatorium & School of Arts, Ghent, BE
+
+[e-mail](mailto:milannowacka@gmail.com) 
+[instagram](www.instagram.com/milanowacka/?hl=en)
+
 
 # Projects
 ## Thyroid
