@@ -223,16 +223,6 @@ wax-based color pencils on military technical paper
 
 photo: Kasia Rysiak
 
-## 00001
-![](KMRY9417-20.jpg)
-### Description 
-from Nowelia Kiliani Series 
-[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
 
-wax-based color pencils on military technical paper
-100 x 70 cm
-2024
-
-photo: Kasia Rysiak
 
 
