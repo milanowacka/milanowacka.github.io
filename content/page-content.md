@@ -6,9 +6,10 @@ Hej jestem bobulus sanktus prajm. Najlepsza baberka w kosmosie.
 [Link do innej strony](https://transientlab.net)
 
 # Projects
-## Thyroid, from Feedback series 
+## Thyroid
 ![](DSCF9528.jpg)
 ### Description
+
 78 x 53 cm 
 2024
 
@@ -50,7 +51,7 @@ This drawing represents nose. This element allows for the regulation of emotions
 photo: Bartosz Górka
 
 ## Urinary system 
-![](_BGF3138_MN_web.jpg)
+![](BGF3138_MN_web.jpg)
 ### Description
 from Feedback series
 200 x 100 cm
@@ -61,7 +62,7 @@ This image is a vision of the urinary system. Kidneys are the power center in ou
 Bartosz Górka
 
 ## Stimulus
-![](_BGF3180_MN_web.jpg)
+![](BGF3180_MN_web.jpg)
 ### Description
 11 x 8 cm 
 2025
