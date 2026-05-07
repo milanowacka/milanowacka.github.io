@@ -12,8 +12,8 @@ EXHIBITIONS
 
 PUBLICATIONS
 
-04.2026 - [The Drawing Stall Vol 2: Compendium of Colored Pencil] (https://the-drawing-stall.bigcartel.com/product/the-drawing-stall-vol-2)
-01.2026 - [Muzeum jutra - cyfrowe modele i artefakty, FRSK] (https://www.mapasztuki.pl/muzeum-jutra/artistution)
+[The Drawing Stall Vol 2: Compendium of Colored Pencil] (https://the-drawing-stall.bigcartel.com/product/the-drawing-stall-vol-2)
+[Muzeum jutra - cyfrowe modele i artefakty, FRSK] (https://www.mapasztuki.pl/muzeum-jutra/artistution)
 
 VIDEO SHOWS
 
@@ -49,8 +49,7 @@ wax-based color pencils on cotton paper
 This drawing depicts an imagined state of my thyroid during a deeply painful breakup. The trauma of abandonment is present. The thyroid is in need of support.
 Regular exercise and proper nutrition are essential. The body feels uncertain and longs for warmth generated from within. Small steps are key to its proper functioning.
 
-The Feedback is a series of drawings that serve as a visual manifestation of my internal bodily and emotional processes. Each image is created as a result of deep introspection and
-embodied perception, both internal and external. The drawings constitute a personal record of the phenomenon of feedback, an interpretation of the mechanism known from electronic systems, here translated into the language of corporeality. Each drawing is accompanied by an original text, which forms an integral part of the work. 
+The Feedback is a series of drawings that serve as a visual manifestation of my internal bodily and emotional processes. Each image is created as a result of deep introspection and embodied perception, both internal and external. The drawings constitute a personal record of the phenomenon of feedback, an interpretation of the mechanism known from electronic systems, here translated into the language of corporeality. Each drawing is accompanied by an original text, which forms an integral part of the work. 
 
 photo: Kasia Rysiak
 
@@ -133,10 +132,9 @@ photo: Bartosz Górka
 ### Description
 from Nowelia Kiliani Series 
 
-The project Nowelia Kiliani emerged from a personal experience and
-reinterpretation of the feedback phenomenon, originally associated with
-electronic audiovisual media but present in every aspect of our planet’s
-functioning.
+The project Nowelia Kiliani emerged from a personal experience and reinterpretation of the feedback phenomenon, originally associated with
+electronic audiovisual media but present in every aspect of our planet’s functioning.
+
 The series of works comprising Nowelia Kiliani developed during a period of my psychoanalysis, as an attempt to translate a technical process of feedback into a practice of introspection and inner inquiry. The process began with the observation of feedback in audio-video devices, and gradually shifted toward the observation of my own body, the flow of thoughts, reinterpretation of meanings, and note-taking.
 In the final stage, these elements were composed into visual forms that most accurately represent internal states. Over time, the forms became increasingly complex, taking on specific characteristics. Throughout the process I recognised the evolution of a new form, which I called the Being and named Nowelia Kiliani. As an accompaniment to the visual works, I created a sound piece - a welcome song for the Being that emerged through this process.
 
@@ -231,4 +229,17 @@ wax-based color pencils on military technical paper
 2024
 
 photo: Kasia Rysiak
+
+## 00001
+![](KMRY9417-20.jpg)
+### Description 
+from Nowelia Kiliani Series 
+[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
+
+wax-based color pencils on military technical paper
+100 x 70 cm
+2024
+
+photo: Kasia Rysiak
+
 
