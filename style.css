@@ -17,7 +17,7 @@ body {
     padding: 0;
     word-break: normal;
     scroll-behavior: smooth;
-    height: 100vh;
+    /* height: 100vh; */
     overflow-y: scroll;
     /* max-width: 600px; */
 
@@ -94,7 +94,7 @@ nav a {
 }
 
 main {
-    height: 100vh;
+    /* height: 100vh; */
     overflow-y: hidden;
     padding: 0;
 }
