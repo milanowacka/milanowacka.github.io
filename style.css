@@ -10,15 +10,9 @@ body {
     background-color: #ffffff;
     color: #000000;
     text-align: left;
-<<<<<<< Updated upstream
     font-family: "acumin";
     font-weight: 400;
     font-size: 12pt;
-=======
-    font-family: Helvetica, sans-serif;
-    font-weight: 200;
-    font-size: 10pt;
->>>>>>> Stashed changes
     margin: 5px;
     padding: 0;
     word-break: normal;
