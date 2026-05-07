@@ -134,7 +134,7 @@ section {
 }
 
 .project img {
-    width: 100%;
+    width: 90vw;
     height: 60vh;
     object-fit: cover;
     margin-bottom: 10px;
@@ -142,15 +142,14 @@ section {
 
 .project p {
     text-align: left;
-    max-width: 50%;
-    min-width: 400px;
+    max-width: 70vw;
     height: 30vh;
     margin: 0;
     padding: 0;
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
 
     .project img {
         height: 40vh;
