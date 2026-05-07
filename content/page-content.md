@@ -27,9 +27,10 @@ This drawing expresses the desire to be both a warm, emotionally supportive mum 
 
 photo: Kasia Rysiak
 
-## The Spine from Feedback series 
+## Spine
 ![](_BGF3150_MN_WB_web.jpg)
 ### Description
+from Feedback series 
 78 x 53 cm 
 2024
 
