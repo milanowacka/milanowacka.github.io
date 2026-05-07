@@ -124,14 +124,13 @@ photo: Bartosz Górka
 ![](DSCF2714.jpg)
 ### Description
 from Nowelia Kiliani Series 
+wax-based colored pencils on cotton paper
+100 x 70 cm
+2021 
 
 The project Nowelia Kiliani emerged from a personal experience and reinterpretation of the feedback phenomenon, originally associated with electronic audiovisual media but present in every aspect of our planet’s functioning.
 
 The series of works comprising Nowelia Kiliani developed during a period of my psychoanalysis, as an attempt to translate a technical process of feedback into a practice of introspection and inner inquiry. The process began with the observation of feedback in audio-video devices, and gradually shifted toward the observation of my own body, the flow of thoughts, reinterpretation of meanings, and note-taking. In the final stage, these elements were composed into visual forms that most accurately represent internal states. Over time, the forms became increasingly complex, taking on specific characteristics. Throughout the process I recognised the evolution of a new form, which I called the Being and named Nowelia Kiliani. As an accompaniment to the visual works, I created a sound piece - a welcome song for the Being that emerged through this process.
-
-wax-based colored pencils on cotton paper
-100 x 70 cm
-2021 
 
 photo: Kasia Rysiak
 
@@ -139,6 +138,9 @@ photo: Kasia Rysiak
 ![](DSCF2731.jpg)
 ### Description 
 from Nowelia Kiliani Series 
+wax-based color pencils on cotton paper
+100 x 70 cm
+2022
 
 The culmination of several years of work on the drawings is an audiovisual album in the form of a book, which includes a lathe-cut vinyl record featuring
 a flute composition. The publication was completed in 2024 in collaboration with bookbinder Igor Gołaszewski and sound record publisher Sebastian Buczek. The piece
@@ -146,11 +148,6 @@ was recorded by Aleksander Żurowski, and the sound was then engraved using a mo
 Photographs of the drawings were taken by Katarzyna Rysiak at Pracownia Wschodnia in Warsaw. A total of 20 copies of the album were produced. The covers were handprinted at the letterpress workshop of the Academy of Fine Arts in Warsaw.
 
 [Album on Bandcamp](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
-
-
-wax-based color pencils on cotton paper
-100 x 70 cm
-2022
 
 photo: Kasia Rysiak
 
