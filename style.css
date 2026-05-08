@@ -152,6 +152,6 @@ section {
 @media (max-width: 700px) {
 
     .project img {
-        height: 40vh;
+        height: 80vh;
     }
 }
