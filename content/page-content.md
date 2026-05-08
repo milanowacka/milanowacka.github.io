@@ -33,8 +33,13 @@ Image”, supervisor: Prof. Dr. Hab. Dorota Folga Januszewska
 2007-2010 - Art History, bachelor’s degree
 
 
+
 [e-mail](mailto:milannowacka@gmail.com) 
 [instagram](https://www.instagram.com/milanowacka)
+
+
+artwork documentation: Kasia Rysiak, Bartosz Górka
+
 
 
 
@@ -57,11 +62,10 @@ wax-based color pencils on cotton paper
 78 x 53 cm 
 2024
 
-This drawing depicts an imagined state of my thyroid during a deeply painful breakup. The trauma of abandonment is present. The thyroid is in need of support. Regular exercise and proper nutrition are essential. The body feels uncertain and longs for warmth generated from within. Small steps are key to its proper functioning. 
+This drawing depicts an imagined state of my thyroid while struggling with family related situations. The thyroid was in need of support. Regular exercise and proper nutrition are essential. The body feels uncertain and longs for warmth generated from within. Small steps are key to its proper functioning. 
 
 The Feedback is a series of drawings that serve as a visual manifestation of my internal bodily and emotional processes. Each image is created as a result of deep introspection and embodied perception, both internal and external. The drawings constitute a personal record of the phenomenon of feedback, an interpretation of the mechanism known from electronic systems, here translated into the language of corporeality. Each drawing is accompanied by an original text, which forms an integral part of the work. 
 
-photo: Kasia Rysiak
 
 ## Head
 ![](DSCF9525.jpg)
@@ -75,7 +79,6 @@ This image reflects the desire to be both a mother, caregiver, and a provider at
 
 Beyond the notion of feedback as a creative method, my practice draws on traditions developed by artists associated with the Theosophical Society, who attempted to give visual form to invisible forces, sensations, and states of consciousness.
 
-photo: Kasia Rysiak
 
 ## Spine
 ![](BGF3150_MN_WB_web.jpg)
@@ -89,7 +92,6 @@ This drawing represents the manifestation of the spine in all its magnificent st
 
 During the process, I focused on internal feelings and emotional responses in relation to information gathered through Traditional Chinese Medicine (TCM), attempting to translate these stimuli into form. The decision-making process was encoded within the body itself: once a gesture, movement of the hand, or emerging shape felt familiar, intuitive, and correct, I continued to develop it further.
 
-photo: Bartosz Górka
 
 ## Nose 
 ![](BGF3171_MN_web.jpg)
@@ -103,7 +105,6 @@ This drawing represents nose. This element allows for the regulation of emotions
 
 I was deeply inspired by the emergence of contemporary scientific movements and manifestos that advocate for new methodologies within scientific discourse, such as new materialism, post-materialism, and posthumanist perspectives. These approaches, often closely connected to feminist theory, propose alternative ways of understanding matter, consciousness, embodiment, and the relationships between humans and non-human entities.
 
-photo: Bartosz Górka
 
 ## Urinary system 
 ![](BGF3138_MN_web.jpg)
@@ -117,7 +118,6 @@ This image is a vision of the urinary system. Kidneys are the power center in ou
 
 I view these movements, and their recognition of all living beings as deeply interconnected, as the emergence of a new paradigm - one that holds the potential to transform, or even heal, the profound wounds of our contemporary world, shaped by ongoing ecological and political crises.
 
-photo: Bartosz Górka
 
 ## Stimulus
 ![](BGF3180_MN_web.jpg)
@@ -126,7 +126,6 @@ wax-based color pencils on old paper in vintage photo frame
 11 x 8 cm
 2025
 
-photo: Bartosz Górka
 
 ## CREATURE stage I
 ![](DSCF2714.jpg)
@@ -140,7 +139,6 @@ The project Nowelia Kiliani emerged from a personal experience and reinterpretat
 
 The series of works comprising Nowelia Kiliani developed during a period of my psychoanalysis, as an attempt to translate a technical process of feedback into a practice of introspection and inner inquiry. The process began with the observation of feedback in audio-video devices, and gradually shifted toward the observation of my own body, the flow of thoughts, reinterpretation of meanings, and note-taking. In the final stage, these elements were composed into visual forms that most accurately represent internal states. Over time, the forms became increasingly complex, taking on specific characteristics. Throughout the process I recognised the evolution of a new form, which I called the Being and named Nowelia Kiliani. As an accompaniment to the visual works, I created a sound piece - a welcome song for the Being that emerged through this process.
 
-photo: Kasia Rysiak
 
 
 
@@ -163,7 +161,6 @@ The culmination of several years of work on the drawings is an audiovisual album
 
 [Album on Bandcamp](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
 
-photo: Kasia Rysiak
 
 ## CREATURE stage III
 ![](DSCF2767.jpg)
@@ -175,7 +172,6 @@ wax-based color pencils on bristol
 100 x 70 cm
 2022
 
-photo: Kasia Rysiak
 
 ## CREATURE stage IV
 ![](DSCF2789.jpg)
@@ -187,7 +183,6 @@ wax-based color pencils on bristol
 100 x 70 cm
 2022
 
-photo: Kasia Rysiak
 
 ## CREATURE stage VI
 ![](DSCF2700.jpg)
@@ -199,7 +194,6 @@ wax-based color pencils on cotton paper
 70 x 50 cm
 2023
 
-photo: Kasia Rysiak
 
 ## CREATURE stage VII
 ![](DSCF2688.jpg)
@@ -211,7 +205,6 @@ wax-based color pencils on cotton paper
 100 x 70 cm
 2023
 
-photo: Kasia Rysiak
 
 ## CREATURE stage VIII
 ![](KMRY9423.jpg)
@@ -223,7 +216,6 @@ wax-based color pencils on cotton paper
 100 x 70 cm
 2023
 
-photo: Kasia Rysiak
 
 ## CREATURE stage X
 ![](KMRY9417-20.jpg)
@@ -235,7 +227,6 @@ wax-based color pencils on military technical paper
 100 x 70 cm
 2024
 
-photo: Kasia Rysiak
 
 
 
