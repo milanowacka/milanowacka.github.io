@@ -134,10 +134,11 @@ section {
 }
 
 .project img {
-    width: 90vw;
-    /* height: 60vh; */
-    object-fit: contain;
+    width: 80vw;
+    height: 40vh;
+    object-fit: cover;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .project p {
@@ -152,7 +153,11 @@ section {
 @media (max-width: 700px) {
 
     .project img {
-        height: 80vh;
+        height: 90vh;
+        width: 95vw;
+        object-fit: contain;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 }
 
