@@ -135,8 +135,8 @@ section {
 
 .project img {
     width: 90vw;
-    height: 60vh;
-    object-fit: cover;
+    /* height: 60vh; */
+    object-fit: contain;
     margin-bottom: 10px;
 }
 
@@ -164,6 +164,33 @@ body.preview-page {
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.preview-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    padding: 10px 18px;
+}
+
+.preview-back {
+    color: #111111;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.preview-back:hover {
+    color: #0f8000;
+    transition: color 0.5s;
+    text-decoration: underline;
+}
+
+.preview-title {
+    color: #111111;
 }
 
 .preview-image {

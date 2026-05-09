@@ -56,11 +56,12 @@ def make_thumbnail(image_filename):
     return thumb_filename
 
 
-def make_preview_html(image_filename, title):
+def make_preview_html(image_filename, title, project_index):
     p = Path(image_filename)
     preview_filename = f"{p.stem}_preview.html"
     preview_path = VIEWS_DIR / preview_filename
     image_src = f"../content/{image_filename}"
+    back_href = f"../index.html#project{project_index}"
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,6 +71,10 @@ def make_preview_html(image_filename, title):
     <link rel="stylesheet" href="../style.css">
 </head>
 <body class="preview-page">
+    <nav class="preview-nav">
+        <a class="preview-back" href="{back_href}">← back</a>
+        <span class="preview-title">{title}</span>
+    </nav>
     <img class="preview-image" src="{image_src}" alt="{title}">
 </body>
 </html>
@@ -98,7 +103,7 @@ index_html = index_html_file.read_text()
 carousel_projects = ''
 for i, project in enumerate(projects, 1):
     thumb_filename = make_thumbnail(project['image'])
-    preview_filename = make_preview_html(project['image'], project['title'])
+    preview_filename = make_preview_html(project['image'], project['title'], i)
     print(f"  ✓ {project['image']} → thumbnail + preview page")
 
     thumb_url = f"views/{thumb_filename}"
