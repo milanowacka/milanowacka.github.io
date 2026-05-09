@@ -79,7 +79,9 @@ def make_preview_html(image_filename, title, project_index):
             </ul>
         </nav>
     </header>
-    <img class="preview-image" src="{image_src}" alt="{title}" loading="lazy">
+    <div class="img-wrapper">
+        <img class="preview-image" src="{image_src}" alt="{title}" loading="lazy">
+    </div>
 </body>
 </html>
 """
@@ -115,7 +117,9 @@ for i, project in enumerate(projects, 1):
 
     carousel_projects += f'''<div id="project{i}" class="project">
 \t\t\t\t\t<a href="{preview_url}" target="_self">
-\t\t\t\t\t\t<img src="{thumb_url}" alt="{project['title']}" loading="lazy">
+\t\t\t\t\t\t<div class="img-wrapper">
+\t\t\t\t\t\t\t<img src="{thumb_url}" alt="{project['title']}" loading="lazy">
+\t\t\t\t\t\t</div>
 \t\t\t\t\t</a>
 \t\t\t\t\t<h2>{project['title']}</h2>
 \t\t\t\t\t<p>{project['description']}</p>

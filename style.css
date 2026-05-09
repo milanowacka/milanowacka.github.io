@@ -135,7 +135,7 @@ section {
 
 .project img {
     width: 80vw;
-    height: 40vh;
+    height: 60vh;
     object-fit: cover;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -161,12 +161,31 @@ section {
     }
 }
 
+.img-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-wrapper::before {
+    content: "loading...";
+    position: absolute;
+    z-index: 0;
+    color: #999999;
+}
+
+.img-wrapper img {
+    position: relative;
+    z-index: 1;
+}
+
 /* Full-size image preview page */
 body.preview-page {
     margin: 0;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
 }
