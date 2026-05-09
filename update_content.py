@@ -5,7 +5,7 @@ from PIL import Image
 
 CONTENT_DIR = Path("content")
 VIEWS_DIR = Path("views")
-THUMBNAIL_WIDTH = 1000
+THUMBNAIL_WIDTH = 1600
 
 VIEWS_DIR.mkdir(exist_ok=True)
 
