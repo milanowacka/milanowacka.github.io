@@ -54,16 +54,6 @@ artwork documentation: Kasia Rysiak, Bartosz Górka
 
 
 # Projects
-## Grandmother Mother Doughter
-![](DSCF7736.jpg)
-### Description
-from Feedback series 
-wax-based color pencils on cotton paper
-Black oack frame
-20 x 30 cm 
-2024
-
-
 ## Thyroid
 ![](DSCF9528.jpg)
 ### Description
