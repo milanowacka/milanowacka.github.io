@@ -54,6 +54,16 @@ artwork documentation: Kasia Rysiak, Bartosz Górka
 
 
 # Projects
+## Grandmother Mother Doughter
+![](DSCF7736.jpg)
+### Description
+from Feedback series 
+wax-based color pencils on cotton paper
+Black oack frame
+20 x 30 cm 
+2024
+
+
 ## Thyroid
 ![](DSCF9528.jpg)
 ### Description
@@ -81,7 +91,7 @@ Beyond the notion of feedback as a creative method, my practice draws on traditi
 
 
 ## Spine
-![](BGF3150_MN_WB_web.jpg)
+![](DSCF7730.jpg)
 ### Description
 from Feedback series 
 wax-based color pencils on cotton paper
@@ -94,16 +104,49 @@ During the process, I focused on internal feelings and emotional responses in re
 
 
 ## Nose 
-![](BGF3171_MN_web.jpg)
+![](Warstwa 1.jpg)
+### Description
+from Feedback series 
+wax-based color pencils on cotton paper
+78 x 53 cm 
+2025
+
+This drawing represents nose. This element allows for the regulation of emotions and stabilisation in difficult moments. It is the gateway to life, as breath is life. Focusing on the breath helps to fall asleep. 
+
+I was deeply inspired by the emergence of contemporary scientific movements and manifestos that advocate for new methodologies within scientific discourse, such as new materialism, post-materialism, and posthumanist perspectives. These approaches, often closely connected to feminist theory, propose alternative ways of understanding matter, consciousness, embodiment, and the relationships between humans and non-human entities.
+
+I view these movements, and their recognition of all living beings as deeply interconnected, as the emergence of a new paradigm - one that holds the potential to transform, or even heal, the profound wounds of our contemporary world, shaped by ongoing ecological and political crises.
+
+## Brain 
+![](DSCF7732.jpg)
 ### Description
 from Feedback series 
 wax-based color pencils on cotton paper
 78 x 53 cm 
 2024
 
-This drawing represents nose. This element allows for the regulation of emotions and stabilisation in difficult moments. It is the gateway to life, as breath is life. Focusing on the breath helps to fall asleep. 
+Brain can be represented by electrified cloud, in the middle there is a representation of the pineal gland, which is responsible for melatonine production. This hormon regulates the sleep-awake cycle.
 
-I was deeply inspired by the emergence of contemporary scientific movements and manifestos that advocate for new methodologies within scientific discourse, such as new materialism, post-materialism, and posthumanist perspectives. These approaches, often closely connected to feminist theory, propose alternative ways of understanding matter, consciousness, embodiment, and the relationships between humans and non-human entities.
+## Mouth 
+![](DSCF7724.jpg)
+### Description
+from Feedback series 
+wax-based color pencils on cotton paper
+78 x 53 cm 
+2025
+
+Mouth is an organ that helps us-humans communicate in a form of words and kissing.
+
+
+## Heart 
+![](DSCF7726.jpg)
+### Description
+from Feedback series 
+wax-based color pencils on cotton paper
+78 x 53 cm 
+2024
+
+Bidirectional feedback between the heart and the brain can be recognized through the autonomic nervous system and interoception. Microscopic physiological and emotional connections are often influenced by subtle gestures and situations.
 
 
 ## Urinary system 
@@ -116,7 +159,6 @@ wax-based color pencils on paper
 
 This image is a vision of the urinary system. Kidneys are the power center in our body - they play a crucial role in our lives. The kidneys like the warmth. As an infant my son strugled with an issue within his urinary system, grade IV ureteral wall thickening, his kidneys were in danger, because of the constantly recurring inflamations. For several years he was under the care of the doctors of the Center of Mother and Child in Warsaw. Currently he is healthy. 
 
-I view these movements, and their recognition of all living beings as deeply interconnected, as the emergence of a new paradigm - one that holds the potential to transform, or even heal, the profound wounds of our contemporary world, shaped by ongoing ecological and political crises.
 
 
 ## Stimulus
