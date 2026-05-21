@@ -23,7 +23,10 @@
 		
 		<main>
 			<section id="projects">
-								<div class="carousel">
+								<div class="carousel-wrapper">
+				<button class="carousel-nav prev" aria-label="Previous project">&#8592;</button>
+				<button class="carousel-nav next" aria-label="Next project">&#8594;</button>
+				<div class="carousel">
 				<div id="project1" class="project">
 					<a href="views/DSCF9528_preview.html" target="_self">
 						<div class="img-wrapper">
@@ -178,7 +181,17 @@
 					<p>from Nowelia Kiliani Series <br><a href="https://milanowacka.bandcamp.com/album/nowelia-kiliani">link</a><br><br>wax-based color pencils on military technical paper<br>100 x 70 cm<br>2024</p>
 				</div>
 				</div>
+				</div>
 		</section>
 		</main>
+		<script>
+			const carousel = document.querySelector('.carousel');
+			document.querySelector('.carousel-nav.prev').addEventListener('click', () => {
+				carousel.scrollBy({ left: -carousel.offsetWidth, behavior: 'smooth' });
+			});
+			document.querySelector('.carousel-nav.next').addEventListener('click', () => {
+				carousel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
+			});
+		</script>
 	</body>
 </html>

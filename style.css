@@ -114,6 +114,10 @@ section {
     padding-bottom: 0px;
 }
 
+.carousel-wrapper {
+    position: relative;
+}
+
 .carousel {
     display: flex;
     overflow-x: scroll;
@@ -123,6 +127,30 @@ section {
     height: 100%;
     cursor: ew-resize;
 }
+
+.carousel-nav {
+    position: absolute;
+    top: 30vh;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 18pt;
+    color: #111111;
+    cursor: pointer;
+    padding: 8px 12px;
+    opacity: 0.25;
+    z-index: 10;
+    line-height: 1;
+    user-select: none;
+}
+
+.carousel-nav:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.carousel-nav.prev { left: 0; }
+.carousel-nav.next { right: 0; }
 
 .project {
     flex: 0 0 100%;
