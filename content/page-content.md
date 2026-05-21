@@ -1,15 +1,15 @@
 # About
+![](IMG_4643.JPG)
 
 I am an artist, art history graduate and mother. My practice explores the relationship between the body, perception, and environment, recently focusing on drawing. I work with feedback phenomena, error, and sensory experience as both research and creative tools. Images that I create explore the entanglement of internal states with external stimuli, incorporating visual and conceptual reflections on the balance of systems - biological and technological. I am particularly interested in the cycles of imbalance and return to stability - processes present in every system and deeply affected by human behavior. Currently, I am working on a series of drawings that visualize my own body from within, exploring the sensations associated with individual internal organs. Former co-creator of the audiovisual duo WIDT, audiovisual band TEYAS and musical duo Mentos Gulgendo.
 
 EXHIBITIONS 
 
-27.09-15.10 - Nowelia Kiliani, Garden Gallery, Warsaw
-14.06–7.07.2024 – Serce Exhib, Warsaw, PL / Do Flowers Look at Bees?, curator: Kamil Pierwszy
-27–28.08.2023 – Turnus Gallery, Warsaw, PL / IRIDISUNTO
-18–19.06.2022 – Karowa Gallery, Warsaw, PL, Mila Nowacka: Presentation of Works and Types of Feedback Loops in Audio-Video Devices
-8–10.12.2021 – Pracownia Wschodnia, Warsaw, PL / Satin Made of Triggers
-
+· 27.09-15.10 - Nowelia Kiliani, Garden Gallery, Warsaw
+· 14.06–7.07.2024 – Serce Exhib, Warsaw, PL / Do Flowers Look at Bees?, curator: Kamil Pierwszy
+· 27–28.08.2023 – Turnus Gallery, Warsaw, PL / IRIDISUNTO
+· 18–19.06.2022 – Karowa Gallery, Warsaw, PL, Mila Nowacka: Presentation of Works and Types of Feedback Loops in Audio-Video Devices
+· 8–10.12.2021 – Pracownia Wschodnia, Warsaw, PL / Satin Made of Triggers
 PUBLICATIONS
 
 [The Drawing Stall Vol 2: Compendium of Colored Pencil](https://the-drawing-stall.bigcartel.com/product/the-drawing-stall-vol-2)
@@ -17,13 +17,13 @@ PUBLICATIONS
 
 VIDEO SHOWS
 
-8.02.2026 - Feedback Loop (2026), Sauna Festival, Warsaw, curated by Weronika Adamowska
-20.09.2025 - Aqualines (2025), Her Docs Festival, Warsaw
-1-21.10.2025 - Screening of the film TEYAS as part of the Sprzężenia/Feedback cycle, curated by Weronika Zalewska, Foundation for Polish Art ING, Warsaw, Poland
-8.02.2025 - Aqualines (2025), Singletary Center for the Arts Visual Music Festival, Kentucky, USA
-18.09.2022 - WIDT 2020, Zachęta & HER Docs, Women’s Video Art and Discussion, Warsaw, Poland
-29-31.07.2021 - WIDT 2020, Contexts Festival, Sokołowsko, Poland
-26.10.2019 - TEYAS, BWA, Warsaw, Poland
+· 8.02.2026 - Feedback Loop (2026), Sauna Festival, Warsaw, curated by Weronika Adamowska
+· 20.09.2025 - Aqualines (2025), Her Docs Festival, Warsaw
+· 1-21.10.2025 - Screening of the film TEYAS as part of the Sprzężenia/Feedback cycle, curated by Weronika Zalewska, Foundation for Polish Art ING, Warsaw, Poland
+· 8.02.2025 - Aqualines (2025), Singletary Center for the Arts Visual Music Festival, Kentucky, USA
+· 18.09.2022 - WIDT 2020, Zachęta & HER Docs, Women’s Video Art and Discussion, Warsaw, Poland
+· 29-31.07.2021 - WIDT 2020, Contexts Festival, Sokołowsko, Poland
+· 26.10.2019 - TEYAS, BWA, Warsaw, Poland
 
 EDUCATION
 

@@ -15,7 +15,17 @@ content = md_file.read_text()
 
 # Extract About section
 about_match = re.search(r'# About\n(.*?)(?=\n# Projects|\Z)', content, re.DOTALL)
-about_text = about_match.group(1).strip() if about_match else ""
+about_raw = about_match.group(1).strip() if about_match else ""
+
+# Check for an optional image at the start of the About section
+about_image_match = re.match(r'!\[\]\(([^)]+)\)\s*\n', about_raw)
+about_image_html = ""
+if about_image_match:
+    about_image_file = about_image_match.group(1)
+    about_image_html = f'<img class="about-image" src="content/{about_image_file}" alt="">'
+    about_raw = about_raw[about_image_match.end():]
+
+about_text = about_raw.strip()
 # Convert Markdown links to HTML
 about_text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', about_text)
 # Add <br> for line breaks
@@ -92,9 +102,14 @@ def make_preview_html(image_filename, title, project_index):
 # Update about.html
 about_html_file = Path("about.html")
 about_html = about_html_file.read_text()
+if about_image_html:
+    about_body = f'<div class="about-content">\n\t\t\t\t{about_image_html}\n\t\t\t\t<p>{about_text}</p>\n\t\t\t</div>'
+else:
+    about_body = f'<p>{about_text}</p>'
+
 about_html = re.sub(
     r'<section id="about">.*?</section>',
-    f'<section id="about">\n\t\t\t<h2>About</h2>\n\t\t\t<p>{about_text}</p>\n\t\t</section>',
+    f'<section id="about">\n\t\t\t{about_body}\n\t\t</section>',
     about_html,
     flags=re.DOTALL
 )

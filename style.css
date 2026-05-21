@@ -106,6 +106,36 @@ section {
     overflow-y: hidden;
 }
 
+.about-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.about-content p {
+    max-width: 700px;
+    flex: 1;
+}
+
+.about-image {
+    width: 35%;
+    max-width: 500px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+@media (max-width: 700px) {
+    .about-content {
+        flex-direction: column-reverse;
+    }
+    .about-image {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 #projects {
     /* height: 100vh; */
     padding-top: 20px;
