@@ -108,20 +108,21 @@ section {
 
 .about-content {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    flex-direction: row;
     gap: 40px;
     align-items: flex-start;
 }
 
 .about-content p {
+    order: 1;
     max-width: 700px;
     flex: 1;
 }
 
 .about-image {
+    order: 2;
     width: 35%;
-    max-width: 500px;
+    max-width: 40vw;
     flex-shrink: 0;
     object-fit: cover;
 }
@@ -218,7 +219,7 @@ body.preview-page {
 
 @media (max-width: 700px) and (pointer: coarse) {
     .about-content {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .about-image {
         width: 100%;
