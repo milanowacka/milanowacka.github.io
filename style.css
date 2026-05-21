@@ -129,32 +129,35 @@ section {
 }
 
 .carousel-nav {
-    position: fixed;
-    top: 50vh;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-family: inherit;
-    font-size: 18pt;
-    color: #111111;
-    cursor: pointer;
-    padding: 8px 12px;
-    opacity: 0.25;
-    z-index: 10;
-    line-height: 1;
-    user-select: none;
+    display: none;
 }
 
-.carousel-nav:hover {
-    opacity: 0.8;
-    transition: opacity 0.2s;
-}
+@media (hover: hover) and (pointer: fine) {
+    .carousel-nav {
+        display: block;
+        position: fixed;
+        top: 50vh;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        font-family: inherit;
+        font-size: 18pt;
+        color: #111111;
+        cursor: pointer;
+        padding: 8px 12px;
+        opacity: 0.25;
+        z-index: 10;
+        line-height: 1;
+        user-select: none;
+    }
 
-.carousel-nav.prev { left: 0; }
-.carousel-nav.next { right: 0; }
+    .carousel-nav:hover {
+        opacity: 0.8;
+        transition: opacity 0.2s;
+    }
 
-@media (hover: none) and (pointer: coarse) {
-    .carousel-nav { display: none; }
+    .carousel-nav.prev { left: 0; }
+    .carousel-nav.next { right: 0; }
 }
 
 .project {
