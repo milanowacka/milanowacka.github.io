@@ -106,6 +106,27 @@ section {
     overflow-y: hidden;
 }
 
+.about-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.about-content p {
+    max-width: 700px;
+    flex: 1;
+}
+
+.about-image {
+    width: 35%;
+    max-width: 500px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+
 #projects {
     /* height: 100vh; */
     padding-top: 20px;
@@ -130,33 +151,6 @@ section {
 
 .carousel-nav {
     display: none;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .carousel-nav {
-        display: block;
-        position: fixed;
-        top: 30vh;
-        background: none;
-        border: none;
-        font-family: inherit;
-        font-size: 18pt;
-        color: #111111;
-        cursor: pointer;
-        padding: 8px 12px;
-        opacity: 0.25;
-        z-index: 10;
-        line-height: 1;
-        user-select: none;
-    }
-
-    .carousel-nav:hover {
-        opacity: 0.8;
-        transition: opacity 0.2s;
-    }
-
-    .carousel-nav.prev { left: 0; }
-    .carousel-nav.next { right: 0; }
 }
 
 .project {
@@ -185,16 +179,6 @@ section {
 }
 
 
-@media (max-width: 700px) {
-
-    .project img {
-        height: 90vh;
-        width: 95vw;
-        object-fit: contain;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-}
 
 .img-wrapper {
     position: relative;
@@ -230,4 +214,46 @@ body.preview-page {
     max-width: 100%;
     max-height: 100vh;
     object-fit: contain;
+}
+
+@media (max-width: 700px) and (pointer: coarse) {
+    .about-content {
+        flex-direction: column-reverse;
+    }
+    .about-image {
+        width: 100%;
+        max-width: 100%;
+    }
+    .project img {
+        height: 90vh;
+        width: 95vw;
+        object-fit: contain;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 701px) and (hover: hover) and (pointer: fine) {
+    .carousel-nav {
+        display: block;
+        position: fixed;
+        top: 30vh;
+        background: none;
+        border: none;
+        font-family: inherit;
+        font-size: 18pt;
+        color: #111111;
+        cursor: pointer;
+        padding: 8px 12px;
+        opacity: 0.25;
+        z-index: 10;
+        line-height: 1;
+        user-select: none;
+    }
+    .carousel-nav:hover {
+        opacity: 0.9;
+        transition: opacity 0.8s;
+    }
+    .carousel-nav.prev { left: 0; }
+    .carousel-nav.next { right: 0; }
 }
