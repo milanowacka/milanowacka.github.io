@@ -129,8 +129,9 @@ section {
 }
 
 .carousel-nav {
-    position: absolute;
-    top: 30vh;
+    position: fixed;
+    top: 50vh;
+    transform: translateY(-50%);
     background: none;
     border: none;
     font-family: inherit;
@@ -151,6 +152,10 @@ section {
 
 .carousel-nav.prev { left: 0; }
 .carousel-nav.next { right: 0; }
+
+@media (hover: none) and (pointer: coarse) {
+    .carousel-nav { display: none; }
+}
 
 .project {
     flex: 0 0 100%;
