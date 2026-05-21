@@ -38,7 +38,7 @@ Image”, supervisor: Prof. Dr. Hab. Dorota Folga Januszewska
 [instagram](https://www.instagram.com/milanowacka)
 
 
-artwork documentation: Kasia Rysiak, Bartosz Górka
+artwork documentation: Kasia Rysiak, Bartosz Górka, Sebastian Rzepka
 
 
 

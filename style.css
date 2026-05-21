@@ -136,8 +136,7 @@ section {
     .carousel-nav {
         display: block;
         position: fixed;
-        top: 50vh;
-        transform: translateY(-50%);
+        top: 30vh;
         background: none;
         border: none;
         font-family: inherit;

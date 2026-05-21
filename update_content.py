@@ -127,8 +127,12 @@ for i, project in enumerate(projects, 1):
 \t\t\t\t'''
 
 # Replace the entire projects section
-projects_section = f'''\t\t\t\t<div class="carousel">
-\t\t\t\t{carousel_projects}</div>'''
+projects_section = f'''\t\t\t\t<div class="carousel-wrapper">
+\t\t\t\t<button class="carousel-nav prev" aria-label="Previous project">&#8592;</button>
+\t\t\t\t<button class="carousel-nav next" aria-label="Next project">&#8594;</button>
+\t\t\t\t<div class="carousel">
+\t\t\t\t{carousel_projects}</div>
+\t\t\t\t</div>'''
 
 index_html = re.sub(
     r'<section id="projects">.*?</section>',
