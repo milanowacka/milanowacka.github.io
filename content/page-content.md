@@ -42,17 +42,6 @@ artwork documentation: Kasia Rysiak, Bartosz Górka, Sebastian Rzepka
 
 
 
-
-
-
-
-
-
-
-
-.
-
-
 # Projects
 ## Heart 
 ![](DSCF7726.jpg)
