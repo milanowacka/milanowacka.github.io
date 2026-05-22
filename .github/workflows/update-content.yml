@@ -33,6 +33,9 @@ jobs:
           exit 1
         fi
     
+    - name: Install dependencies
+      run: pip install Pillow
+
     - name: Run content update script
       run: python update_content.py
     
