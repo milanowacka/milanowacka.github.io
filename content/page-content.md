@@ -42,6 +42,8 @@ artwork documentation: Kasia Rysiak, Bartosz Górka, Sebastian Rzepka
 
 
 
+∿∿∿
+
 # Projects
 ## Heart 
 ![](DSCF7726.jpg)
@@ -163,13 +165,6 @@ The project Nowelia Kiliani emerged from a personal experience and reinterpretat
 The series of works comprising Nowelia Kiliani developed during a period of my psychoanalysis, as an attempt to translate a technical process of feedback into a practice of introspection and inner inquiry. The process began with the observation of feedback in audio-video devices, and gradually shifted toward the observation of my own body, the flow of thoughts, reinterpretation of meanings, and note-taking. In the final stage, these elements were composed into visual forms that most accurately represent internal states. Over time, the forms became increasingly complex, taking on specific characteristics. Throughout the process I recognised the evolution of a new form, which I called the Being and named Nowelia Kiliani. As an accompaniment to the visual works, I created a sound piece - a welcome song for the Being that emerged through this process.
 
 
-
-
-
-
-
-
-
 .
 
 ## CREATURE stage II
@@ -249,8 +244,3 @@ from Nowelia Kiliani Series
 wax-based color pencils on military technical paper
 100 x 70 cm
 2024
-
-
-
-
-
