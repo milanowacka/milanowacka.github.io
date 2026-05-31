@@ -41,6 +41,7 @@ Image”, supervisor: Prof. Dr. Hab. Dorota Folga Januszewska
 
 
 artwork documentation: Kasia Rysiak, Bartosz Górka, Sebastian Rzepka
+portrait: Sebastian Rzepka
 
 
 
