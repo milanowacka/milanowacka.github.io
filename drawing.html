@@ -22,6 +22,17 @@
 			</nav>
 		</header>
 		<main>
+			<section id="drawing">
+			</section>
 		</main>
+		<script>
+			const carousel = document.querySelector('.carousel');
+			document.querySelector('.carousel-nav.prev').addEventListener('click', () => {
+				carousel.scrollBy({ left: -carousel.offsetWidth, behavior: 'smooth' });
+			});
+			document.querySelector('.carousel-nav.next').addEventListener('click', () => {
+				carousel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
+			});
+		</script>
 	</body>
 </html>

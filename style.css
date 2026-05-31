@@ -128,7 +128,8 @@ section {
 }
 
 
-#projects {
+#drawing,
+#video {
     /* height: 100vh; */
     padding-top: 20px;
     padding-left: 5px;
@@ -212,6 +213,20 @@ body.preview-page {
 
 
 .preview-image {
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: contain;
+}
+
+/* Video preview page */
+.video-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.preview-video {
     max-width: 100%;
     max-height: 100vh;
     object-fit: contain;

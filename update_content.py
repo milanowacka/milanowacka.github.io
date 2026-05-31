@@ -14,7 +14,7 @@ md_file = Path("content/page-content.md")
 content = md_file.read_text()
 
 # Extract About section
-about_match = re.search(r'# About\n(.*?)(?=\n# Projects|\Z)', content, re.DOTALL)
+about_match = re.search(r'# About\n(.*?)(?=\n# Drawing|\Z)', content, re.DOTALL)
 about_raw = about_match.group(1).strip() if about_match else ""
 
 # Check for an optional image at the start of the About section
@@ -26,30 +26,43 @@ if about_image_match:
     about_raw = about_raw[about_image_match.end():]
 
 about_text = about_raw.strip()
-# Convert Markdown links to HTML
 about_text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', about_text)
-# Add <br> for line breaks
 about_text = '<br>'.join(about_text.split('\n'))
 
-# Extract Projects section
-projects_match = re.search(r'# Projects\n(.*)', content, re.DOTALL)
-projects_content = projects_match.group(1) if projects_match else ""
+# Extract Drawing section
+drawing_match = re.search(r'# Drawing\n(.*?)(?=\n# Video|\Z)', content, re.DOTALL)
+drawing_content = drawing_match.group(1) if drawing_match else ""
 
-# Parse individual projects
-projects = []
-project_pattern = r'## (.*?)\n!\[\]\((.*?)\)\n### Description\s*\n(.*?)(?=\n## |\Z)'
-for match in re.finditer(project_pattern, projects_content, re.DOTALL):
+# Extract Video section
+video_match = re.search(r'# Video\n(.*)', content, re.DOTALL)
+video_content = video_match.group(1) if video_match else ""
+
+# Parse drawings (empty alt text: ![](...))
+drawings = []
+drawing_pattern = r'## (.*?)\n!\[\]\((.*?)\)\n### Description\s*\n(.*?)(?=\n## |\Z)'
+for match in re.finditer(drawing_pattern, drawing_content, re.DOTALL):
     title = match.group(1).strip()
-    image = match.group(2)
+    image = match.group(2).strip()
     description = match.group(3).strip()
-    # Convert Markdown links to HTML
     description = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', description)
-    # Add <br> for line breaks
     description = '<br>'.join(description.split('\n'))
-    projects.append({
+    drawings.append({'title': title, 'image': image, 'description': description})
+
+# Parse videos (alt text carries video filename: ![video.mp4](thumbnail.jpg))
+videos = []
+video_pattern = r'## (.*?)\n!\[([^\]]+)\]\(([^)]+)\)\n### Description\s*\n(.*?)(?=\n## |\Z)'
+for match in re.finditer(video_pattern, video_content, re.DOTALL):
+    title = match.group(1).strip()
+    video_filename = match.group(2).strip()
+    thumbnail = match.group(3).strip()
+    description = match.group(4).strip()
+    description = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', description)
+    description = '<br>'.join(description.split('\n'))
+    videos.append({
         'title': title,
-        'image': image,
-        'description': description
+        'video': video_filename,
+        'thumbnail': thumbnail,
+        'description': description,
     })
 
 
@@ -66,12 +79,12 @@ def make_thumbnail(image_filename):
     return thumb_filename
 
 
-def make_preview_html(image_filename, title, project_index):
+def make_preview_html(image_filename, title, drawing_index):
     p = Path(image_filename)
     preview_filename = f"{p.stem}_preview.html"
     preview_path = VIEWS_DIR / preview_filename
     image_src = f"../content/{image_filename}"
-    back_href = f"../index.html#project{project_index}"
+    back_href = f"../drawing.html#drawing{drawing_index}"
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,12 +98,45 @@ def make_preview_html(image_filename, title, project_index):
         <nav>
             <h1 id="logo">{title}</h1>
             <ul>
-                <li><a href="{back_href}">← works</a></li>
+                <li><a href="{back_href}">← drawing</a></li>
             </ul>
         </nav>
     </header>
     <div class="img-wrapper">
         <img class="preview-image" src="{image_src}" alt="{title}" loading="lazy">
+    </div>
+</body>
+</html>
+"""
+    preview_path.write_text(html)
+    return preview_filename
+
+
+def make_video_preview_html(thumbnail_filename, video_filename, title, video_index):
+    video_p = Path(video_filename)
+    preview_filename = f"{video_p.stem}_preview.html"
+    preview_path = VIEWS_DIR / preview_filename
+    video_src = f"../content/{video_filename}"
+    back_href = f"../video.html#video{video_index}"
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="preview-page">
+    <header>
+        <nav>
+            <h1 id="logo">{title}</h1>
+            <ul>
+                <li><a href="{back_href}">← video</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="video-wrapper">
+        <video class="preview-video" src="{video_src}" autoplay controls></video>
     </div>
 </body>
 </html>
@@ -116,46 +162,84 @@ about_html = re.sub(
 about_html_file.write_text(about_html)
 print(f"✓ Updated about.html with {len(about_text)} characters from About section")
 
-# Update index.html
-index_html_file = Path("index.html")
-index_html = index_html_file.read_text()
+# Update drawing.html
+drawing_html_file = Path("drawing.html")
+drawing_html = drawing_html_file.read_text()
 
-# Generate carousel projects
-carousel_projects = ''
-for i, project in enumerate(projects, 1):
-    thumb_filename = make_thumbnail(project['image'])
-    preview_filename = make_preview_html(project['image'], project['title'], i)
-    print(f"  ✓ {project['image']} → thumbnail + preview page")
+carousel_drawings = ''
+for i, drawing in enumerate(drawings, 1):
+    thumb_filename = make_thumbnail(drawing['image'])
+    preview_filename = make_preview_html(drawing['image'], drawing['title'], i)
+    print(f"  ✓ {drawing['image']} → thumbnail + preview page")
 
     thumb_url = f"views/{thumb_filename}"
     preview_url = f"views/{preview_filename}"
 
-    carousel_projects += f'''<div id="project{i}" class="project">
+    carousel_drawings += f'''<div id="drawing{i}" class="project">
 \t\t\t\t\t<a href="{preview_url}" target="_self">
 \t\t\t\t\t\t<div class="img-wrapper">
-\t\t\t\t\t\t\t<img src="{thumb_url}" alt="{project['title']}" loading="lazy">
+\t\t\t\t\t\t\t<img src="{thumb_url}" alt="{drawing['title']}" loading="lazy">
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</a>
-\t\t\t\t\t<h2>{project['title']}</h2>
-\t\t\t\t\t<p>{project['description']}</p>
+\t\t\t\t\t<h2>{drawing['title']}</h2>
+\t\t\t\t\t<p>{drawing['description']}</p>
 \t\t\t\t</div>
 \t\t\t\t'''
 
-# Replace the entire projects section
-projects_section = f'''\t\t\t\t<div class="carousel-wrapper">
-\t\t\t\t<button class="carousel-nav prev" aria-label="Previous project">&#8592;</button>
-\t\t\t\t<button class="carousel-nav next" aria-label="Next project">&#8594;</button>
+drawings_section = f'''\t\t\t\t<div class="carousel-wrapper">
+\t\t\t\t<button class="carousel-nav prev" aria-label="Previous">&#8592;</button>
+\t\t\t\t<button class="carousel-nav next" aria-label="Next">&#8594;</button>
 \t\t\t\t<div class="carousel">
-\t\t\t\t{carousel_projects}</div>
+\t\t\t\t{carousel_drawings}</div>
 \t\t\t\t</div>'''
 
-index_html = re.sub(
-    r'<section id="projects">.*?</section>',
-    f'<section id="projects">\n\t\t\t\t{projects_section}\n\t\t</section>',
-    index_html,
+drawing_html = re.sub(
+    r'<section id="drawing">.*?</section>',
+    f'<section id="drawing">\n\t\t\t\t{drawings_section}\n\t\t</section>',
+    drawing_html,
     flags=re.DOTALL
 )
-index_html_file.write_text(index_html)
-print(f"✓ Updated index.html with {len(projects)} projects")
+drawing_html_file.write_text(drawing_html)
+print(f"✓ Updated drawing.html with {len(drawings)} drawings")
+
+# Update video.html
+video_html_file = Path("video.html")
+video_html = video_html_file.read_text()
+
+carousel_videos = ''
+for i, video in enumerate(videos, 1):
+    thumb_filename = make_thumbnail(video['thumbnail'])
+    preview_filename = make_video_preview_html(video['thumbnail'], video['video'], video['title'], i)
+    print(f"  ✓ {video['thumbnail']} → thumbnail + video preview page")
+
+    thumb_url = f"views/{thumb_filename}"
+    preview_url = f"views/{preview_filename}"
+
+    carousel_videos += f'''<div id="video{i}" class="project">
+\t\t\t\t\t<a href="{preview_url}" target="_self">
+\t\t\t\t\t\t<div class="img-wrapper">
+\t\t\t\t\t\t\t<img src="{thumb_url}" alt="{video['title']}" loading="lazy">
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</a>
+\t\t\t\t\t<h2>{video['title']}</h2>
+\t\t\t\t\t<p>{video['description']}</p>
+\t\t\t\t</div>
+\t\t\t\t'''
+
+video_section = f'''\t\t\t\t<div class="carousel-wrapper">
+\t\t\t\t<button class="carousel-nav prev" aria-label="Previous">&#8592;</button>
+\t\t\t\t<button class="carousel-nav next" aria-label="Next">&#8594;</button>
+\t\t\t\t<div class="carousel">
+\t\t\t\t{carousel_videos}</div>
+\t\t\t\t</div>'''
+
+video_html = re.sub(
+    r'<section id="video">.*?</section>',
+    f'<section id="video">\n\t\t\t\t{video_section}\n\t\t</section>',
+    video_html,
+    flags=re.DOTALL
+)
+video_html_file.write_text(video_html)
+print(f"✓ Updated video.html with {len(videos)} videos")
 
 print("\n✓ All pages updated successfully!")
