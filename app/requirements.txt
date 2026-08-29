@@ -1,0 +1,5 @@
+Pillow
+dulwich
+keyring
+paramiko
+pyinstaller

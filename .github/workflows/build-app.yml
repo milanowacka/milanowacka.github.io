@@ -1,0 +1,37 @@
+name: Build Content Manager (Windows)
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'app/**'
+      - 'site_generator.py'
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r app/requirements.txt
+
+      - name: Build executable
+        run: >
+          pyinstaller --onefile --windowed --name "Mila-Content-Manager" --paths .
+          --collect-submodules keyring
+          --hidden-import keyring.backends.Windows
+          app/content_manager.py
+
+      - name: Upload executable
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mila-Content-Manager-Windows
+          path: dist/Mila-Content-Manager.exe

@@ -1,2 +1,6 @@
 *.DS_Store
 .mila-venv
+__pycache__/
+build/
+dist/
+*.spec
