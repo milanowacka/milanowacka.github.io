@@ -43,7 +43,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add index.html about.html
+        git add index.html about.html drawing.html video.html views/
         if git diff --quiet && git diff --staged --quiet; then
           echo "No changes to commit"
         else
