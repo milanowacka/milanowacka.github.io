@@ -6,16 +6,15 @@ I am an artist, art history graduate and mother. My practice explores the relati
 EXHIBITIONS 
 
 Upcomming:
-
-· 20.06 - 9.07.2026 - The Drawing Stall Vol. II, Stellarhighway, New York, USA, curator: Casey Jex Smith
+· 10.10.2026 – 31.01.2027 - The Etheric Field, The College of Psychic Studies, London, UK
 
 Past:
-
-· 27.09-15.10 - Nowelia Kiliani, Garden Gallery, Warsaw
-· 14.06–7.07.2024 – Serce Exhib, Warsaw, PL / Do Flowers Look at Bees?, curator: Kamil Pierwszy
-· 27–28.08.2023 – Turnus Gallery, Warsaw, PL / IRIDISUNTO
-· 18–19.06.2022 – Karowa Gallery, Warsaw, PL, Mila Nowacka: Presentation of Works and Types of Feedback Loops in Audio-Video Devices
-· 8–10.12.2021 – Pracownia Wschodnia, Warsaw, PL / Satin Made of Triggers
+· 20.06 - 9.07.2026 - Saturated, group exhibition, Stellarhighway, New York, USA, curator: Casey Jex Smith
+· 27.09-15.10 - Nowelia Kiliani, solo exhibition, Garden Gallery, Warsaw
+· 14.06–7.07.2024 – Do Flowers Look at Bees?, group exhibition, Serce Exhib, Warsaw, PL, curator: Kamil Pierwszy
+· 27–28.08.2023 – IRIDISUNTO, artistic gathering, Turnus Gallery, Warsaw, PL
+· 18–19.06.2022 – Mila Nowacka: Presentation of Works and Types of Feedback Loops in Audio-Video Devices, Karowa Gallery, Warsaw, PL
+· 8–10.12.2021 – Satin Made of Triggers, interdisciplinary project, Pracownia Wschodnia, Warsaw, PL
 
 PUBLICATIONS
 
@@ -250,12 +249,15 @@ wax-based color pencils on military technical paper
 2024
 
 # Video
-## Izba1
-![izba.mp4](izba.png)
+## Sprzężenie Zwrotne
+![Sprzezenie-zwrotne2026_exerpt.mp4](Sprzezenie-zwrotne202620.png)
 ### Description
-To jest opis projektu wideum
+This work explores grief as a dynamic process revealing itself within a larger network of relationships between the body, the environment, and other living beings. Coming from systems theory I approach emotions not as isolated psychological states but as elements of feedback processes emerging within interconnected systems. This is a video essay about the cycles of imbalance and returning to stability.
 
-## Izba2
-![izba.mp4](izba.png)
+
+## Aqualines
+![Aqualines_2024_exerpt.mp4](Aqualines-Mila-Clarice-2024-2.png)
 ### Description
-To jest opis projektu wideum
+The Aqualines video work is an audiovisual exploration of water and flow-related processes. Sound artist Clarice Calvo-Pinsolle [BE] created an intimate soundscape, for which Mila Nowacka [PL] composed the visuals. The artists’ vision centered on the concept of flow, the interplay of air, fluid, and light, and the processes occurring in the depths—both of our bodies and of our planet. This audiovisual piece seeks to convey the subtlety, delicacy, and fragility, as well as the power, of the nature of which we are a part.
+Her Docs Festival 2025
+
