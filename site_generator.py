@@ -20,7 +20,7 @@ def generate_site(base_dir: Path = Path(".")) -> None:
 
     # Read the markdown file
     md_file = content_dir / "page-content.md"
-    content = md_file.read_text()
+    content = md_file.read_text(encoding="utf-8")
 
     # Extract About section
     about_match = re.search(r'# About\n(.*?)(?=\n# Drawing|\Z)', content, re.DOTALL)
@@ -115,7 +115,7 @@ def generate_site(base_dir: Path = Path(".")) -> None:
 </body>
 </html>
 """
-        preview_path.write_text(html)
+        preview_path.write_text(html, encoding="utf-8")
         return preview_filename
 
     def make_video_preview_html(thumbnail_filename, video_filename, title, video_index):
@@ -147,12 +147,12 @@ def generate_site(base_dir: Path = Path(".")) -> None:
 </body>
 </html>
 """
-        preview_path.write_text(html)
+        preview_path.write_text(html, encoding="utf-8")
         return preview_filename
 
     # Update about.html
     about_html_file = base_dir / "about.html"
-    about_html = about_html_file.read_text()
+    about_html = about_html_file.read_text(encoding="utf-8")
     if about_image_html:
         about_body = f'<div class="about-content">\n\t\t\t\t{about_image_html}\n\t\t\t\t<p>{about_text}</p>\n\t\t\t</div>'
     else:
@@ -164,12 +164,12 @@ def generate_site(base_dir: Path = Path(".")) -> None:
         about_html,
         flags=re.DOTALL
     )
-    about_html_file.write_text(about_html)
+    about_html_file.write_text(about_html, encoding="utf-8")
     print(f"✓ Updated about.html with {len(about_text)} characters from About section")
 
     # Update drawing.html
     drawing_html_file = base_dir / "drawing.html"
-    drawing_html = drawing_html_file.read_text()
+    drawing_html = drawing_html_file.read_text(encoding="utf-8")
 
     carousel_drawings = ''
     for i, drawing in enumerate(drawings, 1):
@@ -204,12 +204,12 @@ def generate_site(base_dir: Path = Path(".")) -> None:
         drawing_html,
         flags=re.DOTALL
     )
-    drawing_html_file.write_text(drawing_html)
+    drawing_html_file.write_text(drawing_html, encoding="utf-8")
     print(f"✓ Updated drawing.html with {len(drawings)} drawings")
 
     # Update video.html
     video_html_file = base_dir / "video.html"
-    video_html = video_html_file.read_text()
+    video_html = video_html_file.read_text(encoding="utf-8")
 
     carousel_videos = ''
     for i, video in enumerate(videos, 1):
@@ -244,7 +244,7 @@ def generate_site(base_dir: Path = Path(".")) -> None:
         video_html,
         flags=re.DOTALL
     )
-    video_html_file.write_text(video_html)
+    video_html_file.write_text(video_html, encoding="utf-8")
     print(f"✓ Updated video.html with {len(videos)} videos")
 
     print("\n✓ All pages updated successfully!")
