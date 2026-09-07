@@ -169,6 +169,9 @@ class ContentManagerApp(tk.Tk):
         self.repo_path: Path | None = None
         self.log_queue: queue.Queue[str] = queue.Queue()
         self.buttons: list[tk.Button] = []
+        self._startup_synced = False
+
+        self.protocol("WM_DELETE_WINDOW", self._on_close)
 
         self._build_ui()
         self.after(100, self._drain_log_queue)
@@ -180,6 +183,7 @@ class ContentManagerApp(tk.Tk):
         else:
             self.after(200, self._prompt_for_repo)
         self._refresh_repo_label()
+        self.after(300, self._maybe_startup_sync)
 
     # ---------------------------------------------------------------- UI --
     def _build_ui(self):
@@ -200,12 +204,14 @@ class ContentManagerApp(tk.Tk):
 
         pull_btn = tk.Button(btn_frame, text="⬇  Pull Latest", width=18,
                               command=self._on_pull)
+        edit_btn = tk.Button(btn_frame, text="📝  Edit Content", width=18,
+                              command=self._on_edit_content)
         preview_btn = tk.Button(btn_frame, text="👁  Preview Locally", width=18,
                                  command=self._on_preview)
         push_btn = tk.Button(btn_frame, text="⬆  Push Changes", width=18,
                               command=self._on_push)
 
-        for b in (pull_btn, preview_btn, push_btn):
+        for b in (pull_btn, edit_btn, preview_btn, push_btn):
             b.pack(side="left", padx=5, pady=5)
             self.buttons.append(b)
 
@@ -274,6 +280,7 @@ class ContentManagerApp(tk.Tk):
         save_config({**load_config(), "repo_path": str(path)})
         self._refresh_repo_label()
         self.log(f"Working folder set to: {path}")
+        self._maybe_startup_sync()
 
     def _require_repo(self) -> Path | None:
         if self.repo_path is None:
@@ -300,6 +307,36 @@ class ContentManagerApp(tk.Tk):
         if url and _is_ssh_url(url):
             return self._ensure_ssh_auth(force_prompt=force_prompt)
         return self._ensure_https_credentials(force_prompt=force_prompt)
+
+    def _ensure_auth_silent(self, repo_path: Path) -> dict | None:
+        """Like _ensure_auth, but never opens a dialog.
+
+        Used for the background startup check: returns already-stored
+        credentials, {} for an anonymous HTTPS fetch (fine for this public
+        repo), or None if an SSH key would need to be picked/unlocked
+        interactively (in which case the startup check is skipped).
+        """
+        url = self._get_remote_url(repo_path)
+        if url and _is_ssh_url(url):
+            config = load_config()
+            key_path = config.get("ssh_key_path")
+            if not key_path or not Path(key_path).is_file():
+                return None
+            passphrase = self._get_stored_ssh_passphrase(key_path)
+            try:
+                paramiko.PKey.from_path(key_path, password=passphrase)
+            except Exception:
+                return None
+            _ensure_github_known_hosts()
+            return {"key_filename": key_path, "password": passphrase}
+
+        config = load_config()
+        username = config.get("github_username", "")
+        if username:
+            token = self._get_stored_token(username)
+            if token:
+                return {"username": username, "password": token}
+        return {}
 
     def _reconfigure_auth(self):
         repo_path = self._require_repo()
@@ -457,6 +494,107 @@ class ContentManagerApp(tk.Tk):
     @staticmethod
     def _status_is_dirty(status) -> bool:
         return bool(any(status.staged.values()) or status.unstaged or status.untracked)
+
+    # --------------------------------------------------- Startup / shutdown --
+    def _maybe_startup_sync(self):
+        if self._startup_synced or self.repo_path is None:
+            return
+        self._startup_synced = True
+        self._run_in_thread(self._do_startup_sync, self.repo_path)
+
+    def _do_startup_sync(self, repo_path: Path):
+        # Pull (not just fetch) before popping the stash: if the stash were
+        # popped first while local HEAD is still behind, then pulled
+        # afterwards, the merge would run against an already-dirty working
+        # tree and could conflict with the incoming commits. Pulling onto a
+        # clean tree first, then popping the stash on top, avoids that.
+        before_sha = self._read_head_sha(repo_path)
+
+        auth = self._ensure_auth_silent(repo_path)
+        if auth is None:
+            self.log("(skipped startup update check — SSH key not yet configured; use 'GitHub Access…')")
+        else:
+            self.log("Checking GitHub for new content…")
+            out, err = io.BytesIO(), io.BytesIO()
+            try:
+                porcelain.pull(repo_path, outstream=out, errstream=err, **auth)
+                self._log_stream(out)
+                self._log_stream(err)
+            except HTTPUnauthorized:
+                self._log_stream(out)
+                self._log_stream(err)
+                self.log("(could not check GitHub for updates: GitHub rejected the saved username/token; use 'GitHub Access…' to re-enter it)")
+                if "username" in auth:
+                    self._clear_bad_credentials(auth["username"])
+            except paramiko.ssh_exception.SSHException as exc:
+                self._log_stream(out)
+                self._log_stream(err)
+                self.log(f"(could not check GitHub for updates: SSH error ({exc}); use 'GitHub Access…' to re-enter your key/passphrase)")
+                self._clear_ssh_passphrase(auth["key_filename"])
+            except Exception as exc:
+                self._log_stream(out)
+                self._log_stream(err)
+                self.log(f"(could not automatically pull latest changes: {exc}) — use 'Pull Latest' to try manually.")
+
+        after_sha = self._read_head_sha(repo_path)
+        if before_sha is not None and after_sha is not None:
+            self.log("✓ Pulled new content from GitHub." if before_sha != after_sha else "✓ Up to date with GitHub.")
+
+        self._pop_latest_stash(repo_path, pulled=(before_sha != after_sha))
+
+    @staticmethod
+    def _read_head_sha(repo_path: Path) -> bytes | None:
+        try:
+            with DulwichRepo(str(repo_path)) as r:
+                return r.head()
+        except Exception:
+            return None
+
+    def _pop_latest_stash(self, repo_path: Path, pulled: bool = False):
+        try:
+            if not list(porcelain.stash_list(repo_path)):
+                return
+
+            # dulwich's stash_pop doesn't do a real three-way merge: it
+            # checks out every file in the stash's full snapshot as-is, so
+            # if HEAD moved since the stash was created (e.g. the pull above
+            # just landed new content), it silently reverts *any* tracked
+            # file back to its pre-stash state — not just the ones the
+            # stash itself touched. So only auto-pop when nothing was
+            # actually pulled (HEAD unchanged); otherwise leave the stash in
+            # place rather than risk clobbering what was just pulled.
+            if pulled:
+                self.log(
+                    "⚠ Kept your changes from the last session on hold in the stash — "
+                    "new content was just pulled from GitHub, and applying the stash now "
+                    "could overwrite it. Merge them by hand (e.g. via 'git stash pop') "
+                    "when you're ready."
+                )
+                return
+
+            porcelain.stash_pop(repo_path)
+            self.log("✓ Restored your changes from the last session (from stash).")
+        except Exception as exc:
+            self.log(f"(could not restore stashed changes from last session: {exc})")
+
+    def _on_close(self):
+        if self.repo_path is not None:
+            try:
+                status = porcelain.status(self.repo_path)
+                if self._status_is_dirty(status):
+                    porcelain.stash_push(self.repo_path)
+                    messagebox.showinfo(
+                        "Changes saved",
+                        "Your unsaved changes were stashed and will be restored "
+                        "automatically the next time you open this app.",
+                    )
+            except Exception as exc:
+                messagebox.showwarning(
+                    "Could not save changes",
+                    f"Your local changes could not be safely stashed and remain "
+                    f"in your working folder as-is:\n{exc}",
+                )
+        self.destroy()
 
     # Pull -------------------------------------------------------------
     def _on_pull(self):
