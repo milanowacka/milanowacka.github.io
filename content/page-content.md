@@ -6,12 +6,12 @@ I am an artist, art history graduate and mother. My practice explores the relati
 EXHIBITIONS 
 
 Upcomming:
-· 10.10.2026 – 31.01.2027 - The Etheric Field, The College of Psychic Studies, London, UK
+· 10.10.2026 – 31.01.2027 - [The Etheric Field, The College of Psychic Studies, London, UK](https://www.collegeofpsychicstudies.co.uk/exhibition/)
 
 Past:
-· 20.06 - 9.07.2026 - Saturated, group exhibition, Stellarhighway, New York, USA, curator: Casey Jex Smith
-· 27.09-15.10 - Nowelia Kiliani, solo exhibition, Garden Gallery, Warsaw
-· 14.06–7.07.2024 – Do Flowers Look at Bees?, group exhibition, Serce Exhib, Warsaw, PL, curator: Kamil Pierwszy
+· 20.06 - 9.07.2026 - Saturated, group exhibition, Stellarhighway galery, New York, USA
+· 27.09-15.10 - Nowelia Kiliani, solo exhibition, Garden Gallery, Warsaw, PL
+· 14.06–7.07.2024 – Do Flowers Look at Bees?, group exhibition, Serce Exhib, Warsaw, PL
 · 27–28.08.2023 – IRIDISUNTO, artistic gathering, Turnus Gallery, Warsaw, PL
 · 18–19.06.2022 – Mila Nowacka: Presentation of Works and Types of Feedback Loops in Audio-Video Devices, Karowa Gallery, Warsaw, PL
 · 8–10.12.2021 – Satin Made of Triggers, interdisciplinary project, Pracownia Wschodnia, Warsaw, PL
@@ -252,9 +252,9 @@ wax-based color pencils on military technical paper
 ## Feedback loop
 ![Sprzezenie-zwrotne2026_exerpt.mp4](Sprzezenie-zwrotne202620.jpg)
 ### Description
-2026
 duration: 5:25 minutes
-Polish Premiere: Sauna Festival, Warsaw, Poland
+Polish Premiere: Sauna Festival, 
+Warsaw, Poland
 February 8, 2026
 
 This work explores grief as a dynamic process revealing itself within a larger network of relationships between the body, the environment, and other living beings. Coming from systems theory I approach emotions not as isolated psychological states but as elements of feedback processes emerging within interconnected systems. This is a video essay about the cycles of imbalance and returning to stability.
@@ -264,10 +264,13 @@ This work explores grief as a dynamic process revealing itself within a larger n
 ![Aqualines_2024_exerpt.mp4](aqualines-img.jpg)
 ### Description
 duration: 5:40 minutes
-Polish Premiere: HER Docs Festival, Warsaw, Poland
+Polish Premiere: HER Docs Festival, 
+Warsaw, Poland
 September 20, 2025
-North American Premiere: 2025 Singletary Center for the Arts Visual Music Festival, Lexington, Kentucky
-United States
+
+North American Premiere: 2025 Singletary Center for the Arts Visual Music Festival, 
+Lexington, Kentucky, United States
+February 8, 2026
 
 The Aqualines video work is an audiovisual exploration of water and flow-related processes. Sound artist Clarice Calvo-Pinsolle [BE] created an intimate soundscape, for which Mila Nowacka [PL] composed the visuals. The artists’ vision centered on the concept of flow, the interplay of air, fluid, and light, and the processes occurring in the depths—both of our bodies and of our planet. This audiovisual piece seeks to convey the subtlety, delicacy, and fragility, as well as the power, of the nature of which we are a part.
 
