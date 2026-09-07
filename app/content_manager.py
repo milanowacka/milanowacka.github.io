@@ -56,16 +56,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from site_generator import generate_site  # noqa: E402
 
 APP_TITLE = "Mila Nowacka — Website Content Manager"
-
-# If True, the startup sync always pops the last-session stash right after
-# pulling, even if the pull moved HEAD. dulwich's stash_pop doesn't do a
-# real three-way merge (see _pop_latest_stash below) — it checks out the
-# stash's full snapshot verbatim, so this can silently revert any tracked
-# file the pull just updated back to its pre-stash state. Set to False to
-# go back to the safe behaviour: leave the stash on hold and let the user
-# reconcile it by hand (e.g. `git stash pop`) whenever HEAD moved.
-AUTO_POP_STASH_AFTER_PULL = True
-
 CONFIG_FILE = Path.home() / ".mila_content_manager.json"
 KEYRING_SERVICE_HTTPS = "mila-content-manager-github"
 KEYRING_SERVICE_SSH = "mila-content-manager-github-ssh"
@@ -513,11 +503,6 @@ class ContentManagerApp(tk.Tk):
         self._run_in_thread(self._do_startup_sync, self.repo_path)
 
     def _do_startup_sync(self, repo_path: Path):
-        # Pull (not just fetch) before popping the stash: if the stash were
-        # popped first while local HEAD is still behind, then pulled
-        # afterwards, the merge would run against an already-dirty working
-        # tree and could conflict with the incoming commits. Pulling onto a
-        # clean tree first, then popping the stash on top, avoids that.
         before_sha = self._read_head_sha(repo_path)
 
         auth = self._ensure_auth_silent(repo_path)
@@ -550,8 +535,6 @@ class ContentManagerApp(tk.Tk):
         if before_sha is not None and after_sha is not None:
             self.log("✓ Pulled new content from GitHub." if before_sha != after_sha else "✓ Up to date with GitHub.")
 
-        self._pop_latest_stash(repo_path, pulled=(before_sha != after_sha))
-
     @staticmethod
     def _read_head_sha(repo_path: Path) -> bytes | None:
         try:
@@ -560,49 +543,19 @@ class ContentManagerApp(tk.Tk):
         except Exception:
             return None
 
-    def _pop_latest_stash(self, repo_path: Path, pulled: bool = False):
-        try:
-            if not list(porcelain.stash_list(repo_path)):
-                return
-
-            # dulwich's stash_pop doesn't do a real three-way merge: it
-            # checks out every file in the stash's full snapshot as-is, so
-            # if HEAD moved since the stash was created (e.g. the pull above
-            # just landed new content), it silently reverts *any* tracked
-            # file back to its pre-stash state — not just the ones the
-            # stash itself touched. AUTO_POP_STASH_AFTER_PULL controls
-            # whether we accept that risk or play it safe.
-            if pulled and not AUTO_POP_STASH_AFTER_PULL:
-                self.log(
-                    "⚠ Kept your changes from the last session on hold in the stash — "
-                    "new content was just pulled from GitHub, and applying the stash now "
-                    "could overwrite it. Merge them by hand (e.g. via 'git stash pop') "
-                    "when you're ready."
-                )
-                return
-
-            porcelain.stash_pop(repo_path)
-            self.log("✓ Restored your changes from the last session (from stash).")
-        except Exception as exc:
-            self.log(f"(could not restore stashed changes from last session: {exc})")
-
     def _on_close(self):
         if self.repo_path is not None:
             try:
                 status = porcelain.status(self.repo_path)
                 if self._status_is_dirty(status):
-                    porcelain.stash_push(self.repo_path)
-                    messagebox.showinfo(
-                        "Changes saved",
-                        "Your unsaved changes were stashed and will be restored "
-                        "automatically the next time you open this app.",
+                    messagebox.showwarning(
+                        "Unsaved changes",
+                        "You have local changes that haven't been pushed to GitHub. "
+                        "They will stay in your working folder — use 'Push Changes' "
+                        "to publish them next time you open the app.",
                     )
             except Exception as exc:
-                messagebox.showwarning(
-                    "Could not save changes",
-                    f"Your local changes could not be safely stashed and remain "
-                    f"in your working folder as-is:\n{exc}",
-                )
+                self.log(f"(could not check for unpushed changes: {exc})")
         self.destroy()
 
     # Pull -------------------------------------------------------------
