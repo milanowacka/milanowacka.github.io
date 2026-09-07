@@ -56,6 +56,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from site_generator import generate_site  # noqa: E402
 
 APP_TITLE = "Mila Nowacka — Website Content Manager"
+
+# If True, the startup sync always pops the last-session stash right after
+# pulling, even if the pull moved HEAD. dulwich's stash_pop doesn't do a
+# real three-way merge (see _pop_latest_stash below) — it checks out the
+# stash's full snapshot verbatim, so this can silently revert any tracked
+# file the pull just updated back to its pre-stash state. Set to False to
+# go back to the safe behaviour: leave the stash on hold and let the user
+# reconcile it by hand (e.g. `git stash pop`) whenever HEAD moved.
+AUTO_POP_STASH_AFTER_PULL = True
+
 CONFIG_FILE = Path.home() / ".mila_content_manager.json"
 KEYRING_SERVICE_HTTPS = "mila-content-manager-github"
 KEYRING_SERVICE_SSH = "mila-content-manager-github-ssh"
@@ -560,10 +570,9 @@ class ContentManagerApp(tk.Tk):
             # if HEAD moved since the stash was created (e.g. the pull above
             # just landed new content), it silently reverts *any* tracked
             # file back to its pre-stash state — not just the ones the
-            # stash itself touched. So only auto-pop when nothing was
-            # actually pulled (HEAD unchanged); otherwise leave the stash in
-            # place rather than risk clobbering what was just pulled.
-            if pulled:
+            # stash itself touched. AUTO_POP_STASH_AFTER_PULL controls
+            # whether we accept that risk or play it safe.
+            if pulled and not AUTO_POP_STASH_AFTER_PULL:
                 self.log(
                     "⚠ Kept your changes from the last session on hold in the stash — "
                     "new content was just pulled from GitHub, and applying the stash now "
