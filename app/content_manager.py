@@ -21,6 +21,7 @@ Run from source with a normal Python install, or package as a standalone
 import io
 import json
 import queue
+import subprocess
 import sys
 import threading
 import tkinter as tk
@@ -509,6 +510,26 @@ class ContentManagerApp(tk.Tk):
             self._log_stream(out)
             self._log_stream(err)
             self.log(f"✗ Pull failed: {exc}")
+
+    # Edit content ---------------------------------------------------------
+    def _on_edit_content(self):
+        repo_path = self._require_repo()
+        if repo_path is None:
+            return
+        md_file = repo_path / "content" / "page-content.md"
+        if not md_file.is_file():
+            messagebox.showerror("File not found", f"Could not find:\n{md_file}")
+            return
+        try:
+            if sys.platform == "win32":
+                subprocess.Popen(["notepad.exe", str(md_file)])
+            elif sys.platform == "darwin":
+                subprocess.Popen(["open", "-t", str(md_file)])
+            else:
+                subprocess.Popen(["xdg-open", str(md_file)])
+            self.log(f"Opened {md_file.name} for editing.")
+        except OSError as exc:
+            messagebox.showerror("Could not open editor", f"Failed to open {md_file.name}:\n{exc}")
 
     # Preview ------------------------------------------------------------
     def _on_preview(self):
