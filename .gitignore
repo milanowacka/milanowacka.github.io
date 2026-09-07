@@ -1,2 +1,15 @@
 *.DS_Store
-.mila-venv
+.venv
+__pycache__/
+build/
+dist/
+*.spec
+
+
+.mila_content_manager.json
+.env
+*.pem
+id_rsa*
+id_ed25519*
+id_ecdsa*
+*.token
