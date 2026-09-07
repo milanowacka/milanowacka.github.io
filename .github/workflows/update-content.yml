@@ -1,11 +1,10 @@
 name: Update Website Content
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'content/**'
+  # 3am UTC daily. Only actually rebuilds if content was pushed to main
+  # since the last run (see "Check for content changes" below).
+  schedule:
+    - cron: '0 3 * * *'
 
 permissions:
   contents: write
@@ -13,33 +12,48 @@ permissions:
 jobs:
   update-content:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v5
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0
-    
+
+    - name: Check for content changes pushed to main
+      id: check
+      run: |
+        if git log --since="24 hours ago" --oneline -- content/ | grep -q .; then
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+        else
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+          echo "No content changes pushed to main since the last run — skipping rebuild."
+        fi
+
     - name: Set up Python
+      if: steps.check.outputs.changed == 'true'
       uses: actions/setup-python@v6
       with:
         python-version: '3.12'
-    
+
     - name: Check if content file exists
+      if: steps.check.outputs.changed == 'true'
       run: |
         if [ ! -f "content/page-content.md" ]; then
           echo "Error: content/page-content.md not found"
           exit 1
         fi
-    
+
     - name: Install dependencies
+      if: steps.check.outputs.changed == 'true'
       run: pip install Pillow
 
     - name: Run content update script
+      if: steps.check.outputs.changed == 'true'
       run: python update_content.py
-    
+
     - name: Commit and push changes
+      if: steps.check.outputs.changed == 'true'
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
