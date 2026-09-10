@@ -92,6 +92,7 @@ Linux/Mac binary, not a .exe):
 ```
 pip install -r app/requirements.txt
 pyinstaller --onefile --windowed --name "Mila-Content-Manager" --paths . ^
+  --icon app/icon.ico --add-data "app/icon.ico;." ^
   --collect-submodules keyring --hidden-import keyring.backends.Windows ^
   app/content_manager.py
 ```

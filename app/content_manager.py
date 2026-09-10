@@ -55,7 +55,18 @@ dulwich_client.get_ssh_vendor = ParamikoSSHVendor
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from site_generator import generate_site  # noqa: E402
 
+def resource_path(name: str) -> Path:
+    """Locate a bundled resource, both run from source and frozen by PyInstaller.
+
+    PyInstaller unpacks `--add-data` files into a temp dir at `sys._MEIPASS`;
+    from source they just sit alongside this script.
+    """
+    base = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
+    return base / name
+
+
 APP_TITLE = "Mila Nowacka — Website Content Manager"
+APP_ICON = resource_path("icon.ico")
 CONFIG_FILE = Path.home() / ".mila_content_manager.json"
 KEYRING_SERVICE_HTTPS = "mila-content-manager-github"
 KEYRING_SERVICE_SSH = "mila-content-manager-github-ssh"
@@ -165,6 +176,10 @@ class ContentManagerApp(tk.Tk):
         self.title(APP_TITLE)
         self.geometry("720x480")
         self.minsize(560, 380)
+        try:
+            self.iconbitmap(APP_ICON)
+        except tk.TclError:
+            pass  # .ico icons aren't supported by Tk on Linux/macOS
 
         self.repo_path: Path | None = None
         self.log_queue: queue.Queue[str] = queue.Queue()
