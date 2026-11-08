@@ -1,3 +1,8 @@
+# Home
+Mila Nowacka is a Polish visual artist and art history graduate working in drawing and video. Her practice explores the relationship between the body, perception and environment, using feedback, error and sensory experience as research-based artistic tools.
+
+Her current series of colour pencil drawings, Feedback, visualises the body from within – one drawing for each internal organ and process, each accompanied by an original text.
+
 # About
 ![](DSCF7516_MILA_NOWACKA_HIRES.jpg)
 
@@ -5,11 +10,11 @@ I am an artist, art history graduate and mother. My practice explores the relati
 
 EXHIBITIONS 
 
-Upcomming:
+Upcoming:
 · 10.10.2026 – 31.01.2027 - [The Etheric Field, The College of Psychic Studies, London, UK](https://www.collegeofpsychicstudies.co.uk/exhibition/)
 
 Past:
-· 20.06 - 9.07.2026 - Saturated, group exhibition, Stellarhighway galery, New York, USA
+· 20.06 - 9.07.2026 - Saturated, group exhibition, Stellarhighway gallery, New York, USA
 · 27.09-15.10 - Nowelia Kiliani, solo exhibition, Garden Gallery, Warsaw, PL
 · 14.06–7.07.2024 – Do Flowers Look at Bees?, group exhibition, Serce Exhib, Warsaw, PL
 · 27–28.08.2023 – IRIDISUNTO, artistic gathering, Turnus Gallery, Warsaw, PL
@@ -18,7 +23,7 @@ Past:
 
 PUBLICATIONS
 
-· 04.2026 - [Publication of two original works in an album showcasing the work of the most notable contemporary artists who use colored pencil drawing techniques in their artistic practice, USA.](https://the-drawing-stall.bigcartel.com/product/the-drawing-stall-vol-2)
+· 04.2026 - [Publication of two original works in an album showcasing the works of the most notable contemporary artists who use colored pencil drawing techniques in their artistic practice, USA.](https://the-drawing-stall.bigcartel.com/product/the-drawing-stall-vol-2)
 · 01.2026 – [Museum of Tomorrow – Digital Models and Artifacts, FRSK](https://www.mapasztuki.pl/muzeum-jutra/artistution). Illustration of Łukasz Adamski’s concept for a museum of the future. Published in print in Art Monitor, Issue No. 30, Poland.
 · 09.2025 – Release of the artist’s book [Nowelia Kiliani](https://milanowacka.bandcamp.com/album/nowelia-kiliani), an art album featuring drawings created between 2020 and 2024.
 · 2023 – Illustration and cover design for the album [Zwanai Easplaining](https://www.discogs.com/release/28090855-Zvanai-Eastplaining), published by the Foundation for Research into Possibilities (Fundacja Badań Możliwości), Poland.
@@ -31,8 +36,7 @@ EDUCATION
 
 2010-2013 - Art History, master’s thesis:
 “The Phenomenon of Glitch Art in the Context of the History of the
-Image”, supervisor: Prof. Dr. Hab. Dorota Folga Januszewska
-2007-2010 - Art History, bachelor’s degree
+Image”, supervisor: Dr Hab. Dorota Folga Januszewska, Prof. ASP
 
 
 
@@ -82,7 +86,7 @@ wax-based color pencils on cotton paper
 78 x 53 cm 
 2025
 
-Mouth is an organ that helps us - humans to communicate in a form of words and kissing. Language is such a intresting structure - constantly evolvi
+Mouth is an organ that helps us - humans to communicate in a form of words and kissing. Language is such an interesting structure - constantly evolving, very complex language structures that carry the reality through the spacetime. 
 
 During the process, I focused on internal feelings and emotional responses in relation to information gathered through Traditional Chinese Medicine (TCM), attempting to translate these stimuli into form. The decision-making process was encoded within the body itself: once a gesture, movement of the hand, or emerging shape felt familiar, intuitive, and correct, I continued to develop it further.
 
@@ -276,3 +280,7 @@ The Aqualines video work is an audiovisual exploration of water and flow-related
 
 Her Docs Festival 2025
 
+
+# CV
+
+# Workshops

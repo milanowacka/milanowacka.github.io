@@ -1,0 +1,464 @@
+{
+ "BGF3138_MN_web_1600.webp": {
+  "height": 3044,
+  "source": "BGF3138_MN_web.jpg",
+  "source_size": 4161611,
+  "width": 1600
+ },
+ "BGF3138_MN_web_2400.webp": {
+  "height": 3733,
+  "source": "BGF3138_MN_web.jpg",
+  "source_size": 4161611,
+  "width": 1962
+ },
+ "BGF3138_MN_web_800.webp": {
+  "height": 1522,
+  "source": "BGF3138_MN_web.jpg",
+  "source_size": 4161611,
+  "width": 800
+ },
+ "BGF3138_MN_web_og.jpg": {
+  "height": 630,
+  "source": "BGF3138_MN_web.jpg",
+  "source_size": 4161611,
+  "width": 1200
+ },
+ "BGF3180_MN_web_1600.webp": {
+  "height": 1516,
+  "source": "BGF3180_MN_web.jpg",
+  "source_size": 258048,
+  "width": 1600
+ },
+ "BGF3180_MN_web_2400.webp": {
+  "height": 1941,
+  "source": "BGF3180_MN_web.jpg",
+  "source_size": 258048,
+  "width": 2048
+ },
+ "BGF3180_MN_web_800.webp": {
+  "height": 758,
+  "source": "BGF3180_MN_web.jpg",
+  "source_size": 258048,
+  "width": 800
+ },
+ "BGF3180_MN_web_og.jpg": {
+  "height": 630,
+  "source": "BGF3180_MN_web.jpg",
+  "source_size": 258048,
+  "width": 1200
+ },
+ "DSCF2688_1600.webp": {
+  "height": 2308,
+  "source": "DSCF2688.jpg",
+  "source_size": 8501841,
+  "width": 1600
+ },
+ "DSCF2688_2400.webp": {
+  "height": 3462,
+  "source": "DSCF2688.jpg",
+  "source_size": 8501841,
+  "width": 2400
+ },
+ "DSCF2688_800.webp": {
+  "height": 1154,
+  "source": "DSCF2688.jpg",
+  "source_size": 8501841,
+  "width": 800
+ },
+ "DSCF2688_og.jpg": {
+  "height": 630,
+  "source": "DSCF2688.jpg",
+  "source_size": 8501841,
+  "width": 1200
+ },
+ "DSCF2700_1600.webp": {
+  "height": 2223,
+  "source": "DSCF2700.jpg",
+  "source_size": 8559417,
+  "width": 1600
+ },
+ "DSCF2700_2400.webp": {
+  "height": 3335,
+  "source": "DSCF2700.jpg",
+  "source_size": 8559417,
+  "width": 2400
+ },
+ "DSCF2700_800.webp": {
+  "height": 1112,
+  "source": "DSCF2700.jpg",
+  "source_size": 8559417,
+  "width": 800
+ },
+ "DSCF2700_og.jpg": {
+  "height": 630,
+  "source": "DSCF2700.jpg",
+  "source_size": 8559417,
+  "width": 1200
+ },
+ "DSCF2714_1600.webp": {
+  "height": 2316,
+  "source": "DSCF2714.jpg",
+  "source_size": 8562600,
+  "width": 1600
+ },
+ "DSCF2714_2400.webp": {
+  "height": 3474,
+  "source": "DSCF2714.jpg",
+  "source_size": 8562600,
+  "width": 2400
+ },
+ "DSCF2714_800.webp": {
+  "height": 1158,
+  "source": "DSCF2714.jpg",
+  "source_size": 8562600,
+  "width": 800
+ },
+ "DSCF2714_og.jpg": {
+  "height": 630,
+  "source": "DSCF2714.jpg",
+  "source_size": 8562600,
+  "width": 1200
+ },
+ "DSCF2731_1600.webp": {
+  "height": 2334,
+  "source": "DSCF2731.jpg",
+  "source_size": 9977711,
+  "width": 1600
+ },
+ "DSCF2731_2400.webp": {
+  "height": 3501,
+  "source": "DSCF2731.jpg",
+  "source_size": 9977711,
+  "width": 2400
+ },
+ "DSCF2731_800.webp": {
+  "height": 1167,
+  "source": "DSCF2731.jpg",
+  "source_size": 9977711,
+  "width": 800
+ },
+ "DSCF2731_og.jpg": {
+  "height": 630,
+  "source": "DSCF2731.jpg",
+  "source_size": 9977711,
+  "width": 1200
+ },
+ "DSCF2767_1600.webp": {
+  "height": 2337,
+  "source": "DSCF2767.jpg",
+  "source_size": 9054112,
+  "width": 1600
+ },
+ "DSCF2767_2400.webp": {
+  "height": 3506,
+  "source": "DSCF2767.jpg",
+  "source_size": 9054112,
+  "width": 2400
+ },
+ "DSCF2767_800.webp": {
+  "height": 1169,
+  "source": "DSCF2767.jpg",
+  "source_size": 9054112,
+  "width": 800
+ },
+ "DSCF2767_og.jpg": {
+  "height": 630,
+  "source": "DSCF2767.jpg",
+  "source_size": 9054112,
+  "width": 1200
+ },
+ "DSCF2789_1600.webp": {
+  "height": 2334,
+  "source": "DSCF2789.jpg",
+  "source_size": 7526726,
+  "width": 1600
+ },
+ "DSCF2789_2400.webp": {
+  "height": 3501,
+  "source": "DSCF2789.jpg",
+  "source_size": 7526726,
+  "width": 2400
+ },
+ "DSCF2789_800.webp": {
+  "height": 1167,
+  "source": "DSCF2789.jpg",
+  "source_size": 7526726,
+  "width": 800
+ },
+ "DSCF2789_og.jpg": {
+  "height": 630,
+  "source": "DSCF2789.jpg",
+  "source_size": 7526726,
+  "width": 1200
+ },
+ "DSCF7516_MILA_NOWACKA_HIRES_1600.webp": {
+  "height": 2134,
+  "source": "DSCF7516_MILA_NOWACKA_HIRES.jpg",
+  "source_size": 2884509,
+  "width": 1600
+ },
+ "DSCF7516_MILA_NOWACKA_HIRES_800.webp": {
+  "height": 1067,
+  "source": "DSCF7516_MILA_NOWACKA_HIRES.jpg",
+  "source_size": 2884509,
+  "width": 800
+ },
+ "DSCF7724_1600.webp": {
+  "height": 2281,
+  "source": "DSCF7724.jpg",
+  "source_size": 12830775,
+  "width": 1600
+ },
+ "DSCF7724_2400.webp": {
+  "height": 3421,
+  "source": "DSCF7724.jpg",
+  "source_size": 12830775,
+  "width": 2400
+ },
+ "DSCF7724_800.webp": {
+  "height": 1140,
+  "source": "DSCF7724.jpg",
+  "source_size": 12830775,
+  "width": 800
+ },
+ "DSCF7724_og.jpg": {
+  "height": 630,
+  "source": "DSCF7724.jpg",
+  "source_size": 12830775,
+  "width": 1200
+ },
+ "DSCF7726_1600.webp": {
+  "height": 2281,
+  "source": "DSCF7726.jpg",
+  "source_size": 12694668,
+  "width": 1600
+ },
+ "DSCF7726_2400.webp": {
+  "height": 3421,
+  "source": "DSCF7726.jpg",
+  "source_size": 12694668,
+  "width": 2400
+ },
+ "DSCF7726_800.webp": {
+  "height": 1140,
+  "source": "DSCF7726.jpg",
+  "source_size": 12694668,
+  "width": 800
+ },
+ "DSCF7726_og.jpg": {
+  "height": 630,
+  "source": "DSCF7726.jpg",
+  "source_size": 12694668,
+  "width": 1200
+ },
+ "DSCF7730_1600.webp": {
+  "height": 2281,
+  "source": "DSCF7730.jpg",
+  "source_size": 13833811,
+  "width": 1600
+ },
+ "DSCF7730_2400.webp": {
+  "height": 3421,
+  "source": "DSCF7730.jpg",
+  "source_size": 13833811,
+  "width": 2400
+ },
+ "DSCF7730_800.webp": {
+  "height": 1140,
+  "source": "DSCF7730.jpg",
+  "source_size": 13833811,
+  "width": 800
+ },
+ "DSCF7730_og.jpg": {
+  "height": 630,
+  "source": "DSCF7730.jpg",
+  "source_size": 13833811,
+  "width": 1200
+ },
+ "DSCF7732_1600.webp": {
+  "height": 2281,
+  "source": "DSCF7732.jpg",
+  "source_size": 14003243,
+  "width": 1600
+ },
+ "DSCF7732_2400.webp": {
+  "height": 3421,
+  "source": "DSCF7732.jpg",
+  "source_size": 14003243,
+  "width": 2400
+ },
+ "DSCF7732_800.webp": {
+  "height": 1140,
+  "source": "DSCF7732.jpg",
+  "source_size": 14003243,
+  "width": 800
+ },
+ "DSCF7732_og.jpg": {
+  "height": 630,
+  "source": "DSCF7732.jpg",
+  "source_size": 14003243,
+  "width": 1200
+ },
+ "DSCF9525_1600.webp": {
+  "height": 2290,
+  "source": "DSCF9525.jpg",
+  "source_size": 5448202,
+  "width": 1600
+ },
+ "DSCF9525_2400.webp": {
+  "height": 3435,
+  "source": "DSCF9525.jpg",
+  "source_size": 5448202,
+  "width": 2400
+ },
+ "DSCF9525_800.webp": {
+  "height": 1145,
+  "source": "DSCF9525.jpg",
+  "source_size": 5448202,
+  "width": 800
+ },
+ "DSCF9525_og.jpg": {
+  "height": 630,
+  "source": "DSCF9525.jpg",
+  "source_size": 5448202,
+  "width": 1200
+ },
+ "DSCF9528_1600.webp": {
+  "height": 2327,
+  "source": "DSCF9528.jpg",
+  "source_size": 5150215,
+  "width": 1600
+ },
+ "DSCF9528_2400.webp": {
+  "height": 3491,
+  "source": "DSCF9528.jpg",
+  "source_size": 5150215,
+  "width": 2400
+ },
+ "DSCF9528_800.webp": {
+  "height": 1164,
+  "source": "DSCF9528.jpg",
+  "source_size": 5150215,
+  "width": 800
+ },
+ "DSCF9528_og.jpg": {
+  "height": 630,
+  "source": "DSCF9528.jpg",
+  "source_size": 5150215,
+  "width": 1200
+ },
+ "KMRY9417-20_1600.webp": {
+  "height": 2286,
+  "source": "KMRY9417-20.jpg",
+  "source_size": 10372394,
+  "width": 1600
+ },
+ "KMRY9417-20_2400.webp": {
+  "height": 3428,
+  "source": "KMRY9417-20.jpg",
+  "source_size": 10372394,
+  "width": 2400
+ },
+ "KMRY9417-20_800.webp": {
+  "height": 1143,
+  "source": "KMRY9417-20.jpg",
+  "source_size": 10372394,
+  "width": 800
+ },
+ "KMRY9417-20_og.jpg": {
+  "height": 630,
+  "source": "KMRY9417-20.jpg",
+  "source_size": 10372394,
+  "width": 1200
+ },
+ "KMRY9423_1600.webp": {
+  "height": 2286,
+  "source": "KMRY9423.jpg",
+  "source_size": 10053228,
+  "width": 1600
+ },
+ "KMRY9423_2400.webp": {
+  "height": 3428,
+  "source": "KMRY9423.jpg",
+  "source_size": 10053228,
+  "width": 2400
+ },
+ "KMRY9423_800.webp": {
+  "height": 1143,
+  "source": "KMRY9423.jpg",
+  "source_size": 10053228,
+  "width": 800
+ },
+ "KMRY9423_og.jpg": {
+  "height": 630,
+  "source": "KMRY9423.jpg",
+  "source_size": 10053228,
+  "width": 1200
+ },
+ "Sprzezenie-zwrotne202620_1600.webp": {
+  "height": 739,
+  "source": "Sprzezenie-zwrotne202620.jpg",
+  "source_size": 204647,
+  "width": 1600
+ },
+ "Sprzezenie-zwrotne202620_800.webp": {
+  "height": 370,
+  "source": "Sprzezenie-zwrotne202620.jpg",
+  "source_size": 204647,
+  "width": 800
+ },
+ "Sprzezenie-zwrotne202620_og.jpg": {
+  "height": 630,
+  "source": "Sprzezenie-zwrotne202620.jpg",
+  "source_size": 204647,
+  "width": 1200
+ },
+ "Warstwa-1_1600.webp": {
+  "height": 2281,
+  "source": "Warstwa 1.jpg",
+  "source_size": 13750597,
+  "width": 1600
+ },
+ "Warstwa-1_2400.webp": {
+  "height": 3421,
+  "source": "Warstwa 1.jpg",
+  "source_size": 13750597,
+  "width": 2400
+ },
+ "Warstwa-1_800.webp": {
+  "height": 1140,
+  "source": "Warstwa 1.jpg",
+  "source_size": 13750597,
+  "width": 800
+ },
+ "Warstwa-1_og.jpg": {
+  "height": 630,
+  "source": "Warstwa 1.jpg",
+  "source_size": 13750597,
+  "width": 1200
+ },
+ "aqualines-img_1600.webp": {
+  "height": 739,
+  "source": "aqualines-img.jpg",
+  "source_size": 105164,
+  "width": 1600
+ },
+ "aqualines-img_800.webp": {
+  "height": 370,
+  "source": "aqualines-img.jpg",
+  "source_size": 105164,
+  "width": 800
+ },
+ "aqualines-img_og.jpg": {
+  "height": 630,
+  "source": "aqualines-img.jpg",
+  "source_size": 105164,
+  "width": 1200
+ },
+ "og-image.jpg": {
+  "height": 630,
+  "source": "DSCF7726.jpg",
+  "source_size": 12694668,
+  "width": 1200
+ }
+}

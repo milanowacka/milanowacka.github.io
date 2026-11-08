@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Page not found | Mila Nowacka</title>
+		<meta name="description" content="This page does not exist. Browse the drawings, video works and biography of Mila Nowacka.">
+		<link rel="canonical" href="https://milanowacka.github.io/404.html">
+		<meta name="robots" content="noindex, follow">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Mila Nowacka">
+		<meta property="og:title" content="Page not found | Mila Nowacka">
+		<meta property="og:description" content="This page does not exist. Browse the drawings, video works and biography of Mila Nowacka.">
+		<meta property="og:url" content="https://milanowacka.github.io/404.html">
+		<meta property="og:locale" content="en_GB">
+		<meta name="twitter:title" content="Page not found | Mila Nowacka">
+		<meta name="twitter:description" content="This page does not exist. Browse the drawings, video works and biography of Mila Nowacka.">
+		<link rel="icon" href="favicon.ico" sizes="32x32">
+		<link rel="preload" href="content/open-sans-latin-300.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<nav aria-label="Main">
+				<h1 id="logo"><a href="index.html">Mila Nowacka</a></h1>
+					<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Menu">
+						<img src="content/slimaczek.png" width="74" height="74" alt="">
+					</button>
+					<ul id="main-menu">
+					<li><a href="drawing.html">Drawing</a></li>
+					<li><a href="video.html">Video</a></li>
+					<li><a href="workshops.html">Workshops</a></li>
+					<li><a href="cv.html">CV</a></li>
+					<li><a href="about.html">About</a></li>
+					</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="text-page">
+				<p>Page not found.</p>
+				<p><a href="/">home</a> · <a href="/drawing.html">drawings</a> · <a href="/video.html">video works</a> · <a href="/about.html">about the artist</a></p>
+			</section>
+		</main>
+		<script>
+			const menuToggle = document.querySelector('.menu-toggle');
+			menuToggle.addEventListener('click', () => {
+				const open = document.body.classList.toggle('menu-open');
+				menuToggle.setAttribute('aria-expanded', open);
+			});
+		</script>
+	</body>
+</html>
