@@ -117,6 +117,30 @@
 				const open = document.body.classList.toggle('menu-open');
 				menuToggle.setAttribute('aria-expanded', open);
 			});
+			// Works "train": wheel and mouse-drag scroll it sideways (touch/trackpad scroll natively)
+			const train = document.querySelector('.works');
+			if (train) {
+				train.addEventListener('wheel', (e) => {
+					if (window.innerWidth > 700 && Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+						train.scrollLeft += e.deltaY;
+						e.preventDefault();
+					}
+				}, { passive: false });
+				let down = false, moved = false, startX = 0, startLeft = 0;
+				train.addEventListener('pointerdown', (e) => {
+					if (e.pointerType !== 'mouse') return;
+					down = true; moved = false; startX = e.clientX; startLeft = train.scrollLeft;
+				});
+				window.addEventListener('pointermove', (e) => {
+					if (!down) return;
+					const dx = e.clientX - startX;
+					if (Math.abs(dx) > 4) { moved = true; train.classList.add('dragging'); }
+					train.scrollLeft = startLeft - dx;
+				});
+				window.addEventListener('pointerup', () => { down = false; train.classList.remove('dragging'); });
+				train.addEventListener('click', (e) => { if (moved) { e.preventDefault(); moved = false; } }, true);
+				train.addEventListener('dragstart', (e) => e.preventDefault());
+			}
 		</script>
 	</body>
 </html>

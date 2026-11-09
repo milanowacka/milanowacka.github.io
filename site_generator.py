@@ -15,6 +15,7 @@ import datetime as dt
 import html
 import json
 import re
+import subprocess
 from pathlib import Path
 
 from PIL import Image
@@ -36,18 +37,19 @@ META_DESCRIPTION_MAX = 155
 
 NAV = [("drawing.html", "Drawing"), ("video.html", "Video"), ("workshops.html", "Workshops"),
        ("cv.html", "CV"), ("about.html", "About")]
-HOME_GRID_COUNT = 4             # drawings shown on the home page
 
 
 # --------------------------------------------------------------------------- #
 # Markdown helpers
 # --------------------------------------------------------------------------- #
 def md_links_to_html(text: str) -> str:
-    return re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', text)
+    text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', text)
+    return re.sub(r'(?<![\w*])\*([^*\n]+)\*(?![\w*])', r'<em>\1</em>', text)
 
 
 def md_links_to_text(text: str) -> str:
-    return re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'\1', text)
+    text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'\1', text)
+    return re.sub(r'(?<![\w*])\*([^*\n]+)\*(?![\w*])', r'\1', text)
 
 
 def plain_text(text: str) -> str:
@@ -164,6 +166,59 @@ def parse_video_meta(description: str) -> dict:
     return meta
 
 
+def strip_comments(text: str) -> str:
+    return re.sub(r'<!--.*?-->', '', text, flags=re.DOTALL).strip()
+
+
+IMAGE_LINE = re.compile(r'!\[([^\]]*)\]\(([^)]+)\)')
+
+
+def parse_cv(raw: str) -> tuple:
+    """CV markdown → ([(label, body_markdown)], [image dicts]).
+    Labels are the ALL-CAPS lines (EXHIBITIONS, PUBLICATIONS, …)."""
+    sections, images, cur = [], [], None
+    for line in raw.split('\n'):
+        st = line.strip()
+        m = IMAGE_LINE.fullmatch(st)
+        if m:
+            images.append({'file': m.group(2).strip(), 'alt': m.group(1).strip()})
+        elif re.fullmatch(r'[A-Z][A-Z ]{2,}', st):
+            cur = [st, []]
+            sections.append(cur)
+        else:
+            if cur is None:
+                cur = ['', []]
+                sections.append(cur)
+            cur[1].append(line)
+    return [(label, '\n'.join(body).strip()) for label, body in sections
+            if label or '\n'.join(body).strip()], images
+
+
+def parse_workshops(raw: str) -> list:
+    """Each '## Title' block → {'title', 'text', 'images': [up to 3]}."""
+    events = []
+    for m in re.finditer(r'^## (.+?)\s*\n(.*?)(?=^## |\Z)', raw, re.DOTALL | re.MULTILINE):
+        body = m.group(2)
+        images = [{'file': i.group(2).strip(), 'alt': i.group(1).strip()} for i in IMAGE_LINE.finditer(body)]
+        text = IMAGE_LINE.sub('', body).strip()
+        events.append({'title': m.group(1).strip(), 'text': text, 'images': images[:3]})
+    return events
+
+
+def video_resolution(path: Path) -> str | None:
+    """'1920 × 1080 px' read with ffprobe (None when ffprobe or the file is missing)."""
+    try:
+        out = subprocess.run(
+            ['ffprobe', '-v', 'error', '-select_streams', 'v:0',
+             '-show_entries', 'stream=width,height', '-of', 'csv=p=0', str(path)],
+            capture_output=True, text=True, check=True, timeout=30).stdout.strip()
+        w, h = out.split(',')[:2]
+        return f"{int(w)} × {int(h)} px"
+    except (OSError, ValueError, subprocess.SubprocessError):
+        print(f"  ! ffprobe could not read {path.name}; resolution omitted")
+        return None
+
+
 def parse_content(content: str) -> dict:
     sections = split_sections(content)
 
@@ -216,8 +271,8 @@ def parse_content(content: str) -> dict:
         })
 
     return {
-        'cv': sections.get('CV', '').strip(),
-        'workshops': sections.get('Workshops', '').strip(),
+        'cv': strip_comments(sections.get('CV', '')),
+        'workshops': strip_comments(sections.get('Workshops', '')),
         'home': home_raw,
         'about': about_raw,
         'about_intro': about_intro,
@@ -458,7 +513,7 @@ def render_page(*, title, description, path, body, nav_html, prefix='',
 			</nav>
 		</header>
 {body}
-{menu_script()}
+{page_script()}
 	</body>
 </html>
 """
@@ -479,13 +534,37 @@ def main_nav(active: str, prefix: str = '') -> str:
 					</ul>'''
 
 
-def menu_script() -> str:
+def page_script() -> str:
     return """		<script>
 			const menuToggle = document.querySelector('.menu-toggle');
 			menuToggle.addEventListener('click', () => {
 				const open = document.body.classList.toggle('menu-open');
 				menuToggle.setAttribute('aria-expanded', open);
 			});
+			// Works "train": wheel and mouse-drag scroll it sideways (touch/trackpad scroll natively)
+			const train = document.querySelector('.works');
+			if (train) {
+				train.addEventListener('wheel', (e) => {
+					if (window.innerWidth > 700 && Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+						train.scrollLeft += e.deltaY;
+						e.preventDefault();
+					}
+				}, { passive: false });
+				let down = false, moved = false, startX = 0, startLeft = 0;
+				train.addEventListener('pointerdown', (e) => {
+					if (e.pointerType !== 'mouse') return;
+					down = true; moved = false; startX = e.clientX; startLeft = train.scrollLeft;
+				});
+				window.addEventListener('pointermove', (e) => {
+					if (!down) return;
+					const dx = e.clientX - startX;
+					if (Math.abs(dx) > 4) { moved = true; train.classList.add('dragging'); }
+					train.scrollLeft = startLeft - dx;
+				});
+				window.addEventListener('pointerup', () => { down = false; train.classList.remove('dragging'); });
+				train.addEventListener('click', (e) => { if (moved) { e.preventDefault(); moved = false; } }, true);
+				train.addEventListener('dragstart', (e) => e.preventDefault());
+			}
 		</script>"""
 
 
@@ -553,18 +632,28 @@ def video_jsonld(v: dict, poster: dict, url: str) -> dict:
 # Site generation
 # --------------------------------------------------------------------------- #
 def work_card(anchor: str, title: str, caption_html: str, href: str, variants: list,
-              alt: str, label: str, eager: bool = False) -> str:
-    """Grid card: caption above, image (linking to the detail page) below."""
+              alt: str, label: str, eager: bool = False, kind: str = 'drawing') -> str:
+    """Train tile: caption above, image (linking to the detail page) below."""
     loading = 'fetchpriority="high"' if eager else 'loading="lazy"'
-    return f'''<article id="{anchor}" class="work">
+    sizes = '(max-width: 700px) 100vw, 290px' if kind == 'drawing' else '(max-width: 700px) 100vw, 42vw'
+    return f'''<article id="{anchor}" class="work {kind}">
 					<div class="caption"><h2>{esc(title)}</h2>{caption_html}</div>
 					<a href="{href}" aria-label="{esc(label)}">
 						<img src="views/{variants[0]['name']}" srcset="{srcset(variants, '')}"
-							sizes="(max-width: 700px) 100vw, 25vw"
+							sizes="{sizes}"
 							width="{variants[0]['width']}" height="{variants[0]['height']}"
 							alt="{esc(alt)}" {loading}>
 					</a>
 				</article>'''
+
+
+def zones_page(*, caption: str = '', text: str = '', media: str = '', css: str = '') -> str:
+    """Three-zone content layout: left margin | text block | image."""
+    return f'''<article class="detail {css}">
+				<div class="detail-caption">{caption}</div>
+				<div class="detail-text">{text}</div>
+				{media}
+			</article>'''
 
 
 def generate_site(base_dir: Path = Path(".")) -> None:
@@ -692,8 +781,17 @@ def generate_site(base_dir: Path = Path(".")) -> None:
         html_outputs.add(preview_name)
         print(f"  ✓ {v['thumbnail']} → images + video detail page")
 
-        v['card'] = work_card(f"video{i}", v['title'], caption_html, f"views/{preview_name}",
-                              posters, v['alt'], f"Play {v['title']}", eager=(i == 1))
+        tile_lines = []
+        if v['meta'].get('duration_text'):
+            tile_lines.append(f"duration: {v['meta']['duration_text']} minutes")
+        resolution = video_resolution(content_dir / v['video'])
+        if resolution:
+            tile_lines.append(resolution)
+        if v['meta'].get('year'):
+            tile_lines.append(v['meta']['year'])
+        tile_caption = '<p>' + '<br>'.join(tile_lines) + '</p>' if tile_lines else caption_html
+        v['card'] = work_card(f"video{i}", v['title'], tile_caption, f"views/{preview_name}",
+                              posters, v['alt'], f"Play {v['title']}", eager=(i == 1), kind='video')
 
     def grid(cards: list, label: str) -> str:
         joined = '\n\t\t\t\t'.join(cards)
@@ -703,7 +801,7 @@ def generate_site(base_dir: Path = Path(".")) -> None:
 
     # ---- index.html -------------------------------------------------------
     index_body = f"""		<main>
-			{grid([d['card'] for d in drawings[:HOME_GRID_COUNT]], 'Selected drawings')}
+			{grid([d['card'] for d in drawings], 'Selected drawings')}
 		</main>"""
     (base_dir / 'index.html').write_text(render_page(
         title=f"{ARTIST_NAME} – visual artist | drawing and video",
@@ -720,32 +818,19 @@ def generate_site(base_dir: Path = Path(".")) -> None:
 
     # ---- about.html -------------------------------------------------------
     about_blocks = render_about_blocks(data['about'])
+    about_media = ''
     if portrait_variants:
-        img = f'''<img class="about-image" src="views/{portrait_variants[-1]['name']}" srcset="{srcset(portrait_variants, '')}"
-					sizes="(max-width: 700px) 100vw, 35vw" width="{portrait['width']}" height="{portrait['height']}"
-					alt="Portrait of {ARTIST_NAME}">'''
-        about_body = f"""		<main>
-			<section id="about">
-			<div class="about-content">
-				{img}
-				<div class="about-text">
-				{about_blocks}
-				</div>
-			</div>
-		</section>
-		</main>"""
-    else:
-        about_body = f"""		<main>
-			<section id="about">
-				<div class="about-text">
-				{about_blocks}
-				</div>
-			</section>
+        about_media = f'''<figure class="detail-media">
+					<img src="views/{portrait_variants[0]['name']}" srcset="{srcset(portrait_variants, '')}"
+						sizes="(max-width: 700px) 100vw, 30vw" width="{portrait_variants[0]['width']}" height="{portrait_variants[0]['height']}"
+						alt="Portrait of {ARTIST_NAME}">
+				</figure>'''
+    about_body = f"""		<main>
+			{zones_page(text=about_blocks, media=about_media, css='about')}
 		</main>"""
     about_graph = [dict(person, mainEntityOfPage=f"{SITE_URL}/about.html")]
-    about_graph += parse_upcoming_events(data['about'])
     (base_dir / 'about.html').write_text(render_page(
-        title=f"About – biography, exhibitions and publications | {ARTIST_NAME}",
+        title=f"About – biography | {ARTIST_NAME}",
         description=truncate(data['about_intro']),
         path='about.html',
         body=about_body,
@@ -754,7 +839,7 @@ def generate_site(base_dir: Path = Path(".")) -> None:
         jsonld={"@context": "https://schema.org", "@graph": about_graph},
         preload_image=portrait_variants[0] if portrait_variants else None,
     ), encoding='utf-8')
-    print(f"✓ Wrote about.html ({len(about_graph) - 1} upcoming event(s) in structured data)")
+    print("✓ Wrote about.html")
 
     # ---- drawing.html -----------------------------------------------------
     series_part = ' and '.join(f"{s}" for s in series_names)
@@ -810,30 +895,77 @@ def generate_site(base_dir: Path = Path(".")) -> None:
     ), encoding='utf-8')
     print(f"✓ Wrote video.html with {len(videos)} videos")
 
-    # ---- cv.html / workshops.html (empty until content is added) -----------
+    # ---- cv.html ----------------------------------------------------------
+    def content_images(items: list, sizes: str, css: str = '') -> str:
+        out = []
+        for im in items:
+            variants = [images.resized(im['file'], w) for w in THUMB_WIDTHS]
+            v = variants[0]
+            out.append(f'<img src="views/{v["name"]}" srcset="{srcset(variants, "")}" sizes="{sizes}" '
+                       f'width="{v["width"]}" height="{v["height"]}" alt="{esc(im["alt"])}" loading="lazy">')
+        return '\n\t\t\t\t\t'.join(out)
+
+    cv_sections, cv_images = parse_cv(data['cv'])
     text_pages = []
-    for key, label, blurb in (
-            ('cv', 'CV', 'Curriculum vitae'),
-            ('workshops', 'Workshops', 'Workshops')):
-        raw = data[key]
-        blocks = render_about_blocks(raw) if raw else ''
-        body = f"""		<main>
-			<section id="{key}" class="text-page" aria-label="{label}">
-				{blocks}
-			</section>
+    if cv_sections:
+        rows = []
+        for label, body in cv_sections:
+            rows.append(f'<div class="detail-caption"><h2>{esc(label)}</h2></div>\n\t\t\t\t'
+                        f'<div class="detail-text">{render_about_blocks(body)}</div>')
+        media = ''
+        if cv_images:
+            media = (f'<div class="detail-media stack" style="grid-row: 1 / span {len(cv_sections)}">'
+                     f'{content_images(cv_images, "(max-width: 700px) 100vw, 18vw")}</div>')
+        cv_body = f"""		<main>
+			<article class="detail cv">
+				{chr(10).join(rows)}
+				{media}
+			</article>
 		</main>"""
-        (base_dir / f'{key}.html').write_text(render_page(
-            title=f"{label} | {ARTIST_NAME}",
-            description=truncate(raw) if raw else f"{blurb} of {ARTIST_NAME}, visual artist working in drawing and video.",
-            path=f'{key}.html',
-            body=body,
-            nav_html=main_nav(f'{key}.html'),
-            og_image=site_share, og_image_alt=site_share_alt,
-            noindex=not raw,
-        ), encoding='utf-8')
-        if raw:
-            text_pages.append(f'{key}.html')
-        print(f"✓ Wrote {key}.html ({'content' if raw else 'empty, noindex'})")
+    else:
+        cv_body = '\t\t<main>\n\t\t\t<section class="text-page" aria-label="CV"></section>\n\t\t</main>'
+    (base_dir / 'cv.html').write_text(render_page(
+        title=f"CV – exhibitions, publications and collaborations | {ARTIST_NAME}",
+        description=f"Curriculum vitae of {ARTIST_NAME}: exhibitions, publications, collaborations and video shows.",
+        path='cv.html',
+        body=cv_body,
+        nav_html=main_nav('cv.html'),
+        og_image=site_share, og_image_alt=site_share_alt,
+        jsonld={"@context": "https://schema.org",
+                "@graph": [dict(person, mainEntityOfPage=f"{SITE_URL}/cv.html")] + parse_upcoming_events(data['cv'])},
+        noindex=not cv_sections,
+    ), encoding='utf-8')
+    if cv_sections:
+        text_pages.append('cv.html')
+    print(f"✓ Wrote cv.html ({len(cv_sections)} section(s))")
+
+    # ---- workshops.html ---------------------------------------------------
+    events = parse_workshops(data['workshops'])
+    if events:
+        event_html = []
+        for ev in events:
+            media = ''
+            if ev['images']:
+                media = (f'<div class="detail-media trio">'
+                         f'{content_images(ev["images"], "(max-width: 700px) 100vw, 36vw")}</div>')
+            event_html.append(zones_page(caption=f'<h2>{esc(ev["title"])}</h2>',
+                                         text=render_about_blocks(ev['text']), media=media, css='event'))
+        workshops_body = '\t\t<main>\n\t\t\t' + '\n\t\t\t'.join(event_html) + '\n\t\t</main>'
+        workshops_desc = truncate(events[0]['text']) or f"Workshops by {ARTIST_NAME}."
+        text_pages.append('workshops.html')
+    else:
+        workshops_body = '\t\t<main>\n\t\t\t<section class="text-page" aria-label="Workshops"></section>\n\t\t</main>'
+        workshops_desc = f"Workshops by {ARTIST_NAME}, visual artist working in drawing and video."
+    (base_dir / 'workshops.html').write_text(render_page(
+        title=f"Workshops | {ARTIST_NAME}",
+        description=workshops_desc,
+        path='workshops.html',
+        body=workshops_body,
+        nav_html=main_nav('workshops.html'),
+        og_image=site_share, og_image_alt=site_share_alt,
+        noindex=not events,
+    ), encoding='utf-8')
+    print(f"✓ Wrote workshops.html ({len(events)} event(s){'' if events else ', empty, noindex'})")
 
     # ---- 404.html ---------------------------------------------------------
     body_404 = """		<main>

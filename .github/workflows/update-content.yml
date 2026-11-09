@@ -48,6 +48,10 @@ jobs:
       if: steps.check.outputs.changed == 'true'
       run: pip install Pillow
 
+    - name: Install ffmpeg (ffprobe reads video resolution)
+      if: steps.check.outputs.changed == 'true'
+      run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
     - name: Run content update script
       if: steps.check.outputs.changed == 'true'
       run: python update_content.py

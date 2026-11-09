@@ -107,29 +107,60 @@ main {
     padding: 0 var(--page-margin) 60px;
 }
 
-/* -------------------------------------------------------- works grid */
+/* ------------------------------------------------- works "train" */
+/* One horizontal strip of tiles anchored to the bottom of the screen,
+   empty space above; scrolls sideways (wheel, drag, touch). */
+main:has(.works) { padding: 0; }
 .works {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 8px;
-    row-gap: 40px;
-    padding-top: 90px;
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    height: calc(100svh - 50px);
+    padding: 0 0 7vh var(--page-margin);
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    cursor: grab;
 }
-.home-page .works { padding-top: 160px; }
+.works::-webkit-scrollbar { display: none; }
+.works::after { content: ""; flex: 0 0 var(--page-margin); }
+.works.dragging { cursor: grabbing; user-select: none; }
 
 .work {
-    display: grid;
-    grid-template-rows: subgrid;
-    grid-row: span 2;
+    flex: 0 0 auto;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
     row-gap: 10px;
 }
-.work img, .detail-media img { display: block; width: 100%; height: auto; }
+.work img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    user-select: none;
+}
+.work.video { width: 42vw; }
+.work.video img { height: auto; aspect-ratio: 16 / 9; }
+.work.video a { position: relative; display: block; }
+.work.video a::after {
+    content: "";
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.45) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M3 1.5v7l5.5-3.5z' fill='white'/%3E%3C/svg%3E") center / 50% no-repeat;
+}
 
 .caption h2 { font-weight: 300; }
 .caption p { margin: 0; }
 .caption p + p { margin-top: 0.5em; }
 
-/* ----------------------------------------------------------- detail pages */
+/* ------------------------------------- three-zone content layout
+   left margin (titles) | text block | image. Used by About, CV, Workshops
+   and the single-work detail pages. Any zone may stay empty. */
 .detail {
     display: grid;
     grid-template-columns: 12vw 31vw 1fr;
@@ -137,42 +168,38 @@ main {
     padding-top: 90px;
     align-items: start;
 }
+.detail + .detail { padding-top: 70px; }
 .detail-caption h2 { font-weight: 300; }
 .detail-caption p { margin: 0; }
 .detail-caption p + p { margin-top: 0.5em; }
-.detail-text { font-size: 9pt; }
-.detail-text p { margin: 0 0 1.3em 0; }
-.detail-media { margin: 0; justify-self: end; max-width: 100%; }
-.detail-media img { width: auto; max-width: 100%; max-height: 72vh; }
+.detail-caption { grid-column: 1; }
+.detail-text { grid-column: 2; font-size: 8.5pt; }
+.detail-text p, .detail-text ul { margin: 0 0 1.3em 0; }
+.detail-text h2, .detail-text h3 { margin: 1.3em 0 0.3em; }
+.detail-text h3 { margin-top: 0; }
+.detail-text ul { list-style: none; padding: 0; }
+.detail-text li::before { content: "· "; }
+.detail-media { grid-column: 3; margin: 0; justify-self: end; max-width: 100%; }
+.detail-media img { display: block; width: auto; max-width: 100%; max-height: 72vh; }
 .detail-video { display: block; width: 100%; max-height: 72vh; background: #000; }
 .detail-media:has(.detail-video) { width: 100%; }
+.detail.about .detail-media img { max-height: 62vh; }
 
-/* ------------------------------------------------------------ text pages */
+/* CV: label | text rows, images stacked on the right spanning all rows */
+.cv .detail-media { grid-row: 1; align-self: start; width: 18vw; }
+.stack img { width: 100%; max-height: none; margin-bottom: 16px; }
+
+/* Workshops: first image on top, second bottom-left, third bottom-right */
+.trio {
+    width: 36vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+}
+.trio img { width: 100%; max-height: none; height: 100%; object-fit: cover; aspect-ratio: 1; }
+.trio img:first-child { grid-column: 1 / -1; aspect-ratio: 16 / 9; }
+
 .text-page { padding-top: 90px; max-width: 700px; }
-.text-page:empty { padding-top: 0; }
-
-#about { padding-top: 90px; }
-.about-content {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    align-items: flex-start;
-}
-.about-content .about-text { order: 1; max-width: 700px; flex: 1; font-size: 9pt; }
-.about-image {
-    order: 2;
-    width: 35%;
-    max-width: 40vw;
-    height: auto;
-    flex-shrink: 0;
-    object-fit: cover;
-}
-/* headings and lists are rendered as plain text */
-#about h2, #about h3 { margin: 1.4em 0; }
-#about h3 { margin: 0; }
-#about p, #about ul { margin: 0 0 1.4em 0; }
-#about ul { list-style: none; padding: 0; }
-#about li::before { content: "· "; }
 
 /* ----------------------------------------------------------------- misc */
 .visually-hidden {
@@ -216,24 +243,28 @@ main {
     nav a[aria-current="page"] { text-decoration: none; }
 
     main { padding-bottom: 40px; }
-    .works { grid-template-columns: 1fr; row-gap: 30px; padding-top: 40px; }
-    .home-page .works { padding-top: 40px; }
-    .work { grid-template-rows: auto auto; grid-row: auto; row-gap: 14px; }
+
+    /* train → plain vertical list, tiles keep their proportions */
+    main:has(.works) { padding: 0 var(--page-margin) 40px; }
+    .works {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+        height: auto;
+        padding: 40px 0 0;
+        overflow: visible;
+        cursor: auto;
+    }
+    .works::after { display: none; }
+    .work, .work.video { width: 100%; }
+    .work img { height: auto; aspect-ratio: 290 / 360; }
+    .work.video img { aspect-ratio: 16 / 9; }
 
     .detail { display: flex; flex-direction: column; padding-top: 40px; row-gap: 24px; }
-    .detail-media { order: -1; justify-self: auto; width: 100%; }
+    .detail + .detail { padding-top: 50px; }
+    .detail-media, .cv .detail-media, .trio { order: -1; justify-self: auto; width: 100%; }
+    .cv .detail-media { order: 99; }
     .detail-media img { width: 100%; max-height: none; }
     .detail-text { font-size: inherit; }
-
-    #about { padding-top: 40px; }
-    .about-content { flex-direction: column; gap: 30px; }
-    .about-content .about-text { font-size: inherit; }
-    .about-image { order: 0; width: 100%; max-width: 100%; }
-}
-
-@media (min-width: 701px) and (max-width: 1000px) {
-    .works { grid-template-columns: repeat(2, 1fr); }
-    .work { grid-row: span 2; }
-    .detail { grid-template-columns: 22vw 1fr; }
-    .detail-media { grid-column: 1 / -1; justify-self: start; margin-top: 30px; }
+    .detail-caption:empty { display: none; }
 }
