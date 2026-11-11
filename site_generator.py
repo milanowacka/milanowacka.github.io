@@ -635,7 +635,7 @@ def work_card(anchor: str, title: str, caption_html: str, href: str, variants: l
               alt: str, label: str, eager: bool = False, kind: str = 'drawing') -> str:
     """Train tile: caption above, image (linking to the detail page) below."""
     loading = 'fetchpriority="high"' if eager else 'loading="lazy"'
-    sizes = '(max-width: 700px) 100vw, 290px' if kind == 'drawing' else '(max-width: 700px) 100vw, 42vw'
+    sizes = '(max-width: 700px) 160vw, 464px'  # tiles are shown enlarged (see --tile-zoom)
     return f'''<article id="{anchor}" class="work {kind}">
 					<div class="caption"><h2>{esc(title)}</h2>{caption_html}</div>
 					<a href="{href}" aria-label="{esc(label)}">
@@ -757,7 +757,7 @@ def generate_site(base_dir: Path = Path(".")) -> None:
 
         caption_html, text_html = split_description(v['description'])
         preview_body = f"""		<main>
-			<article class="detail">
+			<article class="detail video-detail">
 				<div class="detail-caption"><h2>{esc(v['title'])}</h2>{caption_html}</div>
 				<div class="detail-text">{text_html}</div>
 				<div class="detail-media">
@@ -822,7 +822,7 @@ def generate_site(base_dir: Path = Path(".")) -> None:
     if portrait_variants:
         about_media = f'''<figure class="detail-media">
 					<img src="views/{portrait_variants[0]['name']}" srcset="{srcset(portrait_variants, '')}"
-						sizes="(max-width: 700px) 100vw, 30vw" width="{portrait_variants[0]['width']}" height="{portrait_variants[0]['height']}"
+						sizes="(max-width: 700px) 100vw, 400px" width="{portrait_variants[0]['width']}" height="{portrait_variants[0]['height']}"
 						alt="Portrait of {ARTIST_NAME}">
 				</figure>'''
     about_body = f"""		<main>

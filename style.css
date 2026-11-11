@@ -139,11 +139,14 @@ main:has(.works) { padding: 0; }
     height: 360px;
     object-fit: cover;
     user-select: none;
+    zoom: 1.2;
 }
-.work.video { width: 42vw; }
-.work.video img { height: auto; aspect-ratio: 16 / 9; }
-.work.video a { position: relative; display: block; }
-.work.video a::after {
+/* Drawing and video tiles show only the centre of the artwork: the image is enlarged
+   inside a fixed-size tile and its outer parts are cropped. 1 = whole crop. */
+.work { --tile-zoom: 1.6; }
+.work > a { position: relative; display: block; height: 360px; overflow: hidden; }
+.work img { height: 100%; transform: scale(var(--tile-zoom)); }
+.work.video > a::after {
     content: "";
     position: absolute;
     right: 14px;
@@ -183,10 +186,22 @@ main:has(.works) { padding: 0; }
 .detail-media img { display: block; width: auto; max-width: 100%; max-height: 72vh; }
 .detail-video { display: block; width: 100%; max-height: 72vh; background: #000; }
 .detail-media:has(.detail-video) { width: 100%; }
-.detail.about .detail-media img { max-height: 62vh; }
+/* About portrait is never scaled: it keeps a fixed pixel size and is cropped
+   (centred) by its frame when the window is too narrow or too short. */
+.detail.about .detail-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: min(100%, 400px);
+    max-height: 62vh;
+}
+.detail.about .detail-media img { flex: none; width: 400px; max-width: none; max-height: none; height: auto; }
 
-/* CV: label | text rows, images stacked on the right spanning all rows */
-.cv .detail-media { grid-row: 1; align-self: start; width: 18vw; }
+/* CV: label | text rows (text = 75% of the content width), images stacked
+   in the remaining column on the right, spanning all rows */
+.cv { grid-template-columns: 12vw 75% 1fr; }
+.cv .detail-media { grid-row: 1; align-self: start; width: 100%; }
 .stack img { width: 100%; max-height: none; margin-bottom: 16px; }
 
 /* Workshops: first image on top, second bottom-left, third bottom-right */
@@ -198,6 +213,12 @@ main:has(.works) { padding: 0; }
 }
 .trio img { width: 100%; max-height: none; height: 100%; object-fit: cover; aspect-ratio: 1; }
 .trio img:first-child { grid-column: 1 / -1; aspect-ratio: 16 / 9; }
+
+/* Video detail: title | text on the first row, the video below the text;
+   the text column and the video are 75% of the content width. */
+.video-detail { grid-template-columns: 12vw 75% 1fr; row-gap: 30px; }
+.video-detail .detail-media { grid-column: 2; grid-row: 2; justify-self: stretch; width: 100%; }
+.video-detail .detail-video { max-height: none; aspect-ratio: 16 / 9; }
 
 .text-page { padding-top: 90px; max-width: 700px; }
 
@@ -256,15 +277,16 @@ main:has(.works) { padding: 0; }
         cursor: auto;
     }
     .works::after { display: none; }
-    .work, .work.video { width: 100%; }
-    .work img { height: auto; aspect-ratio: 290 / 360; }
-    .work.video img { aspect-ratio: 16 / 9; }
+    .work { width: 100%; }
+    .work > a { height: auto; aspect-ratio: 290 / 360; }
 
     .detail { display: flex; flex-direction: column; padding-top: 40px; row-gap: 24px; }
     .detail + .detail { padding-top: 50px; }
     .detail-media, .cv .detail-media, .trio { order: -1; justify-self: auto; width: 100%; }
     .cv .detail-media { order: 99; }
     .detail-media img { width: 100%; max-height: none; }
+    .detail.about .detail-media { width: 100%; max-height: none; }
+    .detail.about .detail-media img { width: 100%; }
     .detail-text { font-size: inherit; }
     .detail-caption:empty { display: none; }
 }

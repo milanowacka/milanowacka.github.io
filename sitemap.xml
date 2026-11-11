@@ -4,11 +4,11 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://milanowacka.github.io/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
   </url>
   <url>
     <loc>https://milanowacka.github.io/drawing.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <image:image>
       <image:loc>https://milanowacka.github.io/views/DSCF7726_1600.webp</image:loc>
     </image:image>
@@ -32,9 +32,6 @@
     </image:image>
     <image:image>
       <image:loc>https://milanowacka.github.io/views/BGF3138_MN_web_1600.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://milanowacka.github.io/views/BGF3180_MN_web_1600.webp</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://milanowacka.github.io/views/DSCF2714_1600.webp</image:loc>
@@ -63,7 +60,7 @@
   </url>
   <url>
     <loc>https://milanowacka.github.io/video.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <video:video>
       <video:thumbnail_loc>https://milanowacka.github.io/views/Sprzezenie-zwrotne202620_1600.webp</video:thumbnail_loc>
       <video:title>Feedback loop</video:title>
@@ -83,13 +80,13 @@
   </url>
   <url>
     <loc>https://milanowacka.github.io/about.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <image:image>
       <image:loc>https://milanowacka.github.io/views/DSCF7516_MILA_NOWACKA_HIRES_1600.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://milanowacka.github.io/cv.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
   </url>
 </urlset>

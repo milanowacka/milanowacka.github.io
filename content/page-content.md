@@ -119,13 +119,6 @@ This image is a vision of the urinary system. Kidneys are the power center in ou
 
 
 
-## Stimulus
-![](BGF3180_MN_web.jpg)
-### Description
-wax-based color pencils on old paper in vintage photo frame 
-11 x 8 cm
-2025
-
 
 ## CREATURE stage I
 ![](DSCF2714.jpg)
