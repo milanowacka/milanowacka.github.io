@@ -152,7 +152,7 @@ The culmination of several years of work on the drawings is an audiovisual album
 ![](DSCF2767.jpg)
 ### Description 
 from Nowelia Kiliani Series 
-[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
+[Nowelia Kiliani on Bandcamp](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
 
 wax-based color pencils on bristol
 100 x 70 cm
@@ -163,7 +163,7 @@ wax-based color pencils on bristol
 ![](DSCF2789.jpg)
 ### Description 
 from Nowelia Kiliani Series 
-[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
+[Nowelia Kiliani on Bandcamp](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
 
 wax-based color pencils on bristol
 100 x 70 cm
@@ -174,7 +174,7 @@ wax-based color pencils on bristol
 ![](DSCF2700.jpg)
 ### Description 
 from Nowelia Kiliani Series 
-[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
+[Nowelia Kiliani on Bandcamp](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
 
 wax-based color pencils on cotton paper
 70 x 50 cm
@@ -185,7 +185,7 @@ wax-based color pencils on cotton paper
 ![](DSCF2688.jpg)
 ### Description 
 from Nowelia Kiliani Series 
-[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
+[Nowelia Kiliani on Bandcamp](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
 
 wax-based color pencils on cotton paper
 100 x 70 cm
@@ -196,7 +196,7 @@ wax-based color pencils on cotton paper
 ![](KMRY9423.jpg)
 ### Description 
 from Nowelia Kiliani Series 
-[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
+[Nowelia Kiliani on Bandcamp](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
 
 wax-based color pencils on cotton paper
 100 x 70 cm
@@ -207,7 +207,7 @@ wax-based color pencils on cotton paper
 ![](KMRY9417-20.jpg)
 ### Description 
 from Nowelia Kiliani Series 
-[link](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
+[Nowelia Kiliani on Bandcamp](https://milanowacka.bandcamp.com/album/nowelia-kiliani)
 
 wax-based color pencils on military technical paper
 100 x 70 cm

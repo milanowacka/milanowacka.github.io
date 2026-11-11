@@ -28,7 +28,7 @@ ARTIST_SAME_AS = [
     "https://milanowacka.bandcamp.com",
 ]
 
-THUMB_WIDTHS = (800, 1600)      # grid / detail / about images
+THUMB_WIDTHS = (800, 1000, 1600)      # grid / detail / about images
 PREVIEW_WIDTHS = (1600, 2400)   # detail pages
 OG_WIDTH, OG_HEIGHT = 1200, 630  # social share image
 WEBP_QUALITY = 82
@@ -457,7 +457,8 @@ def jsonld_script(data) -> str:
 
 def render_page(*, title, description, path, body, nav_html, prefix='',
                 og_image=None, og_image_alt='', og_type='website',
-                jsonld=None, noindex=False, body_class='', preload_image=None):
+                jsonld=None, noindex=False, body_class='', preload_image=None,
+                h1='', preload_sizes=''):
     canonical = f"{SITE_URL}/{path}" if path != 'index.html' else f"{SITE_URL}/"
     head = [
         '<meta charset="UTF-8">',
@@ -491,13 +492,17 @@ def render_page(*, title, description, path, body, nav_html, prefix='',
         f'<link rel="icon" href="{prefix}favicon.ico" sizes="32x32">',
         f'<link rel="preload" href="{prefix}content/open-sans-latin-300.woff2" as="font" type="font/woff2" crossorigin>',
     ]
-    if preload_image:
+    if isinstance(preload_image, list):
+        head.append(f'<link rel="preload" as="image" href="{prefix}views/{preload_image[0]["name"]}" '
+                    f'imagesrcset="{srcset(preload_image, prefix)}" imagesizes="{preload_sizes}">')
+    elif preload_image:
         head.append(f'<link rel="preload" as="image" href="{prefix}views/{preload_image["name"]}">')
     head.append(f'<link rel="stylesheet" href="{prefix}style.css">')
     if jsonld:
         head.append(jsonld_script(jsonld))
 
     body_attr = f' class="{body_class}"' if body_class else ''
+    h1_html = f'\t\t<h1 class="visually-hidden">{esc(h1)}</h1>' if h1 else ''
     head_html = '\n\t\t'.join(head)
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -512,6 +517,7 @@ def render_page(*, title, description, path, body, nav_html, prefix='',
 				{nav_html}
 			</nav>
 		</header>
+{h1_html}
 {body}
 {page_script()}
 	</body>
@@ -525,7 +531,7 @@ def main_nav(active: str, prefix: str = '') -> str:
         current = ' aria-current="page"' if href == active else ''
         items.append(f'<li><a href="{prefix}{href}"{current}>{label}</a></li>')
     items_html = '\n\t\t\t\t\t'.join(items)
-    return f'''<h1 id="logo"><a href="{prefix}index.html">Mila Nowacka</a></h1>
+    return f'''<a id="logo" href="{prefix}index.html">Mila Nowacka</a>
 					<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Menu">
 						<img src="{prefix}content/slimaczek.png" width="74" height="74" alt="">
 					</button>
@@ -715,7 +721,7 @@ def generate_site(base_dir: Path = Path(".")) -> None:
         d['caption_html'], d['detail_href'] = caption_html, f"views/{preview_name}"
         preview_body = f"""		<main>
 			<article class="detail">
-				<div class="detail-caption"><h2>{esc(d['title'])}</h2>{caption_html}</div>
+				<div class="detail-caption"><h1>{esc(d['title'])}</h1>{caption_html}</div>
 				<div class="detail-text">{text_html}</div>
 				<figure class="detail-media">
 					<img src="../views/{previews[0]['name']}" srcset="{srcset(previews, '../')}"
@@ -758,7 +764,7 @@ def generate_site(base_dir: Path = Path(".")) -> None:
         caption_html, text_html = split_description(v['description'])
         preview_body = f"""		<main>
 			<article class="detail video-detail">
-				<div class="detail-caption"><h2>{esc(v['title'])}</h2>{caption_html}</div>
+				<div class="detail-caption"><h1>{esc(v['title'])}</h1>{caption_html}</div>
 				<div class="detail-text">{text_html}</div>
 				<div class="detail-media">
 					<video class="detail-video" src="../content/{v['video']}" poster="../views/{posters[-1]['name']}"
@@ -800,7 +806,13 @@ def generate_site(base_dir: Path = Path(".")) -> None:
 			</section>'''
 
     # ---- index.html -------------------------------------------------------
+    home_text = '\n\t\t\t\t'.join(
+        f'<p>{"<br>".join(md_links_to_html(p).split(chr(10)))}</p>'
+        for p in data['home'].split('\n\n') if p.strip())
     index_body = f"""		<main>
+			<div class="visually-hidden">
+				{home_text}
+			</div>
 			{grid([d['card'] for d in drawings], 'Selected drawings')}
 		</main>"""
     (base_dir / 'index.html').write_text(render_page(
@@ -811,8 +823,8 @@ def generate_site(base_dir: Path = Path(".")) -> None:
         nav_html=main_nav(''),
         og_image=site_share, og_image_alt=site_share_alt,
         jsonld={"@context": "https://schema.org", "@graph": [website, person]},
-        preload_image=drawings[0]['thumbs'][0] if drawings else None,
-        body_class='home-page',
+        preload_image=drawings[0]['thumbs'] if drawings else None, preload_sizes='(max-width: 700px) 160vw, 464px',
+        h1=f"{ARTIST_NAME} – visual artist", body_class='home-page',
     ), encoding='utf-8')
     print("✓ Wrote index.html")
 
@@ -838,6 +850,7 @@ def generate_site(base_dir: Path = Path(".")) -> None:
         og_image=site_share, og_image_alt=site_share_alt, og_type='profile',
         jsonld={"@context": "https://schema.org", "@graph": about_graph},
         preload_image=portrait_variants[0] if portrait_variants else None,
+        h1=f"About {ARTIST_NAME}",
     ), encoding='utf-8')
     print("✓ Wrote about.html")
 
@@ -864,7 +877,8 @@ def generate_site(base_dir: Path = Path(".")) -> None:
              "isPartOf": {"@id": f"{SITE_URL}/#website"},
              "hasPart": drawing_graph},
             person]},
-        preload_image=drawings[0]['thumbs'][-1] if drawings else None,
+        preload_image=drawings[0]['thumbs'] if drawings else None, preload_sizes='(max-width: 700px) 160vw, 464px',
+        h1="Drawings",
     ), encoding='utf-8')
     print(f"✓ Wrote drawing.html with {len(drawings)} drawings")
 
@@ -891,7 +905,8 @@ def generate_site(base_dir: Path = Path(".")) -> None:
              "isPartOf": {"@id": f"{SITE_URL}/#website"},
              "hasPart": video_graph},
             person]},
-        preload_image=videos[0]['posters'][-1] if videos else None,
+        preload_image=videos[0]['posters'] if videos else None, preload_sizes='(max-width: 700px) 160vw, 464px',
+        h1="Video works",
     ), encoding='utf-8')
     print(f"✓ Wrote video.html with {len(videos)} videos")
 
@@ -933,7 +948,7 @@ def generate_site(base_dir: Path = Path(".")) -> None:
         og_image=site_share, og_image_alt=site_share_alt,
         jsonld={"@context": "https://schema.org",
                 "@graph": [dict(person, mainEntityOfPage=f"{SITE_URL}/cv.html")] + parse_upcoming_events(data['cv'])},
-        noindex=not cv_sections,
+        noindex=not cv_sections, h1=f"CV of {ARTIST_NAME}",
     ), encoding='utf-8')
     if cv_sections:
         text_pages.append('cv.html')
@@ -963,7 +978,7 @@ def generate_site(base_dir: Path = Path(".")) -> None:
         body=workshops_body,
         nav_html=main_nav('workshops.html'),
         og_image=site_share, og_image_alt=site_share_alt,
-        noindex=not events,
+        noindex=not events, h1="Workshops",
     ), encoding='utf-8')
     print(f"✓ Wrote workshops.html ({len(events)} event(s){'' if events else ', empty, noindex'})")
 
@@ -980,7 +995,7 @@ def generate_site(base_dir: Path = Path(".")) -> None:
         path='404.html',
         body=body_404,
         nav_html=main_nav(''),
-        noindex=True,
+        noindex=True, h1="Page not found",
     ), encoding='utf-8')
 
     # ---- sitemap.xml ------------------------------------------------------

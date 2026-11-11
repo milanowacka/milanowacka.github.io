@@ -1,4 +1,10 @@
 {
+ "BGF3138_MN_web_1000.webp": {
+  "height": 1903,
+  "source": "BGF3138_MN_web.jpg",
+  "source_size": 4161611,
+  "width": 1000
+ },
  "BGF3138_MN_web_1600.webp": {
   "height": 3044,
   "source": "BGF3138_MN_web.jpg",
@@ -22,6 +28,12 @@
   "source": "BGF3138_MN_web.jpg",
   "source_size": 4161611,
   "width": 1200
+ },
+ "DSCF2688_1000.webp": {
+  "height": 1442,
+  "source": "DSCF2688.jpg",
+  "source_size": 8501841,
+  "width": 1000
  },
  "DSCF2688_1600.webp": {
   "height": 2308,
@@ -47,6 +59,12 @@
   "source_size": 8501841,
   "width": 1200
  },
+ "DSCF2700_1000.webp": {
+  "height": 1389,
+  "source": "DSCF2700.jpg",
+  "source_size": 8559417,
+  "width": 1000
+ },
  "DSCF2700_1600.webp": {
   "height": 2223,
   "source": "DSCF2700.jpg",
@@ -70,6 +88,12 @@
   "source": "DSCF2700.jpg",
   "source_size": 8559417,
   "width": 1200
+ },
+ "DSCF2714_1000.webp": {
+  "height": 1447,
+  "source": "DSCF2714.jpg",
+  "source_size": 8562600,
+  "width": 1000
  },
  "DSCF2714_1600.webp": {
   "height": 2316,
@@ -95,6 +119,12 @@
   "source_size": 8562600,
   "width": 1200
  },
+ "DSCF2731_1000.webp": {
+  "height": 1459,
+  "source": "DSCF2731.jpg",
+  "source_size": 9977711,
+  "width": 1000
+ },
  "DSCF2731_1600.webp": {
   "height": 2334,
   "source": "DSCF2731.jpg",
@@ -118,6 +148,12 @@
   "source": "DSCF2731.jpg",
   "source_size": 9977711,
   "width": 1200
+ },
+ "DSCF2767_1000.webp": {
+  "height": 1461,
+  "source": "DSCF2767.jpg",
+  "source_size": 9054112,
+  "width": 1000
  },
  "DSCF2767_1600.webp": {
   "height": 2337,
@@ -143,6 +179,12 @@
   "source_size": 9054112,
   "width": 1200
  },
+ "DSCF2789_1000.webp": {
+  "height": 1459,
+  "source": "DSCF2789.jpg",
+  "source_size": 7526726,
+  "width": 1000
+ },
  "DSCF2789_1600.webp": {
   "height": 2334,
   "source": "DSCF2789.jpg",
@@ -167,6 +209,12 @@
   "source_size": 7526726,
   "width": 1200
  },
+ "DSCF7516_MILA_NOWACKA_HIRES_1000.webp": {
+  "height": 1334,
+  "source": "DSCF7516_MILA_NOWACKA_HIRES.jpg",
+  "source_size": 2884509,
+  "width": 1000
+ },
  "DSCF7516_MILA_NOWACKA_HIRES_1600.webp": {
   "height": 2134,
   "source": "DSCF7516_MILA_NOWACKA_HIRES.jpg",
@@ -178,6 +226,12 @@
   "source": "DSCF7516_MILA_NOWACKA_HIRES.jpg",
   "source_size": 2884509,
   "width": 800
+ },
+ "DSCF7724_1000.webp": {
+  "height": 1426,
+  "source": "DSCF7724.jpg",
+  "source_size": 12830775,
+  "width": 1000
  },
  "DSCF7724_1600.webp": {
   "height": 2281,
@@ -203,6 +257,12 @@
   "source_size": 12830775,
   "width": 1200
  },
+ "DSCF7726_1000.webp": {
+  "height": 1426,
+  "source": "DSCF7726.jpg",
+  "source_size": 12694668,
+  "width": 1000
+ },
  "DSCF7726_1600.webp": {
   "height": 2281,
   "source": "DSCF7726.jpg",
@@ -226,6 +286,12 @@
   "source": "DSCF7726.jpg",
   "source_size": 12694668,
   "width": 1200
+ },
+ "DSCF7730_1000.webp": {
+  "height": 1426,
+  "source": "DSCF7730.jpg",
+  "source_size": 13833811,
+  "width": 1000
  },
  "DSCF7730_1600.webp": {
   "height": 2281,
@@ -251,6 +317,12 @@
   "source_size": 13833811,
   "width": 1200
  },
+ "DSCF7732_1000.webp": {
+  "height": 1426,
+  "source": "DSCF7732.jpg",
+  "source_size": 14003243,
+  "width": 1000
+ },
  "DSCF7732_1600.webp": {
   "height": 2281,
   "source": "DSCF7732.jpg",
@@ -274,6 +346,12 @@
   "source": "DSCF7732.jpg",
   "source_size": 14003243,
   "width": 1200
+ },
+ "DSCF9525_1000.webp": {
+  "height": 1431,
+  "source": "DSCF9525.jpg",
+  "source_size": 5448202,
+  "width": 1000
  },
  "DSCF9525_1600.webp": {
   "height": 2290,
@@ -299,6 +377,12 @@
   "source_size": 5448202,
   "width": 1200
  },
+ "DSCF9528_1000.webp": {
+  "height": 1455,
+  "source": "DSCF9528.jpg",
+  "source_size": 5150215,
+  "width": 1000
+ },
  "DSCF9528_1600.webp": {
   "height": 2327,
   "source": "DSCF9528.jpg",
@@ -322,6 +406,12 @@
   "source": "DSCF9528.jpg",
   "source_size": 5150215,
   "width": 1200
+ },
+ "KMRY9417-20_1000.webp": {
+  "height": 1429,
+  "source": "KMRY9417-20.jpg",
+  "source_size": 10372394,
+  "width": 1000
  },
  "KMRY9417-20_1600.webp": {
   "height": 2286,
@@ -347,6 +437,12 @@
   "source_size": 10372394,
   "width": 1200
  },
+ "KMRY9423_1000.webp": {
+  "height": 1428,
+  "source": "KMRY9423.jpg",
+  "source_size": 10053228,
+  "width": 1000
+ },
  "KMRY9423_1600.webp": {
   "height": 2286,
   "source": "KMRY9423.jpg",
@@ -371,6 +467,12 @@
   "source_size": 10053228,
   "width": 1200
  },
+ "Sprzezenie-zwrotne202620_1000.webp": {
+  "height": 462,
+  "source": "Sprzezenie-zwrotne202620.jpg",
+  "source_size": 204647,
+  "width": 1000
+ },
  "Sprzezenie-zwrotne202620_1600.webp": {
   "height": 739,
   "source": "Sprzezenie-zwrotne202620.jpg",
@@ -388,6 +490,12 @@
   "source": "Sprzezenie-zwrotne202620.jpg",
   "source_size": 204647,
   "width": 1200
+ },
+ "Warstwa-1_1000.webp": {
+  "height": 1426,
+  "source": "Warstwa 1.jpg",
+  "source_size": 13750597,
+  "width": 1000
  },
  "Warstwa-1_1600.webp": {
   "height": 2281,
@@ -412,6 +520,12 @@
   "source": "Warstwa 1.jpg",
   "source_size": 13750597,
   "width": 1200
+ },
+ "aqualines-img_1000.webp": {
+  "height": 462,
+  "source": "aqualines-img.jpg",
+  "source_size": 105164,
+  "width": 1000
  },
  "aqualines-img_1600.webp": {
   "height": 739,
