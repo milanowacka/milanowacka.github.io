@@ -287,11 +287,17 @@ TEYAS (2018–2020) – An international audiovisual collaboration with German p
 VIDEO SHOWS
 
 08.02.2026 – Feedback Loop (2026), Sauna Festival, Warsaw, Poland. Curated by Weronika Adamowska.
+
 20.09.2025 – Aqualines (2025), Her Docs Film Festival, Warsaw, Poland.
+
 01–21.10.2025 – TEYAS (2019), Sprzężenia (Feedback Loops), ING Polish Art Foundation, Warsaw, Poland.
+
 08.02.2025 – Aqualines (2025), Singletary Center for the Arts Visual Music Festival, Kentucky, USA.
+
 8.09.2022 – WIDT (2020), Women’s Video Art and Discussion, Zachęta National Gallery of Art & HER Docs, Warsaw, Poland.
+
 29–31.07.2021 – WIDT (2020), Konteksty Festival, Sokołowsko, Poland.
+
 26.10.2019 – TEYAS (2019), BWA Warsaw, Poland.
 
 
