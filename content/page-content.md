@@ -244,43 +244,56 @@ Her Docs Festival 2025
 # CV
 EXHIBITIONS 
 
-Upcoming:
-· 10.10.2026 – 31.01.2027 - [The Etheric Field, The College of Psychic Studies, London, UK](https://www.collegeofpsychicstudies.co.uk/exhibition/)
+10.10.2026 – 31.01.2027 - The Etheric Field, The College of Psychic Studies, London, UK
 
-Past:
-· 20.06 - 9.07.2026 - Saturated, group exhibition, Stellarhighway gallery, New York, USA
-· 27.09-15.10 - Nowelia Kiliani, solo exhibition, Garden Gallery, Warsaw, PL
-· 14.06–7.07.2024 – Do Flowers Look at Bees?, group exhibition, Serce Exhib, Warsaw, PL
-· 27–28.08.2023 – IRIDISUNTO, artistic gathering, Turnus Gallery, Warsaw, PL
-· 18–19.06.2022 – Mila Nowacka: Presentation of Works and Types of Feedback Loops in Audio-Video Devices, Karowa Gallery, Warsaw, PL
-· 8–10.12.2021 – Satin Made of Triggers, interdisciplinary project, Pracownia Wschodnia, Warsaw, PL
+20.06 - 9.07.2026 - Saturated, group exhibition, Stellarhighway gallery, New York, USA
+
+27.09-15.10 - Nowelia Kiliani, solo exhibition, Garden Gallery, Warsaw, PL
+
+14.06–7.07.2024 – Do Flowers Look at Bees?, group exhibition, Serce Exhib, Warsaw, PL
+
+27–28.08.2023 – IRIDISUNTO, artistic gathering, Turnus Gallery, Warsaw, PL
+
+18–19.06.2022 – Mila Nowacka: Presentation of Works and Types of Feedback Loops in Audio-Video Devices, Karowa Gallery, Warsaw, PL
+
+8–10.12.2021 – Satin Made of Triggers, interdisciplinary project, Pracownia Wschodnia, Warsaw, PL
+
 
 PUBLICATIONS
 
-· 04.2026 - [Publication of two original works in an album showcasing the works of the most notable contemporary artists who use colored pencil drawing techniques in their artistic practice, USA.](https://the-drawing-stall.bigcartel.com/product/the-drawing-stall-vol-2)
-· 01.2026 – [Museum of Tomorrow – Digital Models and Artifacts, FRSK](https://www.mapasztuki.pl/muzeum-jutra/artistution). Illustration of Łukasz Adamski’s concept for a museum of the future. Published in print in Art Monitor, Issue No. 30, Poland.
-· 09.2025 – Release of the artist’s book [Nowelia Kiliani](https://milanowacka.bandcamp.com/album/nowelia-kiliani), an art album featuring drawings created between 2020 and 2024.
-· 2023 – Illustration and cover design for the album [Zwanai Easplaining](https://www.discogs.com/release/28090855-Zvanai-Eastplaining), published by the Foundation for Research into Possibilities (Fundacja Badań Możliwości), Poland.
-· 2022 – Cover illustration for [Domestic Flights](https://pointless-geometry.bandcamp.com/album/edyta-jarz-b-domestic-flights), an album by Edka Jarząb, published by Pointless Geometry, Poland.
-· 2021 – Series of illustrations and design for the album [Satin Made of Triggers - Hummings](https://www.cafeoto.co.uk/shop/satin-made-triggers-hummings/), published by Altanova Press.
-· 2021 – Music is Magic – illustrations accompanying a text by Mark O. Pilkington for Supernormal Festival, United Kingdom.
+04.2026 - [Publication of two original works in an album showcasing the works of the most notable contemporary artists who use colored pencil drawing techniques in their artistic practice, USA.](https://the-drawing-stall.bigcartel.com/product/the-drawing-stall-vol-2)
+
+01.2026 – [Museum of Tomorrow – Digital Models and Artifacts, FRSK](https://www.mapasztuki.pl/muzeum-jutra/artistution). Illustration of Łukasz Adamski’s concept for a museum of the future. Published in print in Art Monitor, Issue No. 30, Poland.
+
+09.2025 – Release of the artist’s book [Nowelia Kiliani](https://milanowacka.bandcamp.com/album/nowelia-kiliani), an art album featuring drawings created between 2020 and 2024.
+
+2023 – Illustration and cover design for the album [Zwanai Easplaining](https://www.discogs.com/release/28090855-Zvanai-Eastplaining), published by the Foundation for Research into Possibilities (Fundacja Badań Możliwości), Poland.
+
+2022 – Cover illustration for [Domestic Flights](https://pointless-geometry.bandcamp.com/album/edyta-jarz-b-domestic-flights), an album by Edka Jarząb, published by Pointless Geometry, Poland.
+
+2021 – Series of illustrations and design for the album [Satin Made of Triggers - Hummings](https://www.cafeoto.co.uk/shop/satin-made-triggers-hummings/), published by Altanova Press.
+
+2021 – Music is Magic – illustrations accompanying a text by Mark O. Pilkington for Supernormal Festival, United Kingdom.
 
 COLLABORATIONS
 
-· *Archives of Hesitation (2026)* – Weronika Zalewska for the Malta Biennale. Development of generative feedback-based video works for an installation.
-· *WIDT (2015–2024)* – An audiovisual duo with Antonina Nowacka. Performances and appearances at experimental festivals and venues, including BOZAR Centre for Fine Arts, Brussels; Vasulka Kitchen Brno; and Theater Rotterdam Schouwburg.
-· *TEYAS (2018–2020)* – An international audiovisual collaboration with German producer Christoph de Babalon. Performances at venues including the Manggha Museum, Kraków; Silent Green, Berlin; and Láng Művelődési Központ, Budapest.
+Archives of Hesitation (2026) – Weronika Zalewska for the Malta Biennale. Development of generative feedback-based video works for an installation.
+
+WIDT (2015–2024) – An audiovisual duo with Antonina Nowacka. Performances and appearances at experimental festivals and venues, including BOZAR Centre for Fine Arts, Brussels; Vasulka Kitchen Brno; and Theater Rotterdam Schouwburg.
+
+TEYAS (2018–2020) – An international audiovisual collaboration with German producer Christoph de Babalon. Performances at venues including the Manggha Museum, Kraków; Silent Green, Berlin; and Láng Művelődési Központ, Budapest.
+
 
 VIDEO SHOWS
 
-· 08.02.2026 – Feedback Loop (2026), Sauna Festival, Warsaw, Poland. Curated by Weronika Adamowska.
-· 20.09.2025 – Aqualines (2025), Her Docs Film Festival, Warsaw, Poland.
-· 01–21.10.2025 – TEYAS (2019), Sprzężenia (Feedback Loops), ING Polish Art Foundation, Warsaw, Poland.
-· 08.02.2025 – Aqualines (2025), Singletary Center for the Arts Visual Music Festival, Kentucky, USA.
+08.02.2026 – Feedback Loop (2026), Sauna Festival, Warsaw, Poland. Curated by Weronika Adamowska.
+20.09.2025 – Aqualines (2025), Her Docs Film Festival, Warsaw, Poland.
+01–21.10.2025 – TEYAS (2019), Sprzężenia (Feedback Loops), ING Polish Art Foundation, Warsaw, Poland.
+08.02.2025 – Aqualines (2025), Singletary Center for the Arts Visual Music Festival, Kentucky, USA.
 
 EDUCATION
 
-2010-2013 - Art History, master’s thesis:
+2010-2012 - Art History, master’s thesis:
 “The Phenomenon of Glitch Art in the Context of the History of the
 Image”, supervisor: Dr Hab. Dorota Folga Januszewska, Prof. ASP
 
@@ -294,10 +307,10 @@ Description text...          (middle column)
 ![](image-3.jpg)             (bottom right)
 -->
 
-## Video Feedback Plasticity
+## Video Feedback Plasticity 2022-2024
+
 We are an integral part of the natural world, capable of observing its processes - including the phenomenon of feedback, which is also evident in nature. Understanding the complex systems that shape our reality is often aided by examining them on a human scale - such as through the lens of audio-visual equipment.
-During the workshop, participants learn about the techniques for inducing feedback using video equipment from the 1980s and 1990s. Later on they explore ways of modulating this phenomenonat. At the end for a moment they become instruments themselves, expressing their experience through drawing. In 2023, together with a group of feedback enthusiasts, we organized a series of events titled IRIDISUNTO around this topic at Galeria Turnus in
-Warsaw.
+During the workshop, participants learn about the techniques for inducing feedback using video equipment from the 1980s and 1990s. Later on they explore ways of modulating this phenomenona. At the end for a moment each participant becomes an instrument themselve, expressing their experience through drawing. In 2023, together with a group of feedback enthusiasts, we organized a series of events titled IRIDISUNTO around this topic at Galeria Turnus in Warsaw.
 ![](1.jpg)
-![](2.jpeg)
+![](2_.jpg)
 ![](3.jpg)
