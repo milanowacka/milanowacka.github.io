@@ -281,7 +281,7 @@ Archives of Hesitation (2026) – Weronika Zalewska for the Malta Biennale. Deve
 
 WIDT (2015–2024) – An audiovisual duo with Antonina Nowacka. Performances and appearances at experimental festivals and venues, including BOZAR Centre for Fine Arts, Brussels; Vasulka Kitchen Brno; and Theater Rotterdam Schouwburg.
 
-TEYAS (2018–2020) – An international audiovisual collaboration with German producer Christoph de Babalon. Performances at venues including the Manggha Museum, Kraków; Silent Green, Berlin; and Láng Művelődési Központ, Budapest.
+TEYAS (2018–2020) – An international audiovisual collaboration with German producer Christoph de Babalon. Performances at the agangard festivals, venues including the Manggha Museum, Kraków; Silent Green, Berlin; and Láng Művelődési Központ, Budapest.
 
 
 VIDEO SHOWS
