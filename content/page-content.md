@@ -244,11 +244,11 @@ Her Docs Festival 2025
 # CV
 EXHIBITIONS 
 
-10.10.2026 – 31.01.2027 - The Etheric Field, The College of Psychic Studies, London, UK
+10.10.2026–31.01.2027 – The Etheric Field, The College of Psychic Studies, London, UK
 
-20.06 - 9.07.2026 - Saturated, group exhibition, Stellarhighway gallery, New York, USA
+20.06–9.07.2026 – Saturated, group exhibition, Stellarhighway gallery, New York, USA
 
-27.09-15.10 - Nowelia Kiliani, solo exhibition, Garden Gallery, Warsaw, PL
+27.09–15.10 – Nowelia Kiliani, solo exhibition, Garden Gallery, Warsaw, PL
 
 14.06–7.07.2024 – Do Flowers Look at Bees?, group exhibition, Serce Exhib, Warsaw, PL
 
@@ -261,7 +261,7 @@ EXHIBITIONS
 
 PUBLICATIONS
 
-04.2026 - [Publication of two original works in an album showcasing the works of the most notable contemporary artists who use colored pencil drawing techniques in their artistic practice, USA.](https://the-drawing-stall.bigcartel.com/product/the-drawing-stall-vol-2)
+04.2026 – [Publication of two original works in an album showcasing the works of the most notable contemporary artists who use colored pencil drawing techniques in their artistic practice, USA.](https://the-drawing-stall.bigcartel.com/product/the-drawing-stall-vol-2)
 
 01.2026 – [Museum of Tomorrow – Digital Models and Artifacts, FRSK](https://www.mapasztuki.pl/muzeum-jutra/artistution). Illustration of Łukasz Adamski’s concept for a museum of the future. Published in print in Art Monitor, Issue No. 30, Poland.
 
@@ -286,10 +286,14 @@ TEYAS (2018–2020) – An international audiovisual collaboration with German p
 
 VIDEO SHOWS
 
-08.02.2026 – Feedback Loop (2026), Sauna Festival, Warsaw, Poland. Curated by Weronika Adamowska.
-20.09.2025 – Aqualines (2025), Her Docs Film Festival, Warsaw, Poland.
-01–21.10.2025 – TEYAS (2019), Sprzężenia (Feedback Loops), ING Polish Art Foundation, Warsaw, Poland.
+08.02.2026 – Feedback Loop (2026), Sauna Festival, Warsaw, Poland. Curated by Weronika Adamowska.
+20.09.2025 – Aqualines (2025), Her Docs Film Festival, Warsaw, Poland.
+01–21.10.2025 – TEYAS (2019), Sprzężenia (Feedback Loops), ING Polish Art Foundation, Warsaw, Poland.
 08.02.2025 – Aqualines (2025), Singletary Center for the Arts Visual Music Festival, Kentucky, USA.
+8.09.2022 – WIDT (2020), Women’s Video Art and Discussion, Zachęta National Gallery of Art & HER Docs, Warsaw, Poland.
+29–31.07.2021 – WIDT (2020), Konteksty Festival, Sokołowsko, Poland.
+26.10.2019 – TEYAS (2019), BWA Warsaw, Poland.
+
 
 EDUCATION
 
