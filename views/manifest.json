@@ -1,4 +1,58 @@
 {
+ "1_1000.webp": {
+  "height": 1000,
+  "source": "1.jpg",
+  "source_size": 255400,
+  "width": 1000
+ },
+ "1_1600.webp": {
+  "height": 1440,
+  "source": "1.jpg",
+  "source_size": 255400,
+  "width": 1440
+ },
+ "1_800.webp": {
+  "height": 800,
+  "source": "1.jpg",
+  "source_size": 255400,
+  "width": 800
+ },
+ "2__1000.webp": {
+  "height": 668,
+  "source": "2_.jpg",
+  "source_size": 3387137,
+  "width": 1000
+ },
+ "2__1600.webp": {
+  "height": 1069,
+  "source": "2_.jpg",
+  "source_size": 3387137,
+  "width": 1600
+ },
+ "2__800.webp": {
+  "height": 534,
+  "source": "2_.jpg",
+  "source_size": 3387137,
+  "width": 800
+ },
+ "3_1000.webp": {
+  "height": 637,
+  "source": "3.jpg",
+  "source_size": 703402,
+  "width": 1000
+ },
+ "3_1600.webp": {
+  "height": 1019,
+  "source": "3.jpg",
+  "source_size": 703402,
+  "width": 1600
+ },
+ "3_800.webp": {
+  "height": 509,
+  "source": "3.jpg",
+  "source_size": 703402,
+  "width": 800
+ },
  "BGF3138_MN_web_1000.webp": {
   "height": 1903,
   "source": "BGF3138_MN_web.jpg",
