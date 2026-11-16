@@ -5,6 +5,8 @@ on:
   # since the last run (see "Check for content changes" below).
   schedule:
     - cron: '0 3 * * *'
+  # Manual run from the Actions tab ("Run workflow"): always rebuilds.
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -23,7 +25,10 @@ jobs:
     - name: Check for content changes pushed to main
       id: check
       run: |
-        if git log --since="24 hours ago" --oneline -- content/ | grep -q .; then
+        if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "Manual run — rebuilding."
+        elif git log --since="24 hours ago" --oneline -- content/ | grep -q .; then
           echo "changed=true" >> "$GITHUB_OUTPUT"
         else
           echo "changed=false" >> "$GITHUB_OUTPUT"
