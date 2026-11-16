@@ -12,8 +12,9 @@ I am an artist, art history graduate and mother. My practice explores the relati
 [instagram](https://www.instagram.com/milanowacka)
 
 
-artwork documentation: Kasia Rysiak, Bartosz Górka, Sebastian Rzepka
-portrait: Sebastian Rzepka
+artwork documentation: Kasia Rysiak, Bartosz Górka, Sebastian Rzepka.
+workshop documentation: Karolina Chyc, Michał Małota.
+portrait: Sebastian Rzepka.
 
 
 
