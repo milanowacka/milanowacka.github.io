@@ -322,7 +322,7 @@ Description text...          (middle column)
 
 This workshop takes Annie Besant and Charles W. Leadbeater's Thought-Forms (1901) as a starting point for exploring the possibility of visualising thought and other invisible phenomena through feedback loops. Together we will examine the theoretical principles proposed in the book, asking what conditions determine the forms that our thoughts and emotions take. Rather than approaching this purely as theory, the workshop translates these ideas into direct, embodied practice – using movement, sensory observation and drawing exercises focused on the body and the visual apparatus, you will experiment with translating mental and bodily states into visual processes.
 
-Feedback Loop Seminar, under development
+## Feedback Loop Seminar, under development
 
 Feedback in the Context of the History of Cybernetics and 20th-Century Art.
 The seminar combines theoretical discussions with artistic and research-based practice. Its starting point is the history of cybernetics and the changing understanding of feedback, the concepts rooted in the close observation of living organisms. The seminar operates at the intersection of art, philosophy and embodied experience. Across eight sessions, participants explore:
@@ -335,7 +335,7 @@ The seminar combines theoretical discussions with artistic and research-based pr
 The seminar is open-ended and process-based in nature.
 It is intended for artists interested in contemporary art, new media, systems theory, embodiment, cognitive processes and the relationship between technology and experience. No specialised background is required.
 
-Video Feedback Plasticity 2022-2024
+## Video Feedback Plasticity 2022-2024
 
 We are an integral part of the natural world, capable of observing its processes - including the phenomenon of feedback, which is also evident in nature. Understanding the complex systems that shape our reality is often aided by examining them on a human scale - such as through the lens of audio-visual equipment.
 During the workshop, participants learn about the techniques for inducing feedback using video equipment from the 1980s and 1990s. Later on they explore ways of modulating this phenomenona. At the end for a moment each participant becomes an instrument themselve, expressing their experience through drawing. In 2023, together with a group of feedback enthusiasts, we organized a series of events titled IRIDISUNTO around this topic at Galeria Turnus in Warsaw.
