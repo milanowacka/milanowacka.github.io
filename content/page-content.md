@@ -13,7 +13,6 @@ I am an artist, art history graduate and mother. My practice explores the relati
 
 
 artwork documentation: Kasia Rysiak, Bartosz Górka, Sebastian Rzepka.
-workshop documentation: Karolina Chyc, Michał Małota.
 portrait: Sebastian Rzepka.
 
 
