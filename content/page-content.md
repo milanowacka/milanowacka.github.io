@@ -345,6 +345,8 @@ We are an integral part of the natural world, capable of observing its processes
 During the workshop, participants learn about the techniques for inducing feedback using video equipment from the 1980s and 1990s. Later on they explore ways of modulating this phenomenona. At the end for a moment each participant becomes an instrument themselve, expressing their experience through drawing. In 2023, together with a group of feedback enthusiasts, we organized a series of events titled IRIDISUNTO around this topic at Galeria Turnus in Warsaw.
 
 
-![](1.jpg)
-![](2_.jpg)
-![](3.jpg)
+![](1.png)
+![](2_.png)
+![](3.png)
+![](4.png)
+![](5.png)
