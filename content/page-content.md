@@ -243,6 +243,10 @@ The Aqualines video work is an audiovisual exploration of water and flow-related
 Her Docs Festival 2025
 
 # CV
+![](Obszar kompozycji3.jpg)
+![](post_feedback_mila2.jpg)
+![](post_feedback_mila.jpg)
+
 EXHIBITIONS 
 
 10.10.2026–31.01.2027 – The Etheric Field, The College of Psychic Studies, London, UK
