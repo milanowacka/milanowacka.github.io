@@ -198,10 +198,11 @@ main:has(.works) { padding: 0; }
 }
 .detail.about .detail-media img { flex: none; width: 400px; max-width: none; max-height: none; height: auto; }
 
-/* CV: label | text rows (text = 75% of the content width), images stacked
-   in the remaining column on the right, spanning all rows */
-.cv { grid-template-columns: 12vw 75% 1fr; }
-.cv .detail-media { grid-row: 1; align-self: start; width: 100%; }
+/* CV: label | text rows in their own grid, so the tall image stack on the
+   right (45% of the content width) never stretches the gaps between rows */
+.cv { grid-template-columns: 1fr 45%; }
+.cv-rows { grid-column: 1; display: grid; grid-template-columns: 12vw 1fr; column-gap: 3vw; }
+.cv .detail-media { grid-column: 2; align-self: start; width: 100%; }
 .stack img { width: 100%; max-height: none; margin-bottom: 16px; }
 
 /* Workshops: first image on top, second bottom-left, third bottom-right */
@@ -284,6 +285,7 @@ main:has(.works) { padding: 0; }
     .detail + .detail { padding-top: 50px; }
     .detail-media, .cv .detail-media, .trio { order: -1; justify-self: auto; width: 100%; }
     .cv .detail-media { order: 99; }
+    .cv-rows { display: flex; flex-direction: column; row-gap: 24px; }
     .detail-media img { width: 100%; height: auto; max-height: none; }
     .detail.about .detail-media { width: 100%; max-height: none; }
     .detail.about .detail-media img { width: 100%; }

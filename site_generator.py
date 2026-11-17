@@ -12,6 +12,7 @@ preview.  All paths in the generated HTML are relative, so the pages work both
 on GitHub Pages and when opened directly from disk (file://).
 """
 import datetime as dt
+import hashlib
 import html
 import json
 import re
@@ -19,6 +20,10 @@ import subprocess
 from pathlib import Path
 
 from PIL import Image
+
+# Short content hash appended to the stylesheet URL, so browsers drop a cached
+# style.css as soon as it changes.
+STYLE_VERSION = hashlib.sha1((Path(__file__).parent / 'style.css').read_bytes()).hexdigest()[:8]
 
 SITE_URL = "https://milanowacka.github.io"
 SITE_NAME = "Mila Nowacka"
@@ -497,7 +502,7 @@ def render_page(*, title, description, path, body, nav_html, prefix='',
                     f'imagesrcset="{srcset(preload_image, prefix)}" imagesizes="{preload_sizes}">')
     elif preload_image:
         head.append(f'<link rel="preload" as="image" href="{prefix}views/{preload_image["name"]}">')
-    head.append(f'<link rel="stylesheet" href="{prefix}style.css">')
+    head.append(f'<link rel="stylesheet" href="{prefix}style.css?v={STYLE_VERSION}">')
     if jsonld:
         head.append(jsonld_script(jsonld))
 
@@ -929,11 +934,13 @@ def generate_site(base_dir: Path = Path(".")) -> None:
                         f'<div class="detail-text">{render_about_blocks(body)}</div>')
         media = ''
         if cv_images:
-            media = (f'<div class="detail-media stack" style="grid-row: 1 / span {len(cv_sections)}">'
-                     f'{content_images(cv_images, "(max-width: 700px) 100vw, 18vw")}</div>')
+            media = (f'<div class="detail-media stack">'
+                     f'{content_images(cv_images, "(max-width: 700px) 100vw, 45vw")}</div>')
         cv_body = f"""		<main>
 			<article class="detail cv">
+				<div class="cv-rows">
 				{chr(10).join(rows)}
+				</div>
 				{media}
 			</article>
 		</main>"""
