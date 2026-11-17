@@ -244,7 +244,7 @@ Her Docs Festival 2025
 # CV
 ![](Obszar kompozycji3.jpg)
 ![](post_feedback_mila2.jpg)
-![](post_feedback_mila.jpg)
+![](post_feedback_mila.jpeg)
 
 EXHIBITIONS 
 
@@ -345,7 +345,7 @@ During the workshop, participants learn about the techniques for inducing feedba
 
 
 ![](1.png)
-![](2_.png)
+![](2.png)
 ![](3.png)
 ![](4.png)
 ![](5.png)

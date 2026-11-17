@@ -1,56 +1,56 @@
 {
  "1_1000.webp": {
-  "height": 1000,
-  "source": "1.jpg",
-  "source_size": 255400,
+  "height": 1142,
+  "source": "1.png",
+  "source_size": 758553,
   "width": 1000
  },
  "1_1600.webp": {
-  "height": 1440,
-  "source": "1.jpg",
-  "source_size": 255400,
-  "width": 1440
+  "height": 1407,
+  "source": "1.png",
+  "source_size": 758553,
+  "width": 1232
  },
  "1_800.webp": {
-  "height": 800,
-  "source": "1.jpg",
-  "source_size": 255400,
+  "height": 914,
+  "source": "1.png",
+  "source_size": 758553,
   "width": 800
  },
- "2__1000.webp": {
-  "height": 668,
-  "source": "2_.jpg",
-  "source_size": 3387137,
+ "2_1000.webp": {
+  "height": 641,
+  "source": "2.png",
+  "source_size": 693558,
   "width": 1000
  },
- "2__1600.webp": {
-  "height": 1069,
-  "source": "2_.jpg",
-  "source_size": 3387137,
+ "2_1600.webp": {
+  "height": 1026,
+  "source": "2.png",
+  "source_size": 693558,
   "width": 1600
  },
- "2__800.webp": {
-  "height": 534,
-  "source": "2_.jpg",
-  "source_size": 3387137,
+ "2_800.webp": {
+  "height": 513,
+  "source": "2.png",
+  "source_size": 693558,
   "width": 800
  },
  "3_1000.webp": {
-  "height": 637,
-  "source": "3.jpg",
-  "source_size": 703402,
+  "height": 608,
+  "source": "3.png",
+  "source_size": 1189529,
   "width": 1000
  },
  "3_1600.webp": {
-  "height": 1019,
-  "source": "3.jpg",
-  "source_size": 703402,
+  "height": 972,
+  "source": "3.png",
+  "source_size": 1189529,
   "width": 1600
  },
  "3_800.webp": {
-  "height": 509,
-  "source": "3.jpg",
-  "source_size": 703402,
+  "height": 486,
+  "source": "3.png",
+  "source_size": 1189529,
   "width": 800
  },
  "BGF3138_MN_web_1000.webp": {
@@ -521,6 +521,24 @@
   "source_size": 10053228,
   "width": 1200
  },
+ "Obszar-kompozycji3_1000.webp": {
+  "height": 1250,
+  "source": "Obszar kompozycji3.jpg",
+  "source_size": 759020,
+  "width": 1000
+ },
+ "Obszar-kompozycji3_1600.webp": {
+  "height": 1350,
+  "source": "Obszar kompozycji3.jpg",
+  "source_size": 759020,
+  "width": 1080
+ },
+ "Obszar-kompozycji3_800.webp": {
+  "height": 1000,
+  "source": "Obszar kompozycji3.jpg",
+  "source_size": 759020,
+  "width": 800
+ },
  "Sprzezenie-zwrotne202620_1000.webp": {
   "height": 462,
   "source": "Sprzezenie-zwrotne202620.jpg",
@@ -604,5 +622,41 @@
   "source": "DSCF7726.jpg",
   "source_size": 12694668,
   "width": 1200
+ },
+ "post_feedback_mila2_1000.webp": {
+  "height": 1250,
+  "source": "post_feedback_mila2.jpg",
+  "source_size": 764499,
+  "width": 1000
+ },
+ "post_feedback_mila2_1600.webp": {
+  "height": 1350,
+  "source": "post_feedback_mila2.jpg",
+  "source_size": 764499,
+  "width": 1080
+ },
+ "post_feedback_mila2_800.webp": {
+  "height": 1000,
+  "source": "post_feedback_mila2.jpg",
+  "source_size": 764499,
+  "width": 800
+ },
+ "post_feedback_mila_1000.webp": {
+  "height": 1250,
+  "source": "post_feedback_mila.jpeg",
+  "source_size": 304027,
+  "width": 1000
+ },
+ "post_feedback_mila_1600.webp": {
+  "height": 1350,
+  "source": "post_feedback_mila.jpeg",
+  "source_size": 304027,
+  "width": 1080
+ },
+ "post_feedback_mila_800.webp": {
+  "height": 1000,
+  "source": "post_feedback_mila.jpeg",
+  "source_size": 304027,
+  "width": 800
  }
 }
