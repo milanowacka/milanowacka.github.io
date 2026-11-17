@@ -26,9 +26,10 @@ portrait: Sebastian Rzepka.
 wax-based color pencils on cotton paper
 21 x 30 cm 
 2026
-Part of a Private Collection
+
 
 Stationary Wave is a visualisation of a phisical phenomenon, while examining its methaphorical potential in psychological context. This is a moment in which one perspective that is different then its receiver would consider as proper, and the information comes back to the source in a form of a simmulation of a stagnation - an ilussion that the continual exchange of thoughts stopped. 
+The drawing is a part of a Private Collection.
 
 ## Heart 
 ![](DSCF7726.jpg)
