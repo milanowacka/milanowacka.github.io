@@ -1,15 +1,27 @@
 name: Update Website Content
 
 on:
-  # 3am UTC daily. Only actually rebuilds if content was pushed to main
-  # since the last run (see "Check for content changes" below).
-  schedule:
-    - cron: '0 3 * * *'
-  # Manual run from the Actions tab ("Run workflow"): always rebuilds.
+  # Every push to main that changes the content or anything the generated
+  # pages depend on. The generated HTML/views are not listed, so the commit
+  # made by this workflow never triggers it again.
+  push:
+    branches: [main]
+    paths:
+      - 'content/**'
+      - 'site_generator.py'
+      - 'update_content.py'
+      - 'style.css'
+      - '.github/workflows/update-content.yml'
+  # Manual run from the Actions tab ("Run workflow").
   workflow_dispatch:
 
 permissions:
   contents: write
+
+# Queue runs instead of racing: a second push waits for the first rebuild.
+concurrency:
+  group: update-content
+  cancel-in-progress: false
 
 jobs:
   update-content:
@@ -19,57 +31,45 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v5
       with:
+        ref: main
         token: ${{ secrets.GITHUB_TOKEN }}
-        fetch-depth: 0
-
-    - name: Check for content changes pushed to main
-      id: check
-      run: |
-        if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-          echo "changed=true" >> "$GITHUB_OUTPUT"
-          echo "Manual run — rebuilding."
-        elif git log --since="24 hours ago" --oneline -- content/ | grep -q .; then
-          echo "changed=true" >> "$GITHUB_OUTPUT"
-        else
-          echo "changed=false" >> "$GITHUB_OUTPUT"
-          echo "No content changes pushed to main since the last run — skipping rebuild."
-        fi
-
-    - name: Set up Python
-      if: steps.check.outputs.changed == 'true'
-      uses: actions/setup-python@v6
-      with:
-        python-version: '3.12'
 
     - name: Check if content file exists
-      if: steps.check.outputs.changed == 'true'
       run: |
         if [ ! -f "content/page-content.md" ]; then
           echo "Error: content/page-content.md not found"
           exit 1
         fi
 
+    - name: Set up Python
+      uses: actions/setup-python@v6
+      with:
+        python-version: '3.12'
+
     - name: Install dependencies
-      if: steps.check.outputs.changed == 'true'
       run: pip install Pillow
 
     - name: Install ffmpeg (ffprobe reads video resolution)
-      if: steps.check.outputs.changed == 'true'
       run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
     - name: Run content update script
-      if: steps.check.outputs.changed == 'true'
       run: python update_content.py
 
     - name: Commit and push changes
-      if: steps.check.outputs.changed == 'true'
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add index.html about.html drawing.html video.html cv.html workshops.html 404.html sitemap.xml views/
-        if git diff --quiet && git diff --staged --quiet; then
+        if git diff --staged --quiet; then
           echo "No changes to commit"
-        else
-          git commit -m "Update website content [CI]"
-          git push
+          exit 0
         fi
+        git commit -m "Update website content [CI] [skip ci]"
+        # main may have moved while the site was building: rebase onto it.
+        # Generated files win any conflict, since they were just rebuilt.
+        for attempt in 1 2 3; do
+          git pull --rebase -X theirs origin main && git push origin HEAD:main && exit 0
+          echo "Push failed (attempt $attempt), retrying..."
+          sleep 5
+        done
+        exit 1
