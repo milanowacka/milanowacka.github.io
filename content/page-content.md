@@ -336,6 +336,8 @@ Description text...          (middle column)
 
 This workshop takes Annie Besant and Charles W. Leadbeater's Thought-Forms (1901) as a starting point for exploring the possibility of visualising thought and other invisible phenomena through feedback loops. Together we examined the theoretical principles proposed in the book, asking what conditions determine the forms that our thoughts and emotions take. The workshop translates these ideas into direct, embodied practice, using movement, sensory observation and drawing exercises focused on the body and the visual apparatus, the participants experiment with translating mental and bodily states into visual processes.
 
+![](2.png)
+
 ## Feedback Loop Seminar, under development
 
 Feedback in the Context of the History of Cybernetics and 20th-Century Art.
@@ -348,6 +350,8 @@ The seminar combines theoretical discussions with artistic and research-based pr
 6. Posthumanist and feminist perspectives on the body, technology and the environment.
 The seminar is open-ended and process-based in nature.
 It is intended for artists interested in contemporary art, new media, systems theory, embodiment, cognitive processes and the relationship between technology and experience. No specialised background is required.
+
+![](1.png)
 
 ## Video Feedback Plasticity 2022-2024
 
