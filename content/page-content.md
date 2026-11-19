@@ -352,6 +352,7 @@ The seminar is open-ended and process-based in nature.
 It is intended for artists interested in contemporary art, new media, systems theory, embodiment, cognitive processes and the relationship between technology and experience. No specialised background is required.
 
 ![](1.png)
+![](2.png)
 
 ## Video Feedback Plasticity 2022-2024
 
