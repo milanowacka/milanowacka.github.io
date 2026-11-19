@@ -839,7 +839,7 @@ def generate_site(base_dir: Path = Path(".")) -> None:
     if portrait_variants:
         about_media = f'''<figure class="detail-media">
 					<img src="views/{portrait_variants[0]['name']}" srcset="{srcset(portrait_variants, '')}"
-						sizes="(max-width: 700px) 100vw, 400px" width="{portrait_variants[0]['width']}" height="{portrait_variants[0]['height']}"
+						sizes="(max-width: 700px) 100vw, 39vw" width="{portrait_variants[0]['width']}" height="{portrait_variants[0]['height']}"
 						alt="Portrait of {ARTIST_NAME}">
 				</figure>'''
     about_body = f"""		<main>

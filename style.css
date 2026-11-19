@@ -186,17 +186,23 @@ main:has(.works) { padding: 0; }
 .detail-media img { display: block; width: auto; height: auto; max-width: 100%; max-height: 72vh; }
 .detail-video { display: block; width: 100%; max-height: 72vh; background: #000; }
 .detail-media:has(.detail-video) { width: 100%; }
-/* About portrait is never scaled: it keeps a fixed pixel size and is cropped
-   (centred) by its frame when the window is too narrow or too short. */
+/* About portrait is as wide as the CV images (45% of the content width) and
+   is cropped (centred) by its frame when the window is too short. That is a
+   little wider than its column, so the negative margin lets it grow left into
+   the gap while its right edge stays on the page margin. */
 .detail.about .detail-media {
+    --about-media-width: calc(0.45 * (100vw - 2 * var(--page-margin)));
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: min(100%, 400px);
+    justify-self: start;
+    width: var(--about-media-width);
+    margin-left: calc(100% - var(--about-media-width));
+    max-width: none;
     max-height: 62vh;
 }
-.detail.about .detail-media img { flex: none; width: 400px; max-width: none; max-height: none; height: auto; }
+.detail.about .detail-media img { flex: none; width: 100%; max-width: none; max-height: none; height: auto; }
 
 /* CV: label | text rows in their own grid, so the tall image stack on the
    right (45% of the content width) never stretches the gaps between rows */
@@ -287,7 +293,7 @@ main:has(.works) { padding: 0; }
     .cv .detail-media { order: 99; }
     .cv-rows { display: flex; flex-direction: column; row-gap: 24px; }
     .detail-media img { width: 100%; height: auto; max-height: none; }
-    .detail.about .detail-media { width: 100%; max-height: none; }
+    .detail.about .detail-media { width: 100%; margin-left: 0; max-height: none; }
     .detail.about .detail-media img { width: 100%; }
     .detail-text { font-size: inherit; }
     .detail-caption:empty { display: none; }
