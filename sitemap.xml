@@ -65,6 +65,22 @@
     <loc>https://milanowacka.github.io/video.html</loc>
     <lastmod>2026-11-23</lastmod>
     <video:video>
+      <video:thumbnail_loc>https://milanowacka.github.io/views/Francesca_1600.webp</video:thumbnail_loc>
+      <video:title>Francesca Heart Music Video</video:title>
+      <video:description>duration: 0:30 minutes Promotional Video for [Synthetic Water Music Compilation] (https://pitchfork.com/reviews/albums/various-artists-synthetic-water-music/) from Mappa. Premiere: [Mappa Instagram account] (https://www.instagram.com/reel/DdELoQFowKW/?lqvp=MWJwdmk2YXVpaHZjdA%3D%3D) September 9, 2026</video:description>
+      <video:content_loc>https://milanowacka.github.io/content/FRANCESCA.mp4</video:content_loc>
+      <video:duration>30</video:duration>
+      <video:publication_date>2026-09-09</video:publication_date>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://milanowacka.github.io/views/PAULINA_1600.webp</video:thumbnail_loc>
+      <video:title>Pauline Anna Strom</video:title>
+      <video:description>duration: 0:30 minutes Promotional Video for [Synthetic Water Music Compilation] (https://pitchfork.com/reviews/albums/various-artists-synthetic-water-music/) from Mappa. Premiere: [Mappa Instagram account] (https://www.instagram.com/reel/DdELoQFowKW/?lqvp=MWJwdmk2YXVpaHZjdA%3D%3D) August 5, 2026</video:description>
+      <video:content_loc>https://milanowacka.github.io/content/PAULINA_excerpt.mp4</video:content_loc>
+      <video:duration>30</video:duration>
+      <video:publication_date>2026-08-05</video:publication_date>
+    </video:video>
+    <video:video>
       <video:thumbnail_loc>https://milanowacka.github.io/views/Sprzezenie-zwrotne202620_1600.webp</video:thumbnail_loc>
       <video:title>Feedback loop</video:title>
       <video:description>This work explores grief as a dynamic process revealing itself within a larger network of relationships between the body, the environment, and other living beings. Coming from systems theory I approach emotions not as isolated psychological states but as elements of feedback processes emerging within interconnected systems. This is a video essay about the cycles of imbalance and returning to stability.</video:description>

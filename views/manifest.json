@@ -497,6 +497,30 @@
   "source_size": 5150215,
   "width": 1200
  },
+ "Francesca_1000.webp": {
+  "height": 568,
+  "source": "Francesca.png",
+  "source_size": 1521043,
+  "width": 1000
+ },
+ "Francesca_1600.webp": {
+  "height": 909,
+  "source": "Francesca.png",
+  "source_size": 1521043,
+  "width": 1600
+ },
+ "Francesca_800.webp": {
+  "height": 454,
+  "source": "Francesca.png",
+  "source_size": 1521043,
+  "width": 800
+ },
+ "Francesca_og.jpg": {
+  "height": 630,
+  "source": "Francesca.png",
+  "source_size": 1521043,
+  "width": 1200
+ },
  "KMRY9417-20_1000.webp": {
   "height": 1429,
   "source": "KMRY9417-20.jpg",
@@ -555,6 +579,30 @@
   "height": 630,
   "source": "KMRY9423.jpg",
   "source_size": 10053228,
+  "width": 1200
+ },
+ "PAULINA_1000.webp": {
+  "height": 546,
+  "source": "PAULINA.png",
+  "source_size": 2939825,
+  "width": 1000
+ },
+ "PAULINA_1600.webp": {
+  "height": 874,
+  "source": "PAULINA.png",
+  "source_size": 2939825,
+  "width": 1600
+ },
+ "PAULINA_800.webp": {
+  "height": 437,
+  "source": "PAULINA.png",
+  "source_size": 2939825,
+  "width": 800
+ },
+ "PAULINA_og.jpg": {
+  "height": 630,
+  "source": "PAULINA.png",
+  "source_size": 2939825,
   "width": 1200
  },
  "SW_2026_1000.webp": {
