@@ -317,24 +317,6 @@
   "source_size": 7526726,
   "width": 1200
  },
- "DSCF7516_MILA_NOWACKA_HIRES_1000.webp": {
-  "height": 1334,
-  "source": "DSCF7516_MILA_NOWACKA_HIRES.jpg",
-  "source_size": 2884509,
-  "width": 1000
- },
- "DSCF7516_MILA_NOWACKA_HIRES_1600.webp": {
-  "height": 2134,
-  "source": "DSCF7516_MILA_NOWACKA_HIRES.jpg",
-  "source_size": 2884509,
-  "width": 1600
- },
- "DSCF7516_MILA_NOWACKA_HIRES_800.webp": {
-  "height": 1067,
-  "source": "DSCF7516_MILA_NOWACKA_HIRES.jpg",
-  "source_size": 2884509,
-  "width": 800
- },
  "DSCF7724_1000.webp": {
   "height": 1426,
   "source": "DSCF7724.jpg",
@@ -682,6 +664,24 @@
   "source": "aqualines-img.jpg",
   "source_size": 105164,
   "width": 1200
+ },
+ "nowacka-portret_1000.webp": {
+  "height": 1334,
+  "source": "nowacka-portret.jpg",
+  "source_size": 243161,
+  "width": 1000
+ },
+ "nowacka-portret_1600.webp": {
+  "height": 1334,
+  "source": "nowacka-portret.jpg",
+  "source_size": 243161,
+  "width": 1000
+ },
+ "nowacka-portret_800.webp": {
+  "height": 1067,
+  "source": "nowacka-portret.jpg",
+  "source_size": 243161,
+  "width": 800
  },
  "og-image.jpg": {
   "height": 630,
