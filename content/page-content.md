@@ -280,9 +280,9 @@ Her Docs Festival 2025
 
 EXHIBITIONS 
 
-10.10.2026–31.01.2027 – The Etheric Field, Gabriella Boyd, Aleksandra Ionowa, Mila Nowacka, and Vanessa da Silva, The College of Psychic Studies, London, UK
+10.10.2026–31.01.2027 – The Etheric Field, Gabriella Boyd, Aleksandra Ionowa, Mila Nowacka, and Vanessa da Silva, [The College of Psychic Studies](https://www.collegeofpsychicstudies.co.uk/exhibition/), London, UK
 
-20.06–9.07.2026 – Saturated, group exhibition, Stellarhighway gallery, New York, USA
+20.06–9.07.2026 – Saturated, group exhibition, [Stellarhighway Gallery](https://stellarhighway.com/Saturated-The-Drawing-Stall-Vol-II), New York, USA
 
 27.09–15.10 – Nowelia Kiliani, solo exhibition, Garden Gallery, Warsaw, PL
 
