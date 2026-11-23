@@ -14,6 +14,8 @@ I am an artist, art history graduate and mother. My practice explores the relati
 
 artwork documentation: Kasia Rysiak, Bartosz Górka, Sebastian Rzepka.
 portrait: Sebastian Rzepka.
+installation view, The Etheric Field, The College of Psychic Studies, London, 2026
+Photo: Eva Herzog.
 
 
 
@@ -254,12 +256,12 @@ The Aqualines video work is an audiovisual exploration of water and flow-related
 Her Docs Festival 2025
 
 # CV
-![](post_feedback_mila2.jpg)
-![](post_feedback_mila.jpeg)
+![](CPS_view.jpg)
+
 
 EXHIBITIONS 
 
-10.10.2026–31.01.2027 – The Etheric Field, The College of Psychic Studies, London, UK
+10.10.2026–31.01.2027 – The Etheric Field, Gabriella Boyd, Aleksandra Ionowa, Mila Nowacka, and Vanessa da Silva, The College of Psychic Studies, London, UK
 
 20.06–9.07.2026 – Saturated, group exhibition, Stellarhighway gallery, New York, USA
 
@@ -336,7 +338,7 @@ Description text...          (middle column)
 
 This workshop takes Annie Besant and Charles W. Leadbeater's Thought-Forms (1901) as a starting point for exploring the possibility of visualising thought and other invisible phenomena through feedback loops. Together we examined the theoretical principles proposed in the book, asking what conditions determine the forms that our thoughts and emotions take. The workshop translates these ideas into direct, embodied practice, using movement, sensory observation and drawing exercises focused on the body and the visual apparatus, the participants experiment with translating mental and bodily states into visual processes.
 
-![](2.png)
+![](3.png)
 
 ## Feedback Loop Seminar, under development
 
@@ -352,7 +354,6 @@ The seminar is open-ended and process-based in nature.
 It is intended for artists interested in contemporary art, new media, systems theory, embodiment, cognitive processes and the relationship between technology and experience. No specialised background is required.
 
 ![](1.png)
-![](2.png)
 
 ## Video Feedback Plasticity 2022-2024
 
@@ -361,6 +362,6 @@ During the workshop, participants learn about the techniques for inducing feedba
 
 
 ![](2.png)
-![](1.png)
+![](4.png)
 ![](3.jpg)
 
