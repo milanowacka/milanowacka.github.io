@@ -53,6 +53,24 @@
   "source_size": 703402,
   "width": 800
  },
+ "4_1000.webp": {
+  "height": 436,
+  "source": "4.png",
+  "source_size": 188629,
+  "width": 525
+ },
+ "4_1600.webp": {
+  "height": 436,
+  "source": "4.png",
+  "source_size": 188629,
+  "width": 525
+ },
+ "4_800.webp": {
+  "height": 436,
+  "source": "4.png",
+  "source_size": 188629,
+  "width": 525
+ },
  "BGF3138_MN_web_1000.webp": {
   "height": 1903,
   "source": "BGF3138_MN_web.jpg",
@@ -82,6 +100,24 @@
   "source": "BGF3138_MN_web.jpg",
   "source_size": 4161611,
   "width": 1200
+ },
+ "CPS_view_1000.webp": {
+  "height": 800,
+  "source": "CPS_view.jpg",
+  "source_size": 157257,
+  "width": 1000
+ },
+ "CPS_view_1600.webp": {
+  "height": 1200,
+  "source": "CPS_view.jpg",
+  "source_size": 157257,
+  "width": 1500
+ },
+ "CPS_view_800.webp": {
+  "height": 640,
+  "source": "CPS_view.jpg",
+  "source_size": 157257,
+  "width": 800
  },
  "DSCF2688_1000.webp": {
   "height": 1442,
@@ -634,41 +670,5 @@
   "source": "SW_2026.jpg",
   "source_size": 918723,
   "width": 1200
- },
- "post_feedback_mila2_1000.webp": {
-  "height": 1250,
-  "source": "post_feedback_mila2.jpg",
-  "source_size": 764499,
-  "width": 1000
- },
- "post_feedback_mila2_1600.webp": {
-  "height": 1350,
-  "source": "post_feedback_mila2.jpg",
-  "source_size": 764499,
-  "width": 1080
- },
- "post_feedback_mila2_800.webp": {
-  "height": 1000,
-  "source": "post_feedback_mila2.jpg",
-  "source_size": 764499,
-  "width": 800
- },
- "post_feedback_mila_1000.webp": {
-  "height": 1250,
-  "source": "post_feedback_mila.jpeg",
-  "source_size": 304027,
-  "width": 1000
- },
- "post_feedback_mila_1600.webp": {
-  "height": 1350,
-  "source": "post_feedback_mila.jpeg",
-  "source_size": 304027,
-  "width": 1080
- },
- "post_feedback_mila_800.webp": {
-  "height": 1000,
-  "source": "post_feedback_mila.jpeg",
-  "source_size": 304027,
-  "width": 800
  }
 }
