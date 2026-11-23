@@ -14,8 +14,8 @@ I am an artist, art history graduate and mother. My practice explores the relati
 
 artwork documentation: Kasia Rysiak, Bartosz Górka, Sebastian Rzepka.
 portrait: Sebastian Rzepka.
-installation view, The Etheric Field, The College of Psychic Studies, London, 2026
-Photo: Eva Herzog.
+installation view: The Etheric Field, The College of Psychic Studies, London, 2026,
+photo: Eva Herzog.
 
 
 
