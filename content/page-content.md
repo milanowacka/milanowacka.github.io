@@ -229,7 +229,7 @@ wax-based color pencils on military technical paper
 
 # Video
 ## Francesca Heart Music Video
-![FRANCESCA.mp4](Francesca.png)
+![FRANCESCA.mp4](FRANCESCA.png)
 ### Description
 duration: 0:30 minutes
 Music: an excerpt from: Francesca Heart - Superfici Riflettenti (1:28)
@@ -243,7 +243,7 @@ September 9, 2026
 duration: 0:60 minutes
 Music: an excerpt from: Pauline Anna Strom - Emerald Pool (3:21)
 Promotional Video for [Synthetic Water Music Compilation](https://pitchfork.com/reviews/albums/various-artists-synthetic-water-music/) from Mappa.
-Premiere: [Mappa Instagram account](https://www.instagram.com/reel/DdELoQFowKW/?lqvp=MWJwdmk2YXVpaHZjdA%3D%3D)
+Premiere: [Mappa Instagram account](https://www.instagram.com/reel/Dbp3DntI_GZ/?gwpx=MWR2ejdhaTByMnIxdg%3D%3D)
 August 5, 2026
 
 
