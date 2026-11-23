@@ -228,6 +228,24 @@ wax-based color pencils on military technical paper
 2024
 
 # Video
+## Francesca Heart Music Video
+![FRANCESCA.mp4](Francesca.png)
+### Description
+
+duration: 0:30 minutes
+Promotional Video for [Synthetic Water Music Compilation] (https://pitchfork.com/reviews/albums/various-artists-synthetic-water-music/) from Mappa.
+Premiere: [Mappa Instagram account] (https://www.instagram.com/reel/DdELoQFowKW/?lqvp=MWJwdmk2YXVpaHZjdA%3D%3D)
+September 9, 2026
+
+## Pauline Anna Strom
+![PAULINA_excerpt.mp4](PAULINA.png)
+### Description
+duration: 0:30 minutes
+Promotional Video for [Synthetic Water Music Compilation] (https://pitchfork.com/reviews/albums/various-artists-synthetic-water-music/) from Mappa.
+Premiere: [Mappa Instagram account] (https://www.instagram.com/reel/DdELoQFowKW/?lqvp=MWJwdmk2YXVpaHZjdA%3D%3D)
+August 5, 2026
+
+
 ## Feedback loop
 ![Sprzezenie-zwrotne2026_exerpt.mp4](Sprzezenie-zwrotne202620.jpg)
 ### Description
