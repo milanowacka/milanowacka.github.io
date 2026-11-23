@@ -233,16 +233,16 @@ wax-based color pencils on military technical paper
 ### Description
 
 duration: 0:30 minutes
-Promotional Video for [Synthetic Water Music Compilation] (https://pitchfork.com/reviews/albums/various-artists-synthetic-water-music/) from Mappa.
-Premiere: [Mappa Instagram account] (https://www.instagram.com/reel/DdELoQFowKW/?lqvp=MWJwdmk2YXVpaHZjdA%3D%3D)
+Promotional Video for [Synthetic Water Music Compilation](https://pitchfork.com/reviews/albums/various-artists-synthetic-water-music/) from Mappa.
+Premiere: [Mappa Instagram account](https://www.instagram.com/reel/DdELoQFowKW/?lqvp=MWJwdmk2YXVpaHZjdA%3D%3D)
 September 9, 2026
 
-## Pauline Anna Strom
+## Pauline Anna Strom Music Video
 ![PAULINA_excerpt.mp4](PAULINA.png)
 ### Description
 duration: 0:30 minutes
-Promotional Video for [Synthetic Water Music Compilation] (https://pitchfork.com/reviews/albums/various-artists-synthetic-water-music/) from Mappa.
-Premiere: [Mappa Instagram account] (https://www.instagram.com/reel/DdELoQFowKW/?lqvp=MWJwdmk2YXVpaHZjdA%3D%3D)
+Promotional Video for [Synthetic Water Music Compilation](https://pitchfork.com/reviews/albums/various-artists-synthetic-water-music/) from Mappa.
+Premiere: [Mappa Instagram account](https://www.instagram.com/reel/DdELoQFowKW/?lqvp=MWJwdmk2YXVpaHZjdA%3D%3D)
 August 5, 2026
 
 
