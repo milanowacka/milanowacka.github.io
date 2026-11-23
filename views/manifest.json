@@ -71,6 +71,24 @@
   "source_size": 188629,
   "width": 525
  },
+ "6_1000.webp": {
+  "height": 608,
+  "source": "6.png",
+  "source_size": 1189529,
+  "width": 1000
+ },
+ "6_1600.webp": {
+  "height": 972,
+  "source": "6.png",
+  "source_size": 1189529,
+  "width": 1600
+ },
+ "6_800.webp": {
+  "height": 486,
+  "source": "6.png",
+  "source_size": 1189529,
+  "width": 800
+ },
  "BGF3138_MN_web_1000.webp": {
   "height": 1903,
   "source": "BGF3138_MN_web.jpg",
