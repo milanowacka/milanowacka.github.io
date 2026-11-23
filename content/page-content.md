@@ -4,7 +4,7 @@ Mila Nowacka is a Polish visual artist and art history graduate working in drawi
 Her current series of colour pencil drawings, Feedback, visualises the body from within – one drawing for each internal organ and process, each accompanied by an original text.
 
 # About
-![](DSCF7516_MILA_NOWACKA_HIRES.jpg)
+![](nowacka-portret.jpg)
 
 I am an artist, art history graduate and mother. My practice explores the relationship between the body, perception, and environment. While my current practice is centered on drawing, its methodology is highly influenced by my long-standing engagement with video technologies. I use feedback, error, and sensory experience as research-based and artistic tools, investigating processes of destabilization and re-stabilization, alternative modes of cognition, and the intersections of contemporary art, spirituality, and media theory. I am particularly interested in the cycles of imbalance and return to stability - processes present in every system and deeply affected by human behavior. Currently, I am working on a series of drawings that visualize my own body from within, exploring the sensations associated with individual internal organs and various processes.
 
